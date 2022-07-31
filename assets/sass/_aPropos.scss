@@ -1,0 +1,29 @@
+@use "variables" as v;
+@use "reset";
+
+
+
+// TITRE ANIME *******************************************************************
+
+.letter-container {
+    text-align: center;
+    perspective: 100rem;
+
+    h1 {
+        font-family: v.$playfair;
+        transform-style: preserve-3d;
+        display: inline-flex;
+        margin-top: 20rem;
+        color: v.$darkgrey;
+        font-weight: 100;
+        letter-spacing: 1rem;
+        font-size: 10rem;
+        cursor: pointer;
+        text-transform: uppercase;
+        // background: rgba(255, 166, 0, 0.464);
+
+        span {
+            pointer-events: none;
+        }
+    }
+}

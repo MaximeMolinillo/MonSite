@@ -1,0 +1,28 @@
+// Variables
+//Couleur
+$darkgrey: #333;
+$second-dark:#414141;
+$text-white: #f1f1f1;
+$shadow-white: #c5c5c6;
+$cream: #fafafa;
+$text-dark: #222;
+$red: #ff4e50;
+$yellow: #f9d423;
+$blue: #591e98;
+
+//Breakpoint
+$sm-breakpoint: 576px;
+$md-breakpoint: 768px;
+$lg-breakpoint: 992px;
+$xl-breakpoint: 1200px;
+
+//Police
+$fatFont: Abril fatface, sans-serif;
+$playfair: 'Playfair Display', serif;
+
+
+// Import Police
+// Abril Fatface
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+//Playfair display
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');

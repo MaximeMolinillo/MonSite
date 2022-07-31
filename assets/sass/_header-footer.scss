@@ -1,0 +1,213 @@
+@use "variables" as v;
+@use "reset";
+
+// HEADER **************************************************************************
+img {
+    width: 2rem;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 2.5rem;
+    background: v.$cream;
+    box-shadow: inset 0rem -0.1rem 0rem v.$shadow-white;
+    z-index: 5;
+    @media screen and(max-width: v.$lg-breakpoint) {
+        padding: 1.5rem 2rem;
+        position: relative;
+    }
+}
+
+.nav-icon {
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+    @media screen and(max-width: v.$lg-breakpoint) {
+        order: 2;
+        margin: 0 auto;
+    }
+    span {
+        font-family: v.$fatFont;
+        font-size: 2.5rem;
+        margin-left: 1rem;
+        font-weight: 400;
+        color: v.$darkgrey;
+        @media screen and(max-width: v.$lg-breakpoint) {
+            font-size: 2.2rem;
+        }
+        @media screen and(max-width: v.$lg-breakpoint) {
+            font-size: 2rem;
+        }
+    }
+    img {
+        width: 4rem;
+        transform: rotate(-17deg) translateX(0.5rem);
+        @media screen and(max-width: v.$sm-breakpoint) {
+            width: 3rem;
+        }
+    }
+}
+
+.main-navlinks {
+    @media screen and(max-width: v.$lg-breakpoint) {
+        order: 1;
+    }
+    .hamburger {
+        display: none;
+        @media screen and(max-width: v.$lg-breakpoint) {
+            width: 2rem;
+            height: 2rem;
+            cursor: pointer;
+            border: none;
+            display: flex;
+            background: v.$cream;
+            align-items: center;
+            position: relative;
+        }
+        span {
+            @media screen and(max-width: v.$lg-breakpoint) {
+                display: block;
+                width: 100%;
+                height: 0.2rem;
+                background: v.$darkgrey;
+                position: absolute;
+                pointer-events: none;
+                transition: opacity 0.3s 0.15s ease-out;
+            }
+        }
+        span:nth-child(1) {
+            @media screen and(max-width: v.$lg-breakpoint) {
+                transform: translateY(0.7rem);
+            }
+        }
+        span:nth-child(3) {
+            @media screen and(max-width: v.$lg-breakpoint) {
+                transform: translateY(-0.7rem);
+            }
+        }
+    }
+}
+
+.navlinks-container {
+    @media screen and(max-width: v.$lg-breakpoint) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        background: v.$cream;
+        top: 100%;
+        left: 0;
+        height: 100vh;
+        padding: 1.5rem 5rem 1.5rem 2rem;
+        border-right: 0.1rem solid v.$darkgrey;
+        transform: translate(-100%);
+        transition: transform 0.3s ease-out;
+    }
+    a {
+        margin: 1rem 0.5rem;
+        font-size: 1.8rem;
+        font-weight: 500;
+        text-decoration: none;
+        color: v.$second-dark;
+        display: inline-block;
+        position: relative;
+        @media screen and(max-width: v.$lg-breakpoint) {
+            font-size: 1.8rem;
+            margin: 1rem 0;
+        }
+    }
+    a::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -0.3rem;
+        width: 100%;
+        height: 0.1rem;
+        transform: scaleX(0);
+        transform-origin: left;
+        background: v.$darkgrey;
+        transition: transform 0.3s ease-out;
+    }
+    a:hover::after {
+        transform: scaleX(1);
+    }
+}
+
+.hamburger span:nth-child(1),
+.hamburger span:nth-child(3) {
+    @media screen and(max-width: v.$lg-breakpoint) {
+        transition: transform 0.3s ease-out;
+    }
+}
+.hamburger.open {
+    span:nth-child(1) {
+        @media screen and(max-width: v.$lg-breakpoint) {
+            transform: translate(0) rotate(135deg);
+        }
+    }
+}
+
+.hamburger.open {
+    span:nth-child(2) {
+        @media screen and(max-width: v.$lg-breakpoint) {
+            opacity: 0;
+            transition: opacity 0s ease-out;
+        }
+    }
+}
+.hamburger.open {
+    span:nth-child(3) {
+        @media screen and(max-width: v.$lg-breakpoint) {
+            transform: translate(0) rotate(-135deg);
+        }
+    }
+}
+
+.nav-authentifications {
+    margin-left: auto;
+    @media screen and(max-width: v.$lg-breakpoint) {
+        order: 3;
+        margin-left: 0;
+    }
+    .sign-btns {
+        button {
+            // font-family: v.$fatFont;
+            font-size: 1.6rem;
+            min-width: 9rem;
+            padding: 0.1rem 0.5rem;
+            margin: 0 0.5rem;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            border: none;
+            @media screen and(max-width: v.$lg-breakpoint) {
+                display: none;
+            }
+            &:nth-child(2) {
+                border: none;
+                background: #92c3eeb7;
+            }
+        }
+    }
+    .sign-user {
+        display: none;
+        @media screen and(max-width: v.$lg-breakpoint) {
+            display: block;
+            cursor: pointer;
+            border: none;
+        }
+        img {
+            @media screen and(max-width: v.$lg-breakpoint) {
+                width: 2rem;
+            }
+        }
+    }
+}
+
+.open {
+    @media screen and(max-width: v.$lg-breakpoint) {
+        transform: translate(0%);
+    }
+}
