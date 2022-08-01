@@ -1,0 +1,59 @@
+@use "variables" as v;
+@use "reset";
+@use "mixin" as m;
+
+.contact-title {
+    padding-top: 10rem;
+    text-align: center;
+    font-family: v.$fatFont;
+}
+form {
+    font-family: v.$fatFont;
+    background: v.$darkgrey url("../img/bgContacts.jpg") center / cover no-repeat;
+ 
+    padding-top: 5rem;
+    // text-align: left;
+    width: 100%;
+    height: 79vh;
+
+   
+    .wrap-form-group {
+        width: 80%;
+        margin-left: 10%;
+        .column-form-group {
+            display: flex;
+            .form-group {
+                color: v.$cream;
+                font-size: 2rem;
+                text-shadow: 0.2rem 0.2rem 1rem v.$darkgrey;
+                input {
+                    @include m.input-style;
+                    width: 40rem;
+                    height: 3rem;
+                }
+            }
+        }
+    }
+}
+.textarea-btn {
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 5rem;
+        textarea {
+            @include m.input-style;
+            width: 80%;
+            margin: 1rem 10% 5rem 10%;
+            
+          
+        }
+        label{
+            color: v.$cream;
+            font-size: 2rem
+        }
+    }
+    .submit {
+        @include m.btn;
+    }
+}

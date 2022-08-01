@@ -12,7 +12,7 @@
   <header>
       <nav>
         <a
-          href="index.html"
+          href="../index.html"
           class="nav-icon"
           aria-label="visit homepage"
           aria-current="page"
@@ -34,9 +34,9 @@
           </button>
           <div class="navlinks-container">
             <a href="../index.html" aria-current="page">Home</a>
-            <a href="./projets.html">Mes projets</a>
-            <a href="/public/apropos.html">A propos</a>
-            <a href="./contact.html">Contact</a>
+            <a href="./projets.php">Mes projets</a>
+            <a href="./aPropos.php">A propos</a>
+            <a href="./contact.php">Contact</a>
           </div>
         </div>
         <div class="nav-authentifications">

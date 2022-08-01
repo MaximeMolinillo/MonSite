@@ -1,7 +1,11 @@
 @use "variables" as v;
 @use "reset";
+@use "mixin";
 @use "aPropos";
+@use "contact";
+@use "projets";
 @use "header-footer";
+
 //NAVBAR******************************************************
 // nav {
 //     width: 100%;

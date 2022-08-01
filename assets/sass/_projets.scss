@@ -1,0 +1,107 @@
+@use "variables" as v;
+@use "reset";
+@use "mixin" as m;
+
+    .wrapProjects {
+        background: rgb(182, 71, 71);
+        // padding-top: 5rem;
+        p{
+            // color: v.$darkgrey;
+            font-family: v.$playfair;
+            font-size: 12rem;
+            margin: 0;
+            position: absolute;
+        }
+        p:nth-child(1) {
+            top :10rem;
+            left: 65rem;
+            color: v.$blue;
+        }
+        p:nth-child(2) {
+            top :35rem;
+            left: 2rem;
+            color: v.$green;
+            z-index: 1;
+        }
+        p:nth-child(3) {
+            top :60rem;
+            left: 65rem;
+            color: v.$yellow;
+            z-index: 2;
+        }
+        p:nth-child(4) {
+            top :105rem;
+            left: 35rem;
+            color: v.$red;
+            z-index: 3;
+        }
+        p:nth-child(5) {
+            top :145rem;
+            left: 85rem;
+            color: v.$purple;
+            z-index: 4;
+        }
+        .box{
+            position: absolute;
+            
+        }
+        .box1{
+           
+            top: 10rem;
+            left: 5rem;
+            background: v.$blue;
+            img{
+                width: 40rem;
+                padding: 2rem;
+                
+            }
+        }
+        .box2{
+           
+            top: 35rem;
+            left: 105rem;
+            background: v.$green;
+            img{
+                width: 40rem;
+                padding: 2rem;
+                
+            }
+        }
+        .box3{
+           
+            top: 60rem;
+            left: 15rem;
+            background: v.$yellow;
+            img{
+                width: 40rem;
+                padding: 2rem;
+                
+            }
+        }
+ 
+        .box4{
+           
+            top: 90rem;
+            left: 100rem;
+            background: v.$red;
+            img{
+                width: 40rem;
+                padding: 2rem;
+                
+            }
+        }
+        .box5{
+           
+            top: 115rem;
+            left: 25rem;
+            background: v.$purple;
+            img{
+                width: 40rem;
+                padding: 2rem;
+                
+            }
+        }
+   
+    }
+
+  

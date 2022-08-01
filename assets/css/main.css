@@ -16,6 +16,7 @@ body {
   height: 100vh;
   width: 100%;
   overflow-x: hidden;
+  background: rgba(114, 114, 114, 0.219);
 }
 
 img {
@@ -45,6 +46,167 @@ a {
 }
 .letter-container h1 span {
   pointer-events: none;
+}
+
+.contact-title {
+  padding-top: 10rem;
+  text-align: center;
+  font-family: Abril fatface, sans-serif;
+}
+
+form {
+  font-family: Abril fatface, sans-serif;
+  background: #333 url("../img/bgContacts.jpg") center/cover no-repeat;
+  padding-top: 5rem;
+  width: 100%;
+  height: 79vh;
+}
+form .wrap-form-group {
+  width: 80%;
+  margin-left: 10%;
+}
+form .wrap-form-group .column-form-group {
+  display: flex;
+}
+form .wrap-form-group .column-form-group .form-group {
+  color: #fafafa;
+  font-size: 2rem;
+  text-shadow: 0.2rem 0.2rem 1rem #333;
+}
+form .wrap-form-group .column-form-group .form-group input {
+  border-radius: 0.5rem;
+  border: 0.2rem solid #333;
+  background: #fafafa;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem 1rem;
+  width: 40rem;
+  height: 3rem;
+}
+
+.textarea-btn .form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 5rem;
+}
+.textarea-btn .form-group textarea {
+  border-radius: 0.5rem;
+  border: 0.2rem solid #333;
+  background: #fafafa;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem 1rem;
+  width: 80%;
+  margin: 1rem 10% 5rem 10%;
+}
+.textarea-btn .form-group label {
+  color: #fafafa;
+  font-size: 2rem;
+}
+.textarea-btn .submit {
+  width: 40%;
+  margin-left: 30%;
+  height: 8rem;
+  font-family: Abril fatface, sans-serif;
+  font-size: 4rem;
+  border: 0.2rem solid #333;
+  border-radius: 0.5rem;
+  background: #333;
+  color: #fafafa;
+  box-shadow: 1rem 1rem 1rem black;
+}
+.textarea-btn .submit:hover {
+  background: #414141;
+}
+
+.wrapProjects {
+  background: rgb(182, 71, 71);
+}
+.wrapProjects p {
+  font-family: "Playfair Display", serif;
+  font-size: 12rem;
+  margin: 0;
+  position: absolute;
+}
+.wrapProjects p:nth-child(1) {
+  top: 10rem;
+  left: 65rem;
+  color: #591e98;
+}
+.wrapProjects p:nth-child(2) {
+  top: 35rem;
+  left: 2rem;
+  color: #005300;
+  z-index: 1;
+}
+.wrapProjects p:nth-child(3) {
+  top: 60rem;
+  left: 65rem;
+  color: #fcce04;
+  z-index: 2;
+}
+.wrapProjects p:nth-child(4) {
+  top: 105rem;
+  left: 35rem;
+  color: #990e10;
+  z-index: 3;
+}
+.wrapProjects p:nth-child(5) {
+  top: 145rem;
+  left: 85rem;
+  color: rgb(33, 142, 150);
+  z-index: 4;
+}
+.wrapProjects .box {
+  position: absolute;
+}
+.wrapProjects .box1 {
+  top: 10rem;
+  left: 5rem;
+  background: #591e98;
+}
+.wrapProjects .box1 img {
+  width: 40rem;
+  padding: 2rem;
+}
+.wrapProjects .box2 {
+  top: 35rem;
+  left: 105rem;
+  background: #005300;
+}
+.wrapProjects .box2 img {
+  width: 40rem;
+  padding: 2rem;
+}
+.wrapProjects .box3 {
+  top: 60rem;
+  left: 15rem;
+  background: #fcce04;
+}
+.wrapProjects .box3 img {
+  width: 40rem;
+  padding: 2rem;
+}
+.wrapProjects .box4 {
+  top: 90rem;
+  left: 100rem;
+  background: #990e10;
+}
+.wrapProjects .box4 img {
+  width: 40rem;
+  padding: 2rem;
+}
+.wrapProjects .box5 {
+  top: 115rem;
+  left: 25rem;
+  background: rgb(33, 142, 150);
+}
+.wrapProjects .box5 img {
+  width: 40rem;
+  padding: 2rem;
 }
 
 img {
