@@ -1,5 +1,8 @@
 <?php
 include("../templates/header.php");
+
+$query = $db->query("SELECT * FROM products ORDER BY id");
+$projets = $query->fetchAll();
 ?>
 
 <main >
@@ -9,7 +12,7 @@ include("../templates/header.php");
         <p class="rellax"data-rellax-speed="-2">Demain dès l'Aube</p>
         <p class="rellax" data-rellax-speed="0">Platform Movie</p>
         <p class="rellax" data-rellax-speed="2">Disney +</p>
-        <p class="rellax" data-rellax-speed="4">Olivarius</p>
+        <p class="rellax" data-rellax-speed="2">Olivarius</p>
 
         <div class="box box1 rellax" data-rellax-speed="-5">
             <img src="../assets/img/projets/monsite.png" alt="Mon site">

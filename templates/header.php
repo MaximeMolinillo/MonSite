@@ -46,7 +46,7 @@
             aria-label="Sign in page"
             target="_blank"
           >
-            <img src="../img/linkedin.svg" alt="Lien vers Linkedin" />
+            <img src="../assets/img/linkedin.svg" alt="Lien vers Linkedin" />
           </a>
           <div class="sign-btns">
             <button type="button">
