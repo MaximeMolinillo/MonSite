@@ -48,6 +48,34 @@ a {
   pointer-events: none;
 }
 
+.rose {
+  width: 50%;
+  height: 50rem;
+}
+.rose img {
+  position: absolute;
+}
+.rose .carre {
+  width: 40rem;
+  height: 40rem;
+}
+.rose .centre {
+  width: 15rem;
+  height: 15rem;
+}
+.rose .haut {
+  top: 0;
+}
+.rose .gauche {
+  left: 0;
+}
+.rose .droite {
+  right: 0;
+}
+.rose .bas {
+  bottom: 0;
+}
+
 .contact-title {
   padding-top: 10rem;
   text-align: center;
@@ -81,6 +109,9 @@ form .wrap-form-group .column-form-group .form-group input {
   display: flex;
   flex-direction: column;
   margin: 0.5rem 1rem;
+  padding: 1rem;
+  width: 40rem;
+  font-family: Abril fatface, sans-serif;
   width: 40rem;
   height: 3rem;
 }
@@ -99,6 +130,9 @@ form .wrap-form-group .column-form-group .form-group input {
   display: flex;
   flex-direction: column;
   margin: 0.5rem 1rem;
+  padding: 1rem;
+  width: 40rem;
+  font-family: Abril fatface, sans-serif;
   width: 80%;
   margin: 1rem 10% 5rem 10%;
 }
@@ -200,13 +234,25 @@ form .wrap-form-group .column-form-group .form-group input {
   padding: 2rem;
 }
 .wrapProjects .box5 {
-  top: 115rem;
+  top: 110rem;
   left: 25rem;
   background: rgb(33, 142, 150);
 }
 .wrapProjects .box5 img {
   width: 40rem;
   padding: 2rem;
+}
+
+.db {
+  padding-top: 150rem;
+}
+.db .products h1 {
+  font-family: Abril fatface, sans-serif;
+  font-size: 5rem;
+  color: black;
+}
+.db .products img {
+  width: 50rem;
 }
 
 img {
@@ -392,33 +438,18 @@ nav {
     margin-left: 0;
   }
 }
-.nav-authentifications .sign-btns button {
-  font-size: 1.6rem;
-  min-width: 9rem;
-  padding: 0.1rem 0.5rem;
-  margin: 0 0.5rem;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  border: none;
-}
-@media screen and (max-width: 992px) {
-  .nav-authentifications .sign-btns button {
-    display: none;
-  }
-}
-.nav-authentifications .sign-btns button:nth-child(2) {
-  border: none;
-  background: rgba(146, 195, 238, 0.7176470588);
-}
 .nav-authentifications .sign-user {
-  display: none;
+  padding: 0.5rem;
 }
 @media screen and (max-width: 992px) {
   .nav-authentifications .sign-user {
-    display: block;
     cursor: pointer;
     border: none;
+    padding: 0;
   }
+}
+.nav-authentifications .sign-user img {
+  width: 3rem;
 }
 @media screen and (max-width: 992px) {
   .nav-authentifications .sign-user img {
@@ -430,6 +461,14 @@ nav {
   .open {
     transform: translate(0%);
   }
+}
+
+.work-details {
+  padding-top: 10rem;
+  font-size: 5rem;
+}
+.work-details img {
+  width: 100rem;
 }
 
 /*  Effet au clic */

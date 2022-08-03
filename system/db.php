@@ -18,3 +18,4 @@ class DB {
 		return $this->db->exec($sql);
 	}
 }
+?>

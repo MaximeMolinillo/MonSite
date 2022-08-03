@@ -28,6 +28,7 @@ form {
                 text-shadow: 0.2rem 0.2rem 1rem v.$darkgrey;
                 input {
                     @include m.input-style;
+                  
                     width: 40rem;
                     height: 3rem;
                 }

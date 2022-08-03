@@ -88,17 +88,17 @@ include("../templates/header.php");
             <div class="column-form-group">
                 <div class="form-group">
                     <label for="inputName">Nom :</label>
-                    <input type="text" name="name" id="inputName" placeholder="Votre Nom">
+                    <input type="text" name="name" id="inputName" placeholder="Votre Nom...">
                 </div>
 
                 <div class="form-group">
                     <label for="inputFirstname">Prénom :</label>
-                    <input type="text" name="firstname" id="inputFirstname" placeholder="Votre Prénom">
+                    <input type="text" name="firstname" id="inputFirstname" placeholder="Votre Prénom...">
                 </div>
 
                 <div class="form-group">
                     <label for="inputSociety">Sociétée :</label>
-                    <input type="text" name="society" id="inputSociety" placeholder="Votre Sociétée">
+                    <input type="text" name="society" id="inputSociety" placeholder="Votre Sociétée...">
                 </div>
 
             </div>
@@ -106,17 +106,17 @@ include("../templates/header.php");
             <div class="column-form-group">
                 <div class="form-group">
                     <label for="inputEmail">Email :</label>
-                    <input type="email" name="email" id="inputEmail" placeholder="Votre email">
+                    <input type="email" name="email" id="inputEmail" placeholder="Votre email...">
                 </div>
 
                 <div class="form-group">
                     <label for="inputTel">Télephone :</label>
-                    <input type="tel" name="tel" id="inputTel" placeholder="Votre Numéro de tél">
+                    <input type="tel" name="tel" id="inputTel" placeholder="Votre Numéro de tél...">
                 </div>
 
                 <div class="form-group">
                     <label for="inputObject">Objet :</label>
-                    <input type="text" name="object" id="inputObject" placeholder="Objet de votre demande">
+                    <input type="text" name="object" id="inputObject" placeholder="Objet de votre demande...">
                 </div>
 
             </div>
@@ -126,7 +126,7 @@ include("../templates/header.php");
         <div class="textarea-btn">
             <div class="form-group">
                 <label for="inputMessage">Message :</label>
-                <textarea name="message" id="inputMessage" cols="30" rows="10" placeholder="Votre message"></textarea>
+                <textarea name="message" id="inputMessage" cols="30" rows="10" placeholder="Votre message..."></textarea>
             </div>
 
             <input type="submit" class="submit" value="Envoyer" name="contactMail">

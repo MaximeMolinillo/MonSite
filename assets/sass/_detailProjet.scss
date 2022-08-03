@@ -1,0 +1,16 @@
+@use "variables" as v;
+@use "reset";
+@use "mixin" as m;
+
+
+.work-details{
+    padding-top: 10rem;
+    font-size: 5rem;
+    h1{
+       
+        
+    }
+    img{
+        width: 100rem;
+    }
+}

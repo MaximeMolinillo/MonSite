@@ -27,3 +27,37 @@
         }
     }
 }
+
+.rose{
+    width: 50%;
+    height: 50rem;
+    img{
+        position:absolute;
+        // background: url("../img/projets/ddla2.png");
+    }
+    .carre{
+        width: 40rem;
+        height: 40rem;
+    }
+    .centre{
+        width: 15rem;
+        height: 15rem;
+    }
+    .haut{
+    
+        top: 0;
+       
+    }
+    .gauche{
+       
+        left: 0;
+    }
+    .droite{
+        right: 0;
+    }
+
+    .bas{
+        bottom: 0;
+    }
+   
+}

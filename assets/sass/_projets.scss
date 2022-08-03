@@ -104,4 +104,17 @@
    
     }
 
+    .db{
+         padding-top: 150rem;
+        .products{
+            h1{
+                font-family: v.$fatFont;
+                font-size: 5rem;
+                color: black;
+            }
+            img{
+                width: 50rem;
+            }
+        }
+    }
   
