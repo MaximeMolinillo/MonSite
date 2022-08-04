@@ -5,12 +5,32 @@
 
 .work-details{
     padding-top: 10rem;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15rem;
     font-size: 5rem;
+    // padding: 5rem;
     h1{
-       
+       font-family: v.$fatFont;
         
     }
     img{
         width: 100rem;
+        padding: 3rem;
+        background-color: v.$darkgrey;
+    }
+    p{
+        text-align: center;
+        margin: 3rem 0;
+        font-size: 3rem;
+        a{
+            @include m.btn2;
+            background-color: v.$darkgrey;
+            color: v.$cream;
+            
+        }
     }
 }

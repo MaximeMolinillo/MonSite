@@ -38,7 +38,7 @@ if ($find) {
             <img src="../assets/img/projets/<?= $data['Pictures'] ?>" alt="image de <?= $data['title'] ?>">
             <img src="../assets/img/projets/<?= $data['picture'] ?>" alt="image de <?= $data['title'] ?>"> -->
             <img src="../assets/img/projets/<?= $data['picture'] ?>" alt="image de <?= $data['title'] ?>">
-            <p><a href="<?= $data["url"] ?>" target="_blank" > >>Visiter ce site<< </a></p>
+            <p><a href="<?= $data["url"] ?>" target="_blank" > Visiter ce site </a></p>
 
             <p><?= $data["description"] ?></p>
 

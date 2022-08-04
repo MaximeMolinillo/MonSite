@@ -175,6 +175,7 @@ nav {
 
     .sign-user {
         padding: 0.5rem;
+            
         @media screen and(max-width: v.$lg-breakpoint) {
             // display: block;
             cursor: pointer;
@@ -183,10 +184,15 @@ nav {
         }
         img {
             width: 3rem;
-      
+            -webkit-transition: 0.3s ease-in-out;
+            transition: 0.3s ease-in-out;
             @media screen and(max-width: v.$lg-breakpoint) {
                 width: 2rem;
             }
+        }
+        &:hover img{
+            -webkit-transform: scale(1.3);
+            transform: scale(1.3);
         }
     }
 }

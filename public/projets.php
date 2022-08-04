@@ -5,17 +5,15 @@ $page = "Mes projets";
 
 
 
-$query = $db->query("SELECT * FROM products ORDER BY id");
-$products = $query->fetchAll(PDO::FETCH_ASSOC);
+// $query = $db->query("SELECT * FROM products ORDER BY id");
+// $products = $query->fetchAll(PDO::FETCH_ASSOC);
 
 include("../templates/header.php");
 ?>
 
-<main>
+<main class="main">
 
-    <?php
-    foreach ($products as $item) {
-    ?>
+
         <div class="wrapProjects">
 
 
@@ -58,13 +56,10 @@ include("../templates/header.php");
             </div>
 
         </div>
-    <?php
 
-    }
-    ?>
 
 </main>
-<div class="db">
+<!-- <div class="db">
     <?php
     foreach ($products as $product) {
     ?>
@@ -91,7 +86,7 @@ include("../templates/header.php");
     <?php
     }
     ?>
-</div>
+</div> -->
 
 
 

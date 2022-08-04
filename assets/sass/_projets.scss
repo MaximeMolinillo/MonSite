@@ -1,120 +1,141 @@
 @use "variables" as v;
 @use "reset";
 @use "mixin" as m;
+.main {
 
     .wrapProjects {
-        background: rgb(182, 71, 71);
+        width: 100%;
+        height: 200vh;
+        background: v.$darkgrey url("../img/web.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
         // padding-top: 5rem;
-        p{
+        p {
             // color: v.$darkgrey;
             font-family: v.$playfair;
             font-size: 12rem;
             margin: 0;
             position: absolute;
+         
+            a {
+                text-shadow: 0.3rem 0.3rem 0.5rem v.$cream;
+                // -webkit-transition: 0.3s ease-in-out;
+                // transition: 0.3s ease-in-out;
+            }
+            // &:hover a {
+            //     -webkit-transform: scale(1.3);
+            //     transform: scale(1.3);
+            // }
         }
+      
+
         p:nth-child(1) {
-            top :10rem;
+            top: 10rem;
             left: 65rem;
-            color: v.$blue;
+            a {
+                color: v.$blue;
+            }
         }
         p:nth-child(2) {
-            top :35rem;
+            top: 35rem;
             left: 2rem;
-            color: v.$green;
             z-index: 1;
+            a {
+                color: v.$green;
+            }
         }
+
         p:nth-child(3) {
-            top :60rem;
+            top: 60rem;
             left: 65rem;
-            color: v.$yellow;
             z-index: 2;
+            a {
+                color: v.$yellow;
+            }
         }
         p:nth-child(4) {
-            top :105rem;
+            top: 105rem;
             left: 35rem;
-            color: v.$red;
             z-index: 3;
+            a {
+                color: v.$red;
+            }
         }
         p:nth-child(5) {
-            top :145rem;
+            top: 145rem;
             left: 85rem;
-            color: v.$purple;
             z-index: 4;
+
+            a {
+                color: v.$purple;
+            }
         }
-        .box{
+
+        .box {
             position: absolute;
-            
+            box-shadow: 0.3rem 0.3rem 0.5rem v.$cream;
+       
         }
-        .box1{
-           
+
+        .box1 {
             top: 10rem;
             left: 5rem;
             background: v.$blue;
-            img{
+            img {
                 width: 40rem;
                 padding: 2rem;
-                
             }
         }
-        .box2{
-           
+        .box2 {
             top: 35rem;
             left: 105rem;
             background: v.$green;
-            img{
+            img {
                 width: 40rem;
                 padding: 2rem;
-                
             }
         }
-        .box3{
-           
+        .box3 {
             top: 60rem;
             left: 15rem;
             background: v.$yellow;
-            img{
+            img {
                 width: 40rem;
                 padding: 2rem;
-                
             }
         }
- 
-        .box4{
-           
+
+        .box4 {
             top: 90rem;
             left: 100rem;
             background: v.$red;
-            img{
+            img {
                 width: 40rem;
                 padding: 2rem;
-                
             }
         }
-        .box5{
-           
+        .box5 {
             top: 110rem;
             left: 25rem;
             background: v.$purple;
-            img{
+            img {
                 width: 40rem;
                 padding: 2rem;
-                
             }
         }
-   
     }
 
-    .db{
-         padding-top: 150rem;
-        .products{
-            h1{
+    .db {
+        padding-top: 150rem;
+        .products {
+            h1 {
                 font-family: v.$fatFont;
                 font-size: 5rem;
                 color: black;
             }
-            img{
+            img {
                 width: 50rem;
             }
         }
     }
-  
+}

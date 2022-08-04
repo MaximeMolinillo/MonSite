@@ -1,6 +1,6 @@
 @use "variables" as v;
 @use "reset";
-@use "mixin";
+@use "mixin" as m;
 @use "aPropos";
 @use "contact";
 @use "projets";
@@ -147,20 +147,18 @@
     .container-btns {
         position: relative;
         top: 8rem;
-        padding-left: 10rem;
+        // padding-left: 20rem;
+        margin-top: 5rem;
+        img{
+            width: 4rem;
+            margin-right:1rem;
+        }
         a{
-            color: v.$text-white;
+            color: black;
+            text-align: justify;
         }
         .btn-first {
-            border: 0.2rem solid v.$text-white;
-            border-radius: 1rem;
-            outline: none;
-            // background: transparent;
-            background: rgba(237, 237, 237, 0.2);
-            font-size: 3rem;
-            padding: 2rem;
-            width: 30rem;
-            
+   @include m.btn2;
             cursor: pointer;
          
         }

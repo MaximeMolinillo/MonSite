@@ -33,3 +33,18 @@
     }
 
 }
+@mixin btn2{
+    border: 0.2rem solid v.$text-white;
+    border-radius: 1rem;
+    outline: none;
+    // background: transparent;
+    background: rgba(237, 237, 237, 0.4);
+    font-size: 3rem;
+    padding: 2rem;
+    width: 30rem;
+    // height: 15rem;
+    box-shadow: 1rem 1rem 0.5rem v.$darkgrey;
+    margin: 0;
+    // text-align: justify;
+    margin: 0.5rem 3rem;
+}
