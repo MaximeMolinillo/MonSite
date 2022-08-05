@@ -1,8 +1,6 @@
 @use "variables" as v;
 @use "reset";
 
-
-
 // TITRE ANIME *******************************************************************
 
 .letter-container {
@@ -13,7 +11,7 @@
         font-family: v.$playfair;
         transform-style: preserve-3d;
         display: inline-flex;
-        margin-top: 10rem;
+        // margin-top: 10rem;
         color: v.$darkgrey;
         font-weight: 100;
         letter-spacing: 1rem;
@@ -28,62 +26,93 @@
     }
 }
 
-.carreAnim{
-    background: url("../img/MaxMoli.png");
+.carreAnim {
+
     background-size: cover;
-    // margin-top: 20rem;
-    
-    //  margin-top: 2rem;
     max-width: 42rem;
     height: 42rem;
-    margin-left: 35%;
+    margin-left: 15%;
     display: flex;
     padding: 0;
-    img{
-        // position:absolute;
-        // background: url("../img/projets/ddla2.png");
+    .pic {
+        width: 42rem;
+        height: 42rem;
+        position: absolute;
+        margin-top: 2rem;
     }
-    .carre{
+    .carre {
         width: 40rem;
         height: 40rem;
+        position: relative;
     }
-    .centre{
-        // margin-top: -25rem;
-        // margin-top: -25rem;
-        // top: 10rem;
-        width: 15rem;
-        height: 15rem;
-        margin-left: 12rem;
-        margin-top: -50rem;
-        
+    // .centre {
+    //     // margin-top: -25rem;
+    //     // margin-top: -25rem;
+    //     // top: 10rem;
+    //     width: 15rem;
+    //     height: 15rem;
+    //     margin-left: 12rem;
+    //     margin-top: -50rem;
+    // }
+    .haut {
+        margin-top: -10.2rem;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out;
+        filter: invert(100%) sepia(98%) saturate(7499%) hue-rotate(347deg) brightness(103%) contrast(106%) opacity(50%);
+        // position: absolute;
+        &:hover {
+            -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+            z-index: 2;
+        }
     }
-    .haut{
-// margin-top: 2rem;
-margin-top: 2rem;
-        // top: 0;
-       
+  
+    .droite {
+        margin-top: 3rem;
+        margin-left: -14.5rem;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out;
+        filter: invert(53%) sepia(63%) saturate(474%) hue-rotate(66deg) brightness(95%) contrast(91%) opacity(65%);
+        &:hover {
+            -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+            z-index: 2;
+            // 
+        }
     }
-    .gauche{
-        margin-top: 15rem;
-        // left: 0;
+    .gauche {
+        margin-top: 3rem;
         margin-right: -15rem;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out;
+        filter: invert(10%) sepia(48%) saturate(6686%) hue-rotate(240deg) brightness(83%) contrast(124%) opacity(50%);
+        &:hover {
+            -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+            z-index: 2;
+        }
     }
-    .droite{
-        // right: 0;
-        margin-top: 15rem;
-        margin-left: -15rem;
+    .bas {
+        margin-top: -13.9rem;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out;
+        filter: invert(12%) sepia(63%) saturate(5174%) hue-rotate(6deg) brightness(96%) contrast(120%) opacity(50%);
+        &:hover {
+            -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+            z-index: 2;
+        }
+    }
 
-    }
-
-    .bas{
-        // margin-top: -55rem;
-        // padding-top: -50rem;
-        // bottom: 0;
-        // top: 20rem;
-        margin-top: -14rem;
-    }
-    .haut-centre-bas{
+    .haut-centre-bas {
         margin: 0;
     }
-   
 }

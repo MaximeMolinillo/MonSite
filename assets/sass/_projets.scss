@@ -2,7 +2,6 @@
 @use "reset";
 @use "mixin" as m;
 .main {
-
     .wrapProjects {
         width: 100%;
         height: 200vh;
@@ -16,9 +15,9 @@
             font-size: 12rem;
             margin: 0;
             position: absolute;
-         
+
             a {
-                text-shadow: 0.3rem 0.3rem 0.5rem v.$cream;
+                text-shadow: 0.5rem 0.5rem 0.5rem  v.$cream;
                 // -webkit-transition: 0.3s ease-in-out;
                 // transition: 0.3s ease-in-out;
             }
@@ -27,11 +26,11 @@
             //     transform: scale(1.3);
             // }
         }
-      
 
         p:nth-child(1) {
             top: 10rem;
             left: 65rem;
+            z-index: 1;
             a {
                 color: v.$blue;
             }
@@ -71,10 +70,76 @@
             }
         }
 
+        .logoMM { 
+            top: 50rem;
+            left: 40rem;
+            position: absolute; 
+          
+            img{
+                filter: invert(90%) sepia(1%) saturate(0%) hue-rotate(151deg) brightness(85%) contrast(84%) opacity(50%);
+            }
+        }
+        .logoMM1 { 
+            top: 50rem;
+            left: 58rem;        
+            img{
+                width: 20rem;
+            }
+        }
+        .logoMM2 { 
+            top: 30rem;
+            left: 70rem;        
+            img{
+                width: 10rem;
+            }
+        }
+        .logoMM3 { 
+            top: 75rem;
+            left: 90rem;        
+            img{
+                width: 15rem;
+            }
+        }
+        .logoMM4 { 
+            top: 90rem;
+            left: 5rem;       
+            img{
+                width: 5rem;
+            }
+        }
+        .logoMM5 { 
+            top: 100rem;
+            left: 120rem;       
+            img{
+                width: 5rem;
+            }
+        }
+        .logoMM6 { 
+            top: 115rem;
+            left: 35rem;       
+            img{
+                width: 15rem;
+            }
+        }
+        .logoMM7 { 
+            top: 120rem;
+            left: 15rem;       
+            img{
+                width: 10rem;
+            }
+        }
+        .logoMM8 { 
+            top: 100rem;
+            left: 50rem;       
+            img{
+                width: 15rem;
+            }
+        }
+
+
         .box {
             position: absolute;
             box-shadow: 0.3rem 0.3rem 0.5rem v.$cream;
-       
         }
 
         .box1 {

@@ -82,57 +82,82 @@ include("../templates/header.php");
 <main>
     <h1 class="contact-title">Contactez-moi !</h1>
     <hr>
-    <form action="" method="post">
-
-        <div class="wrap-form-group">
-            <div class="column-form-group">
-                <div class="form-group">
-                    <label for="inputName">Nom :</label>
-                    <input type="text" name="name" id="inputName" placeholder="Votre Nom...">
-                </div>
-
-                <div class="form-group">
-                    <label for="inputFirstname">Prénom :</label>
-                    <input type="text" name="firstname" id="inputFirstname" placeholder="Votre Prénom...">
-                </div>
-
-                <div class="form-group">
-                    <label for="inputSociety">Sociétée :</label>
-                    <input type="text" name="society" id="inputSociety" placeholder="Votre Sociétée...">
-                </div>
-
+    <div class="wrap-section">
+        <div class="coordinate ">
+            <div class="tel section">
+                <img src="../assets/img/logo/telephone.png" alt="Téléphone">
+                <h3>06 58 88 59 94</h3>
             </div>
-
-            <div class="column-form-group">
-                <div class="form-group">
-                    <label for="inputEmail">Email :</label>
-                    <input type="email" name="email" id="inputEmail" placeholder="Votre email...">
-                </div>
-
-                <div class="form-group">
-                    <label for="inputTel">Télephone :</label>
-                    <input type="tel" name="tel" id="inputTel" placeholder="Votre Numéro de tél...">
-                </div>
-
-                <div class="form-group">
-                    <label for="inputObject">Objet :</label>
-                    <input type="text" name="object" id="inputObject" placeholder="Objet de votre demande...">
-                </div>
-
+            <div class="mail section">
+                <img src="../assets/img/mail.svg" alt="email">
+                <h3>maxime.molinillo@outlook.fr</h3>
             </div>
-
+            <div class="location section">
+                <img src="../assets/img/logo/loc.png" alt="location">
+                <h3>Valenciennes - Lille</h3>
+            </div>
+            <div class="car section">
+                <img src="../assets/img/logo/car.png" alt="Véhicule">
+                <h3>Permis B - Véhiculé</h3>
+            </div>
+            <div class="age section">
+                <img src="../assets/img/logo/calendrier.png" alt="Age">
+                <h3>35 ans</h3>
+            </div>
         </div>
+      
+        <form action="" method="post">
 
-        <div class="textarea-btn">
-            <div class="form-group">
-                <label for="inputMessage">Message :</label>
-                <textarea name="message" id="inputMessage" cols="30" rows="10" placeholder="Votre message..."></textarea>
+            <div class="wrap-form-group">
+                <div class="column-form-group">
+                    <div class="form-group">
+                        <label for="inputName">Nom :</label>
+                        <input type="text" name="name" id="inputName" placeholder="Votre Nom...">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputFirstname">Prénom :</label>
+                        <input type="text" name="firstname" id="inputFirstname" placeholder="Votre Prénom...">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputSociety">Sociétée :</label>
+                        <input type="text" name="society" id="inputSociety" placeholder="Votre Sociétée...">
+                    </div>
+
+                </div>
+
+                <div class="column-form-group">
+                    <div class="form-group">
+                        <label for="inputEmail">Email :</label>
+                        <input type="email" name="email" id="inputEmail" placeholder="Votre email...">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputTel">Télephone :</label>
+                        <input type="tel" name="tel" id="inputTel" placeholder="Votre Numéro de tél...">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputObject">Objet :</label>
+                        <input type="text" name="object" id="inputObject" placeholder="Objet de votre demande...">
+                    </div>
+
+                </div>
+
             </div>
 
-            <input type="submit" class="submit" value="Envoyer" name="contactMail">
-        </div>
+            <div class="textarea-btn">
+                <div class="form-group">
+                    <label for="inputMessage">Message :</label>
+                    <textarea name="message" id="inputMessage" cols="30" rows="10" placeholder="Votre message..."></textarea>
+                </div>
 
-    </form>
+                <input type="submit" class="submit" value="Envoyer" name="contactMail">
+            </div>
+
+        </form>
+    </div>
 </main>
 
 

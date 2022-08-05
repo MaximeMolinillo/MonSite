@@ -34,9 +34,10 @@
           <span></span>
         </button>
         <div class="navlinks-container">
-          <a href="../index.html" aria-current="page">Home</a>
-          <a href="./projets.php">Mes projets</a>
+          <!-- <a href="../index.html" aria-current="page">Home</a> -->
           <a href="./aPropos.php">A propos</a>
+          <a href="./projets.php">Mes projets</a>
+        
           <a href="./contact.php">Contact</a>
         </div>
       </div>

@@ -119,6 +119,10 @@ nav {
             margin: 1rem 0;
         }
     }
+    a:hover {
+       color: v.$third-dark;
+     
+    }
     a::after {
         content: "";
         display: block;
@@ -128,11 +132,12 @@ nav {
         height: 0.1rem;
         transform: scaleX(0);
         transform-origin: left;
-        background: v.$darkgrey;
+        background: v.$third-dark;
         transition: transform 0.3s ease-out;
     }
     a:hover::after {
         transform: scaleX(1);
+     
     }
 }
 

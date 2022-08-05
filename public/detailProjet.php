@@ -10,7 +10,7 @@ $query = $db->query("SELECT products.*, GROUP_CONCAT(pictures.name SEPARATOR ', 
                   ON products.id = product_pictures.id_products
                   INNER JOIN pictures
                   ON product_pictures.id_pictures = pictures.id
-                  GROUP BY products.title;") ;
+                  GROUP BY products.title;");
 
 $works = $query->fetchAll();
 
@@ -30,23 +30,28 @@ if ($find) {
 
     <main>
 
+        <h1><?= $data['title'] ?></h1>
         <div class="work-details">
 
-
-            <h1><?= $data['title'] ?></h1>
-            <!-- <img src="../assets/img/projets/<?= $data['name'] ?>" alt="image de <?= $data['title'] ?>">
+            <div class="picturesProject">
+                <!-- <img src="../assets/img/projets/<?= $data['name'] ?>" alt="image de <?= $data['title'] ?>">
             <img src="../assets/img/projets/<?= $data['Pictures'] ?>" alt="image de <?= $data['title'] ?>">
             <img src="../assets/img/projets/<?= $data['picture'] ?>" alt="image de <?= $data['title'] ?>"> -->
-            <img src="../assets/img/projets/<?= $data['picture'] ?>" alt="image de <?= $data['title'] ?>">
-            <p><a href="<?= $data["url"] ?>" target="_blank" > Visiter ce site </a></p>
 
-            <p><?= $data["description"] ?></p>
+                <img src="../assets/img/projets/<?= $data['picture'] ?>" alt="image de <?= $data['title'] ?>">
+            </div>
+            <div class="txtProject">
+                <p><?= $data["description"] ?></p>
 
-            <p>Technologies utilisées : <?= $data["technologies"] ?></p>
+                <p><a href="<?= $data["url"] ?>" target="_blank"> Visiter ce site </a></p>
 
-            <p>Contexte : <?= $data["contexte"] ?></p>
+                <p>Technologies utilisées : <?= $data["technologies"] ?></p>
 
-            <h2><?= $data["date"] ?></h2>
+                <p>Contexte : <?= $data["contexte"] ?></p>
+
+                <h2>
+                    <?= date("d/m/Y", strtotime($data["date"])); ?></h2>
+            </div>
         </div>
         <?php
 

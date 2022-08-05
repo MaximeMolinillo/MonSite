@@ -24,11 +24,12 @@
     font-size: 4rem;
     border: 0.2rem solid v.$darkgrey;
     border-radius: 0.5rem;
-    background: v.$darkgrey;
+    background: v.$purple;
     color: v.$cream;
     box-shadow: 1rem 1rem 1rem black;
     &:hover{
         background: v.$second-dark;
+        color: v.$purple;
  
     }
 

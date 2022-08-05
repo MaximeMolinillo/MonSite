@@ -36,7 +36,6 @@ a {
   font-family: "Playfair Display", serif;
   transform-style: preserve-3d;
   display: inline-flex;
-  margin-top: 10rem;
   color: #333;
   font-weight: 100;
   letter-spacing: 1rem;
@@ -49,37 +48,77 @@ a {
 }
 
 .carreAnim {
-  background: url("../img/MaxMoli.png");
   background-size: cover;
   max-width: 42rem;
   height: 42rem;
-  margin-left: 35%;
+  margin-left: 15%;
   display: flex;
   padding: 0;
+}
+.carreAnim .pic {
+  width: 42rem;
+  height: 42rem;
+  position: absolute;
+  margin-top: 2rem;
 }
 .carreAnim .carre {
   width: 40rem;
   height: 40rem;
-}
-.carreAnim .centre {
-  width: 15rem;
-  height: 15rem;
-  margin-left: 12rem;
-  margin-top: -50rem;
+  position: relative;
 }
 .carreAnim .haut {
-  margin-top: 2rem;
+  margin-top: -10.2rem;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  filter: invert(100%) sepia(98%) saturate(7499%) hue-rotate(347deg) brightness(103%) contrast(106%) opacity(50%);
 }
-.carreAnim .gauche {
-  margin-top: 15rem;
-  margin-right: -15rem;
+.carreAnim .haut:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  z-index: 2;
 }
 .carreAnim .droite {
-  margin-top: 15rem;
-  margin-left: -15rem;
+  margin-top: 3rem;
+  margin-left: -14.5rem;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  filter: invert(53%) sepia(63%) saturate(474%) hue-rotate(66deg) brightness(95%) contrast(91%) opacity(65%);
+}
+.carreAnim .droite:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  z-index: 2;
+}
+.carreAnim .gauche {
+  margin-top: 3rem;
+  margin-right: -15rem;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  filter: invert(10%) sepia(48%) saturate(6686%) hue-rotate(240deg) brightness(83%) contrast(124%) opacity(50%);
+}
+.carreAnim .gauche:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  z-index: 2;
 }
 .carreAnim .bas {
-  margin-top: -14rem;
+  margin-top: -13.9rem;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  filter: invert(12%) sepia(63%) saturate(5174%) hue-rotate(6deg) brightness(96%) contrast(120%) opacity(50%);
+}
+.carreAnim .bas:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  z-index: 2;
 }
 .carreAnim .haut-centre-bas {
   margin: 0;
@@ -91,26 +130,42 @@ a {
   font-family: Abril fatface, sans-serif;
 }
 
-form {
-  font-family: Abril fatface, sans-serif;
+.wrap-section {
   background: #333 url("../img/bgContacts.jpg") center/cover no-repeat;
-  padding-top: 5rem;
-  width: 100%;
-  height: 79vh;
-}
-form .wrap-form-group {
-  width: 80%;
-  margin-left: 10%;
-}
-form .wrap-form-group .column-form-group {
   display: flex;
 }
-form .wrap-form-group .column-form-group .form-group {
+.wrap-section .coordinate {
+  padding: 5rem 1rem 0 1rem;
+  background-color: rgba(241, 241, 241, 0.3960784314);
+  margin: 5rem;
+  border-radius: 2rem;
+}
+.wrap-section .coordinate .section {
+  display: flex;
+  padding: 1.5rem;
+}
+.wrap-section .coordinate .section img {
+  width: 3rem;
+  margin-right: 2rem;
+}
+.wrap-section form {
+  font-family: Abril fatface, sans-serif;
+  padding-top: 5rem;
+  width: 100%;
+  height: 70vh;
+}
+.wrap-section form .wrap-form-group {
+  margin-left: 10%;
+}
+.wrap-section form .wrap-form-group .column-form-group {
+  display: flex;
+}
+.wrap-section form .wrap-form-group .column-form-group .form-group {
   color: #fafafa;
   font-size: 2rem;
   text-shadow: 0.2rem 0.2rem 1rem #333;
 }
-form .wrap-form-group .column-form-group .form-group input {
+.wrap-section form .wrap-form-group .column-form-group .form-group input {
   border-radius: 0.5rem;
   border: 0.2rem solid #333;
   background: #fafafa;
@@ -121,7 +176,7 @@ form .wrap-form-group .column-form-group .form-group input {
   padding: 1rem;
   width: 40rem;
   font-family: Abril fatface, sans-serif;
-  width: 40rem;
+  width: 28rem;
   height: 3rem;
 }
 
@@ -129,7 +184,7 @@ form .wrap-form-group .column-form-group .form-group input {
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 .textarea-btn .form-group textarea {
   border-radius: 0.5rem;
@@ -142,7 +197,8 @@ form .wrap-form-group .column-form-group .form-group input {
   padding: 1rem;
   width: 40rem;
   font-family: Abril fatface, sans-serif;
-  width: 80%;
+  width: 90rem;
+  height: 10rem;
   margin: 1rem 10% 5rem 10%;
 }
 .textarea-btn .form-group label {
@@ -157,12 +213,13 @@ form .wrap-form-group .column-form-group .form-group input {
   font-size: 4rem;
   border: 0.2rem solid #333;
   border-radius: 0.5rem;
-  background: #333;
+  background: #218e96;
   color: #fafafa;
   box-shadow: 1rem 1rem 1rem black;
 }
 .textarea-btn .submit:hover {
   background: #414141;
+  color: #218e96;
 }
 
 .main .wrapProjects {
@@ -179,11 +236,12 @@ form .wrap-form-group .column-form-group .form-group input {
   position: absolute;
 }
 .main .wrapProjects p a {
-  text-shadow: 0.3rem 0.3rem 0.5rem #fafafa;
+  text-shadow: 0.5rem 0.5rem 0.5rem #fafafa;
 }
 .main .wrapProjects p:nth-child(1) {
   top: 10rem;
   left: 65rem;
+  z-index: 1;
 }
 .main .wrapProjects p:nth-child(1) a {
   color: #591e98;
@@ -202,7 +260,7 @@ form .wrap-form-group .column-form-group .form-group input {
   z-index: 2;
 }
 .main .wrapProjects p:nth-child(3) a {
-  color: #fcce04;
+  color: #ffff00;
 }
 .main .wrapProjects p:nth-child(4) {
   top: 105rem;
@@ -218,7 +276,71 @@ form .wrap-form-group .column-form-group .form-group input {
   z-index: 4;
 }
 .main .wrapProjects p:nth-child(5) a {
-  color: rgb(33, 142, 150);
+  color: #218e96;
+}
+.main .wrapProjects .logoMM {
+  top: 50rem;
+  left: 40rem;
+  position: absolute;
+}
+.main .wrapProjects .logoMM img {
+  filter: invert(90%) sepia(1%) saturate(0%) hue-rotate(151deg) brightness(85%) contrast(84%) opacity(50%);
+}
+.main .wrapProjects .logoMM1 {
+  top: 50rem;
+  left: 58rem;
+}
+.main .wrapProjects .logoMM1 img {
+  width: 20rem;
+}
+.main .wrapProjects .logoMM2 {
+  top: 30rem;
+  left: 70rem;
+}
+.main .wrapProjects .logoMM2 img {
+  width: 10rem;
+}
+.main .wrapProjects .logoMM3 {
+  top: 75rem;
+  left: 90rem;
+}
+.main .wrapProjects .logoMM3 img {
+  width: 15rem;
+}
+.main .wrapProjects .logoMM4 {
+  top: 90rem;
+  left: 5rem;
+}
+.main .wrapProjects .logoMM4 img {
+  width: 5rem;
+}
+.main .wrapProjects .logoMM5 {
+  top: 100rem;
+  left: 120rem;
+}
+.main .wrapProjects .logoMM5 img {
+  width: 5rem;
+}
+.main .wrapProjects .logoMM6 {
+  top: 115rem;
+  left: 35rem;
+}
+.main .wrapProjects .logoMM6 img {
+  width: 15rem;
+}
+.main .wrapProjects .logoMM7 {
+  top: 120rem;
+  left: 15rem;
+}
+.main .wrapProjects .logoMM7 img {
+  width: 10rem;
+}
+.main .wrapProjects .logoMM8 {
+  top: 100rem;
+  left: 50rem;
+}
+.main .wrapProjects .logoMM8 img {
+  width: 15rem;
 }
 .main .wrapProjects .box {
   position: absolute;
@@ -245,7 +367,7 @@ form .wrap-form-group .column-form-group .form-group input {
 .main .wrapProjects .box3 {
   top: 60rem;
   left: 15rem;
-  background: #fcce04;
+  background: #ffff00;
 }
 .main .wrapProjects .box3 img {
   width: 40rem;
@@ -263,7 +385,7 @@ form .wrap-form-group .column-form-group .form-group input {
 .main .wrapProjects .box5 {
   top: 110rem;
   left: 25rem;
-  background: rgb(33, 142, 150);
+  background: #218e96;
 }
 .main .wrapProjects .box5 img {
   width: 40rem;
@@ -413,6 +535,9 @@ nav {
     margin: 1rem 0;
   }
 }
+.navlinks-container a:hover {
+  color: #8e8d8d;
+}
 .navlinks-container a::after {
   content: "";
   display: block;
@@ -422,7 +547,7 @@ nav {
   height: 0.1rem;
   transform: scaleX(0);
   transform-origin: left;
-  background: #333;
+  background: #8e8d8d;
   transition: transform 0.3s ease-out;
 }
 .navlinks-container a:hover::after {
@@ -495,29 +620,41 @@ nav {
   }
 }
 
-.work-details {
+h1 {
+  font-family: Abril fatface, sans-serif;
   padding-top: 10rem;
+  text-align: center;
+  font-size: 8rem;
+  color: #218e96;
+}
+
+.work-details {
+  padding: 0 3rem;
+  display: flex;
+}
+.work-details .picturesProject img {
+  margin-top: 10rem;
+  width: 90rem;
+  padding: 3rem;
+  background-color: #218e96;
+}
+.work-details .txtProject {
+  background-color: rgba(241, 241, 241, 0.6901960784);
+  border-radius: 2rem;
+  margin: 12rem 5rem;
+  padding: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 15rem;
   font-size: 5rem;
 }
-.work-details h1 {
-  font-family: Abril fatface, sans-serif;
-}
-.work-details img {
-  width: 100rem;
-  padding: 3rem;
-  background-color: #333;
-}
-.work-details p {
+.work-details .txtProject p {
   text-align: center;
-  margin: 3rem 0;
-  font-size: 3rem;
+  margin: 5rem 0 0 0;
+  font-size: 2rem;
 }
-.work-details p a {
+.work-details .txtProject p a {
   border: 0.2rem solid #f1f1f1;
   border-radius: 1rem;
   outline: none;
@@ -528,8 +665,14 @@ nav {
   box-shadow: 1rem 1rem 0.5rem #333;
   margin: 0;
   margin: 0.5rem 3rem;
-  background-color: #333;
+  background-color: #218e96;
   color: #fafafa;
+}
+.work-details .txtProject h2 {
+  margin-top: 5rem;
+  font-family: Abril fatface, sans-serif;
+  font-size: 4rem;
+  color: #218e96;
 }
 
 /*  Effet au clic */
@@ -568,7 +711,7 @@ nav {
 }
 .acceuil .container-first {
   position: absolute;
-  top: 30%;
+  top: 15%;
   left: 5%;
 }
 .acceuil .container-first h1 {
@@ -587,14 +730,6 @@ nav {
   top: 8rem;
   margin-top: 5rem;
 }
-.acceuil .container-btns img {
-  width: 4rem;
-  margin-right: 1rem;
-}
-.acceuil .container-btns a {
-  color: black;
-  text-align: justify;
-}
 .acceuil .container-btns .btn-first {
   border: 0.2rem solid #f1f1f1;
   border-radius: 1rem;
@@ -608,6 +743,17 @@ nav {
   margin: 0.5rem 3rem;
   cursor: pointer;
 }
+.acceuil .container-btns .btn-first img {
+  width: 3rem;
+  margin-right: 1rem;
+}
+.acceuil .container-btns .btn-first a {
+  color: black;
+  text-align: justify;
+}
+.acceuil .container-btns .btn-first .btn-p {
+  margin-bottom: 5rem;
+}
 .acceuil .container-btns .btn-first:nth-child(1) {
   margin-right: 3rem;
 }
@@ -615,7 +761,6 @@ nav {
   margin-right: 3rem;
 }
 .acceuil .container-btns .btn-first:hover {
-  transition: all 0.3s ease-in-out;
   background: #f1f1f1;
 }
 .acceuil .container-btns .btn-first:hover a {
