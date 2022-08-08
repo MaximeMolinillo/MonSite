@@ -1,0 +1,295 @@
+@use "variables" as v;
+@use "reset";
+@use "mixin" as m;
+@use "aPropos";
+@use "contact";
+@use "projets";
+@use "header-footer";
+@use "detailProjet";
+
+//NAVBAR******************************************************
+// nav {
+//     width: 100%;
+//     height: 7rem;
+//     background: transparent;
+//     position: fixed;
+//     transition: all 0.3s ease-out;
+// }
+// .anim-nav {
+//     background: v.$darkgrey;
+//     color: v.$text-white;
+//     border-bottom: 0.1rem solid v.$text-white;
+// }
+// .liste {
+//     width: 100%;
+//     height: 100%;
+//     list-style-type: none;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     .item {
+//         margin: 0 1rem;
+//         font-size: 2.2rem;
+//         color: v.$text-white;
+//     }
+// }
+//*****************************************************************
+
+/*  Effet au clic */ //*********************************************
+
+// .clickAnim {
+//     width: 10rem;
+//     height: 10rem;
+//     border-radius: 50%;
+//     background: linear-gradient(to top, v.$red, v.$yellow);
+//     position: absolute;
+//     z-index: 9000;
+//     transform: scale(0);
+//     transform-origin: center;
+//     animation: 'clickAninm' 1s ease-in-out;
+// }
+
+// @keyframes clickAnim {
+//     0% {
+//         transform: scale(0);
+//     }
+//     50% {
+//         transform: scale(2);
+//         opacity: 1;
+//     }
+//     0% {
+//         transform: scale(0);
+//         opacity: 0;
+//     }
+// }
+//**************************************************************
+
+/* Anim input */ //*********************************************
+
+// label,
+// input {
+//     width: 50rem;
+//     margin: 0.5rem auto;
+//     display: block;
+// }
+// label {
+//     margin-top: 3.5rem;
+// }
+// input {
+//     padding: 1rem;
+//     margin-bottom: 3rem;
+//     outline: none;
+//     border: 0.5rem solid #000;
+// }
+//*********************************************************
+
+////////tuto2 anim texte
+///
+.acceuil {
+    width: 100%;
+    height: 100vh;
+    // background: #333;
+    // background: url("/img/acceuil.jpg");
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // background-position: center;
+    background: v.$darkgrey url("../img/acceuil.jpg") center / cover no-repeat;
+    // position: relative;
+
+    .lignes {
+        position: absolute;
+        top: 6%;
+        left: 5%;
+        .l1 {
+            width: 110rem;
+            height: 0.3rem;
+            background: v.$text-white;
+            border-radius: 0.5rem;
+        }
+        .l2 {
+            width: 80rem;
+            height: 0.3rem;
+            background: v.$text-white;
+            border-radius: 0.5rem;
+            position: relative;
+            top: 2rem;
+        }
+        .l3 {
+            width: 50rem;
+            height: 0.3rem;
+            background: v.$text-white;
+            border-radius: 0.5rem;
+            position: relative;
+            top: 4rem;
+        }
+    }
+    .container-first {
+        position: absolute;
+        top: 15%;
+        left: 5%;
+        h1 {
+            font-size: 5rem;
+            padding-left: 10rem;
+            color: v.$text-white;
+            text-transform: uppercase;
+            color: v.$text-white;
+
+            span {
+                position: relative;
+                font-family: v.$fatFont;
+            }
+        }
+    }
+    .container-btns {
+        position: relative;
+        top: 8rem;
+        // padding-left: 20rem;
+        margin-top: 5rem;
+
+        .btn-first {
+            @include m.btn2;
+            cursor: pointer;
+            &:hover{
+                img{
+                    filter: invert(100%) sepia(7%) saturate(271%) hue-rotate(269deg) brightness(113%) contrast(89%);
+            
+                }
+                a{
+           
+                    color: black;
+                    text-align: justify;
+                    
+                    // padding-bottom: 3rem
+             
+      
+            }
+            }
+            img{
+                width: 3rem;
+                margin-right:1rem;    
+        
+            }
+            a{
+           
+                    color: black;
+                    text-align: justify;
+                    
+                    // padding-bottom: 3rem
+             
+      
+            }
+            .btn-p{
+            margin-bottom: 5rem;
+        
+            }
+        }
+        .btn-first:active {
+            margin-top: 0.7rem;
+            box-shadow: 0 0 0 v.$third-dark ;
+        }
+        .btn-first:nth-child(1) {
+            margin-right: 3rem;
+        }
+        .btn-first:nth-child(2) {
+            margin-right: 3rem;
+        }
+        .btn-first:hover {
+            // transition: all 0.3s ease-in-out;
+            background: v.$purple;
+        
+            a {
+                color: v.$text-white;
+            }
+       
+        }
+    }
+    .logo {
+        position: absolute;
+        right: 2.9%;
+        top: 4%;
+        width: 18rem;
+        height: 18rem;
+        cursor: pointer;
+        transform: scale(1.3);
+
+    }
+    .medias {
+        list-style-type: none;
+        position: absolute;
+        right: 3.3%;
+        top: 30%;
+        transform: translate(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .bulle {
+            width: 7rem;
+            height: 7rem;
+            border-radius: 50%;
+            border: 0.2rem solid v.$text-white;
+            box-shadow: 1rem 1rem 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 1rem 0;
+            background: v.$text-white;
+            cursor: pointer;
+            position: relative;
+            .logo-medias {
+                width: 4rem;
+                height: 4rem;
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                -webkit-transition: 0.3s ease-in-out;
+                transition: 0.3s ease-in-out;
+            }
+            &:hover .logo-medias {
+                -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+                filter: invert(44%) sepia(58%) saturate(541%) hue-rotate(136deg) brightness(94%) contrast(90%);
+            }
+        }
+    }
+}
+
+// .media-container {
+//     display: flex;
+//     padding-left: 24rem;
+//     margin: 2rem 0 4rem 0;
+// }
+
+// .medias-btn {
+//     width: 5rem;
+//     height: 5rem;
+//     border-radius: 50%;
+//     background: v.$text-white;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     margin-right: 1rem;
+//     cursor: pointer;
+// }
+
+// .icones {
+//     width: 2.7rem;
+// }
+
+// .btn {
+//     margin-left: 24rem;
+//     background: transparent;
+//     text-decoration: none;
+//     padding: 1rem 3rem;
+//     border-radius: 0.3rem;
+//     border: 0.2rem solid #333;
+//     color: #333;
+//     font-weight: 600;
+//     transition: all 0.2s ease-in-out;
+// }
+
+// .btn:hover {
+//     background: #333;
+//     color: #f1f1f1;
+// }
+
+//tuto3

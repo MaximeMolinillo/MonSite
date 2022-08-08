@@ -1,0 +1,55 @@
+@use "variables" as v;
+@use "reset";
+
+@mixin input-style {
+    border-radius: 0.5rem;
+    border: 0.2rem solid v.$darkgrey;
+    background: v.$cream;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem 1rem;
+    padding: 1rem;
+    width: 40rem;
+    font-family: v.$fatFont;
+}
+
+@mixin btn {
+    width: 40%;
+    margin-left: 30%;
+    height: 8rem;
+    font-family: v.$fatFont;
+    font-size: 4rem;
+    border: 0.2rem solid v.$darkgrey;
+    border-radius: 0.5rem;
+    background: v.$purple;
+    color: v.$cream;
+    box-shadow: 1rem 1rem 1rem black;
+    &:hover {
+        background: v.$second-dark;
+        color: v.$purple;
+    }
+    &:active {
+        margin-top: 0.7rem;
+        box-shadow: 0 0 0 v.$third-dark;
+    }
+}
+@mixin btn2 {
+    border: 0.2rem solid v.$text-white;
+    border-radius: 1rem;
+    outline: none;
+    // background: transparent;
+    background: rgba(237, 237, 237, 0.4);
+    font-size: 3rem;
+    padding: 2rem;
+    width: 30rem;
+    // height: 15rem;
+    box-shadow: 1rem 1rem 0.5rem v.$darkgrey;
+    margin: 0;
+    // text-align: justify;
+    margin: 0.5rem 3rem;
+    &:active {
+        margin-top: 0.7rem;
+        box-shadow: 0 0 0 v.$third-dark;
+    }
+}

@@ -1,0 +1,206 @@
+@use "variables" as v;
+@use "reset";
+@use "mixin" as m;
+.main {
+    .wrapProjects {
+        width: 100%;
+        height: 200vh;
+        background: v.$darkgrey url("../img/web.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        // padding-top: 5rem;
+        p {
+            // color: v.$darkgrey;
+            font-family: v.$playfair;
+            font-size: 12rem;
+            margin: 0;
+            position: absolute;
+
+            a {
+                text-shadow: 0.5rem 0.5rem 0.5rem  v.$cream;
+                // -webkit-transition: 0.3s ease-in-out;
+                // transition: 0.3s ease-in-out;
+            }
+            // &:hover a {
+            //     -webkit-transform: scale(1.3);
+            //     transform: scale(1.3);
+            // }
+        }
+
+        p:nth-child(1) {
+            top: 10rem;
+            left: 65rem;
+            z-index: 1;
+            a {
+                color: v.$blue;
+            }
+        }
+        p:nth-child(2) {
+            top: 35rem;
+            left: 2rem;
+            z-index: 1;
+            a {
+                color: v.$green;
+            }
+        }
+
+        p:nth-child(3) {
+            top: 60rem;
+            left: 65rem;
+            z-index: 2;
+            a {
+                color: v.$yellow;
+            }
+        }
+        p:nth-child(4) {
+            top: 105rem;
+            left: 35rem;
+            z-index: 3;
+            a {
+                color: v.$red;
+            }
+        }
+        p:nth-child(5) {
+            top: 145rem;
+            left: 85rem;
+            z-index: 4;
+
+            a {
+                color: v.$purple;
+            }
+        }
+
+        .logoMM { 
+            top: 50rem;
+            left: 40rem;
+            position: absolute; 
+          
+            img{
+                filter: invert(90%) sepia(1%) saturate(0%) hue-rotate(151deg) brightness(85%) contrast(84%) opacity(50%);
+            }
+        }
+        .logoMM1 { 
+            top: 50rem;
+            left: 58rem;        
+            img{
+                width: 20rem;
+            }
+        }
+        .logoMM2 { 
+            top: 30rem;
+            left: 70rem;        
+            img{
+                width: 10rem;
+            }
+        }
+        .logoMM3 { 
+            top: 75rem;
+            left: 90rem;        
+            img{
+                width: 15rem;
+            }
+        }
+        .logoMM4 { 
+            top: 90rem;
+            left: 5rem;       
+            img{
+                width: 5rem;
+            }
+        }
+        .logoMM5 { 
+            top: 100rem;
+            left: 120rem;       
+            img{
+                width: 5rem;
+            }
+        }
+        .logoMM6 { 
+            top: 115rem;
+            left: 35rem;       
+            img{
+                width: 15rem;
+            }
+        }
+        .logoMM7 { 
+            top: 120rem;
+            left: 15rem;       
+            img{
+                width: 10rem;
+            }
+        }
+        .logoMM8 { 
+            top: 100rem;
+            left: 50rem;       
+            img{
+                width: 15rem;
+            }
+        }
+
+
+        .box {
+            position: absolute;
+            box-shadow: 0.3rem 0.3rem 0.5rem v.$cream;
+        }
+
+        .box1 {
+            top: 10rem;
+            left: 5rem;
+            background: v.$blue;
+            img {
+                width: 40rem;
+                padding: 2rem;
+            }
+        }
+        .box2 {
+            top: 35rem;
+            left: 105rem;
+            background: v.$green;
+            img {
+                width: 40rem;
+                padding: 2rem;
+            }
+        }
+        .box3 {
+            top: 60rem;
+            left: 15rem;
+            background: v.$yellow;
+            img {
+                width: 40rem;
+                padding: 2rem;
+            }
+        }
+
+        .box4 {
+            top: 90rem;
+            left: 100rem;
+            background: v.$red;
+            img {
+                width: 40rem;
+                padding: 2rem;
+            }
+        }
+        .box5 {
+            top: 110rem;
+            left: 25rem;
+            background: v.$purple;
+            img {
+                width: 40rem;
+                padding: 2rem;
+            }
+        }
+    }
+
+    .db {
+        padding-top: 150rem;
+        .products {
+            h1 {
+                font-family: v.$fatFont;
+                font-size: 5rem;
+                color: black;
+            }
+            img {
+                width: 50rem;
+            }
+        }
+    }
+}
