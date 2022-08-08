@@ -1,5 +1,9 @@
 <?php
+require_once('../system/config.php');
 $page = "A propos";
+
+$query = $db->query("SELECT * FROM language ORDER BY id");
+$language = $query->fetchAll();
 
 include("../templates/header.php");
 
@@ -88,7 +92,22 @@ include("../templates/header.php");
   </div>
   <div class="containerSlot">
     <div class="slot"></div>
-    <button class="btn-confettis">language</button>
+    <button class="btnConfettis">language</button>
+  </div>
+  <div class="language">
+    <?php
+    foreach ($language as $lang) {
+    ?>
+      <div class="lang">
+
+        <img src="../assets/img/logo/<?= $lang["picture"] ?>" alt="<?= $lang["name"] ?>">
+
+
+      </div>
+    <?php
+    }
+    ?>
+    <img src="../assets/img/logo/html.png" alt="">
   </div>
 
 </main>

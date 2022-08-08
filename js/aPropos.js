@@ -34,7 +34,7 @@ let calledOut = false;
 let animOpened = false;
 
 function handleLetters() {
-    if(animOpened) {
+    if (animOpened) {
         animOut();
         animOpened = false;
         return;
@@ -103,15 +103,17 @@ function animOut() {
 
 // Animation emoji ***********************************************************
 const containerSlot = document.querySelector('.slot');
-const btnConfettis = document.querySelector('.btn-confettis');
-const emojis = ["😀" ,"😛", "🍉", "🦊"];
+const btnConfettis = document.querySelector('.btnConfettis');
+const emojis = ["😀", "😀", "😀", "😀"];
 
 
 btnConfettis.addEventListener('click', fiesta)
 
-function fiesta(){
+function fiesta() {
 
-    for (let i=0; i<50; i++) {
+if(isTweening()) return;
+
+    for (let i = 0; i < 50; i++) {
         const confetti = document.createElement('div');
         confetti.innerText = emojis[Math.floor(Math.random() * emojis.lenght)];
         containerSlot.appendChild(confetti);
@@ -129,10 +131,15 @@ function animateConfettis() {
         x: "random(-100,100)",
         z: "random(0,1000)",
         rotation: "random(-90,90)",
-        duration:1
+        duration: 1,
 
     })
-    to('slot div', {autoAlpha: 0, duration: 0.3}, "-=0.2")
-.add(() => {
-    containerSlot.innerHTML = "";
-})};
+        .to('slot div', { autoAlpha: 0, duration: 0.3 }, "-=0.2")
+        .add(() => {
+            containerSlot.innerHTML = "";
+        });
+}
+
+function isTweening() {
+    return gsap.isTweening('.slot div');
+}

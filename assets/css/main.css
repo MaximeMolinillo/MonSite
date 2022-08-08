@@ -154,7 +154,7 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.containerSlot .btn-confettis {
+.containerSlot .btnConfettis {
   width: 10rem;
   height: 10rem;
   position: absolute;
@@ -168,7 +168,7 @@ a {
   outline: none;
   box-shadow: 0 0.7rem 0 #8e8d8d;
 }
-.containerSlot .btn-confettis:active {
+.containerSlot .btnConfettis:active {
   margin-top: 0.7rem;
   box-shadow: 0 0 0 #8e8d8d;
 }
@@ -185,6 +185,14 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   user-select: none;
+}
+
+.language {
+  top: 10%;
+  margin-left: 50%;
+}
+.language img {
+  width: 5rem;
 }
 
 .contact-title {

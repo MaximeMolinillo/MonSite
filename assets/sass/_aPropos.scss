@@ -149,7 +149,7 @@
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    .btn-confettis {
+    .btnConfettis {
         width: 10rem;
         height: 10rem;
         position: absolute;
@@ -163,7 +163,7 @@
         outline: none;
         box-shadow: 0 0.7rem 0 v.$third-dark;
     }
-    .btn-confettis:active {
+    .btnConfettis:active {
         margin-top: 0.7rem;
         box-shadow: 0 0 0 v.$third-dark ;
     }
@@ -180,5 +180,14 @@
         left: 50%;
         transform: translate(-50% , -50%);
         user-select: none;
+    }
+}
+
+.language{
+   top: 10%;
+    margin-left:50%;
+
+    img{
+        width: 5rem;
     }
 }
