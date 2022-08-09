@@ -53,3 +53,27 @@
         box-shadow: 0 0 0 v.$third-dark;
     }
 }
+
+
+@mixin bg-cv {
+    background: v.$shadow-white;
+    padding: 3rem;
+    border-radius: 2rem;
+    box-shadow: 0.2rem 0.2rem 0.5rem v.$darkgrey;
+    margin-left: 40%;
+    padding: 5rem;
+    line-height: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    justify-content: space-between;
+
+}
+
+@mixin bg-cv-text {
+    background: v.$shadow-white;
+    padding: 3rem;
+    border-radius: 2rem;
+    box-shadow: 0.2rem 0.2rem 0.5rem v.$darkgrey;
+    margin-left: 40%;
+}

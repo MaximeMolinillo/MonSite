@@ -106,7 +106,7 @@ INSERT INTO product_pictures
 VALUES
 (1,1),
 (2,2),(2,3),(2,4),(2,5),(2,6),
-(3,7),(2,8),(2,9),(2,10),(2,11),
+(3,7),(3,8),(3,9),(3,10),(3,11),
 (4,12),
 (5,13);
 
@@ -138,8 +138,42 @@ VALUES
 ("MySQL", "mysql.png"),
 ("WordPress", "wordpress.png"),
 ("Illustrator", "illustrator.png"),
-("Photoshop", "photoshop.png");
+("Photoshop", "photoshop.png"),
+("Sass", "sass.png")
 
 
+CREATE TABLE product_language(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    id_prod SMALLINT,
+    id_language SMALLINT
+);
+
+INSERT INTO product_language
+(id_prod, id_language)
+VALUES
+(1,1),(1,10),(1,3),(1,5),(1,6),(1,9),(1,8),
+(2,1),(2,10),(2,5),(2,9),(2,6),
+(3,1),(3,10),(3,5),(2,6),
+(4,1),(4,4),(4,10),
+(5,1),(5,3),(5,2);
 
 
+CREATE TABLE hobbies(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(70) NOT NULL,
+    picture VARCHAR(80)
+);
+
+INSERT INTO hobbies
+(name, picture)
+VALUES
+("Informatique", "pc.png"),
+("VTT", "velo.png"),
+("Jardinage", "plante.png"),
+("Voyage", "voyage.png"),
+("Musique", "ecouteur.png"),
+("Rétro-gaming", "game.png"),
+("Lego", "lego.png"),
+("Art", "art.png"),
+("Football", "ballon.png"),
+("Cinéma", "cinema.png");

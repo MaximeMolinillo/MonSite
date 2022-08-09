@@ -2,58 +2,73 @@
 @use "reset";
 @use "mixin" as m;
 
-h1 {
-    font-family: v.$fatFont;
-    padding-top: 10rem;
-    text-align: center;
-    font-size: 8rem;
-    color: v.$purple;
-}
+.bgDetail {
+    background: url("../img/web.jpg");
+    h1 {
+        font-family: v.$fatFont;
+        padding-top: 10rem;
+        text-align: center;
+        font-size: 8rem;
+        color: v.$purple;
+        text-shadow:  0.3rem 0.3rem v.$shadow-white;
 
-.work-details {
-    padding: 0 3rem;
-    display: flex;
-    // width: 80rem;
-    .picturesProject {
-        img {
-            margin-top: 10rem;
-            width: 90rem;
+    }
+
+    .work-details {
+        padding: 0 3rem;
+        display: flex;
+        // width: 80rem;
+        .picturesProject {
+            img {
+                margin-top: 10rem;
+                width: 90rem;
+                padding: 3rem;
+                background-color: v.$purple;
+        box-shadow: 0.5rem 0.5rem 1rem v.$darkgrey;
+
+            }
+        }
+        .txtProject {
+            // padding: 5rem 1rem 0 1rem;
+            background-color: #f1f1f1b0;
+            // margin: 5rem;
+            border-radius: 2rem;
+            // padding: 4rem 8rem 1rem 2rem;
+            margin: 12rem 5rem;
             padding: 3rem;
-            background-color: v.$purple;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            // margin: 0 15rem;
+            font-size: 5rem;
+            // padding: 5rem;
+        box-shadow: 0.5rem 0.5rem 1rem v.$darkgrey;
+
+
+            p {
+                text-align: center;
+                margin: 5rem 0 0 0;
+                font-size: 2rem;
+                a {
+                    @include m.btn2;
+                    background-color: v.$purple;
+                    color: v.$cream;
+                }
+            }
+            h2 {
+                margin-top: 5rem;
+                font-family: v.$fatFont;
+                font-size: 4rem;
+                color: v.$purple;
+            }
         }
     }
-    .txtProject {
-        // padding: 5rem 1rem 0 1rem;
-        background-color: #f1f1f1b0;
-        // margin: 5rem;
-        border-radius: 2rem;
-        // padding: 4rem 8rem 1rem 2rem;
-        margin: 12rem 5rem;
-        padding: 3rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        // margin: 0 15rem;
-        font-size: 5rem;
-        // padding: 5rem;
 
-        p {
-            text-align: center;
-            margin: 5rem 0 0 0;
-            font-size: 2rem;
-            a {
-                @include m.btn2;
-                background-color: v.$purple;
-                color: v.$cream;
-            }
-         
-        }
-        h2 {
-            margin-top: 5rem;
-            font-family: v.$fatFont;
-            font-size: 4rem;
-            color: v.$purple;
+    .techno {
+        img {
+            width: 20rem;
+            height: 20rem;
         }
     }
 }

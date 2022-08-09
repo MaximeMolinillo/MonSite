@@ -5,10 +5,14 @@ $page = "A propos";
 $query = $db->query("SELECT * FROM language ORDER BY id");
 $language = $query->fetchAll();
 
+
+$req = $db->query("SELECT * FROM hobbies ORDER BY id");
+$hobbies = $req->fetchAll();
+
 include("../templates/header.php");
 
 ?>
-<main>
+<main class="containerCv">
   <div class="letter-container">
     <h1>
       <span>à</span>
@@ -39,7 +43,7 @@ include("../templates/header.php");
     <div class="school sectionCV">
       <h2>Cursus Scolaire</h2>
       <ul>
-        <li><span>2021: </span>Obtention du titre pro Développeur-Web avec M2i formation.</li>
+        <li><span>2021: Obtention du titre pro Développeur-Web avec M2i formation.</span></li>
         <br>
         <li><span>2011: </span>Préparation du BAC Pro cuisine au château Fortier, Valarep, de Saint-Saulve.
         </li>
@@ -50,20 +54,21 @@ include("../templates/header.php");
         <br>
         <li><span>2009:</span> Obtention du BEP hôtellerie production culinaire au CFA de Prouvy.</li>
         <br>
-        <li><span>2008: </span>Obtention du niveau BTS Design de Produit à l’ESAAT de Roubaix</li>
+        <li><span>2008: Obtention du niveau BTS Design de Produit à l’ESAAT de Roubaix</span></li>
         <br>
-        <li><span>2006: </span>Obtention du Baccalauréat STI Arts Appliqués à l’ ESAAT de Roubaix.</li>
+        <li><span>2006: Obtention du Baccalauréat STI Arts Appliqués à l’ ESAAT de Roubaix.</span></li>
       </ul>
     </div>
 
     <div class="exp sectionCV">
       <h2>Expérience Professionnelle</h2>
       <ul>
+        <li><span>2022: Stage pour la fleuriste Demain dès l'Aube -- Réalisation d'un site avec systéme d'authentification et gestion de contenus</span></li>
         <br>
         <li><span>2016/2021: </span>Traiteur dans la société Maison Davaine à Douai</li>
         <br>
-        <li><span>2014/2016:</span> Chef d’entreprise de la société Molinillo Traiteur( Organisation
-          d’evennement, location de salle, repas à domicile )</li>
+        <li><span>2014/2016: Chef d’entreprise de la société Molinillo Traiteur( Organisation
+            d’evennement, location de salle, repas à domicile )</span></li>
         <br>
         <li><span>2010/2014:</span> Chef traiteur/ cuisinier chez Molinillo Traiteur, et gérant d’une salle
           de reception à Condé/Escaut.</li>
@@ -78,7 +83,7 @@ include("../templates/header.php");
           Molinillo à Condé/Escaut.
         </li>
         <br>
-        <li><span>2007: </span>stage de deux mois dans l’entreprise Innovaxe, comme Designer Graphique.</li>
+        <li><span>2007: stage de deux mois dans l’entreprise Innovaxe, comme Designer Graphique.</span></li>
       </ul>
     </div>
 
@@ -90,24 +95,40 @@ include("../templates/header.php");
         Je suis persuadé que ces qualités me seront utiles dans ma nouvelle vie.</p>
     </div>
   </div>
-  <div class="containerSlot">
-    <div class="slot"></div>
-    <button class="btnConfettis">language</button>
+  <div class="wrap-language">
+
+    <div class="containerSlot">
+      <div class="slot"></div>
+      <button class="btnConfettis">language</button>
+    </div>
+    <div class="language sectionCV">
+      <?php
+      foreach ($language as $lang) {
+      ?>
+        <div class="lang">
+
+          <img src="../assets/img/logo/<?= $lang["picname"] ?>" alt="<?= $lang["name"] ?>">
+
+
+        </div>
+      <?php
+      }
+      ?>
+      <!-- <img src="../assets/img/logo/html.png" alt=""> -->
+    </div>
   </div>
-  <div class="language">
+
+  <div class="hobbies">
     <?php
-    foreach ($language as $lang) {
+    foreach ($hobbies as $hobbie) {
     ?>
-      <div class="lang">
-
-        <img src="../assets/img/logo/<?= $lang["picture"] ?>" alt="<?= $lang["name"] ?>">
-
-
+      <div class="hob">
+        <img src="../assets/img/logo/<?= $hobbie["picture"] ?>" alt="">
+        <h3><?= $hobbie["name"] ?></h3>
       </div>
     <?php
     }
     ?>
-    <img src="../assets/img/logo/html.png" alt="">
   </div>
 
 </main>

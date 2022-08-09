@@ -28,11 +28,22 @@ a {
   color: #222;
 }
 
-.letter-container {
+ul {
+  list-style: none;
+}
+
+.containerCv {
+  background: url("../img/computer.jpg");
+  background-size: cover;
+  height: 120vh;
+}
+.containerCv .letter-container {
   text-align: center;
   perspective: 100rem;
+  z-index: -1;
+  padding-top: 10rem;
 }
-.letter-container h1 {
+.containerCv .letter-container h1 {
   font-family: Abril fatface, sans-serif;
   transform-style: preserve-3d;
   display: inline-flex;
@@ -42,34 +53,36 @@ a {
   font-size: 10rem;
   cursor: pointer;
   text-transform: uppercase;
+  text-shadow: 0.3rem 0.3rem rgba(197, 197, 198, 0.8823529412);
 }
-.letter-container h1 span {
+.containerCv .letter-container h1 span {
   pointer-events: none;
 }
-
-.container-carreAnim {
+.containerCv .container-carreAnim {
   display: flex;
 }
-.container-carreAnim .carreAnim {
+.containerCv .container-carreAnim .carreAnim {
   background-size: cover;
   max-width: 42rem;
   height: 42rem;
   margin-left: 10%;
   display: flex;
   padding: 0;
+  position: absolute;
 }
-.container-carreAnim .carreAnim .pic {
+.containerCv .container-carreAnim .carreAnim .pic {
   width: 42rem;
   height: 42rem;
   position: absolute;
   margin-top: 2rem;
+  box-shadow: 1rem 1rem 1rem 1rem #333;
 }
-.container-carreAnim .carreAnim .carre {
+.containerCv .container-carreAnim .carreAnim .carre {
   width: 40rem;
   height: 40rem;
   position: relative;
 }
-.container-carreAnim .carreAnim .haut {
+.containerCv .container-carreAnim .carreAnim .haut {
   margin-top: -10.2rem;
   -webkit-transform: scale(1);
   transform: scale(1);
@@ -77,12 +90,12 @@ a {
   transition: 0.3s ease-in-out;
   filter: invert(100%) sepia(98%) saturate(7499%) hue-rotate(347deg) brightness(103%) contrast(106%) opacity(50%);
 }
-.container-carreAnim .carreAnim .haut:hover {
+.containerCv .container-carreAnim .carreAnim .haut:hover {
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
   z-index: 2;
 }
-.container-carreAnim .carreAnim .droite {
+.containerCv .container-carreAnim .carreAnim .droite {
   margin-top: 3rem;
   margin-left: -14.5rem;
   -webkit-transform: scale(1);
@@ -91,12 +104,12 @@ a {
   transition: 0.3s ease-in-out;
   filter: invert(53%) sepia(63%) saturate(474%) hue-rotate(66deg) brightness(95%) contrast(91%) opacity(65%);
 }
-.container-carreAnim .carreAnim .droite:hover {
+.containerCv .container-carreAnim .carreAnim .droite:hover {
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
   z-index: 2;
 }
-.container-carreAnim .carreAnim .gauche {
+.containerCv .container-carreAnim .carreAnim .gauche {
   margin-top: 3rem;
   margin-right: -15rem;
   -webkit-transform: scale(1);
@@ -105,12 +118,12 @@ a {
   transition: 0.3s ease-in-out;
   filter: invert(10%) sepia(48%) saturate(6686%) hue-rotate(240deg) brightness(83%) contrast(124%) opacity(50%);
 }
-.container-carreAnim .carreAnim .gauche:hover {
+.containerCv .container-carreAnim .carreAnim .gauche:hover {
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
   z-index: 2;
 }
-.container-carreAnim .carreAnim .bas {
+.containerCv .container-carreAnim .carreAnim .bas {
   margin-top: -13.9rem;
   -webkit-transform: scale(1);
   transform: scale(1);
@@ -118,43 +131,56 @@ a {
   transition: 0.3s ease-in-out;
   filter: invert(12%) sepia(63%) saturate(5174%) hue-rotate(6deg) brightness(96%) contrast(120%) opacity(50%);
 }
-.container-carreAnim .carreAnim .bas:hover {
+.containerCv .container-carreAnim .carreAnim .bas:hover {
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
   z-index: 2;
 }
-.container-carreAnim .carreAnim .haut-centre-bas {
+.containerCv .container-carreAnim .carreAnim .haut-centre-bas {
   margin: 0;
 }
-.container-carreAnim .sectionCV {
+.containerCv .container-carreAnim .sectionCV {
   position: absolute;
   width: 50%;
-  top: 40%;
+  right: 8%;
+  background: rgba(197, 197, 198, 0.8823529412);
+  padding: 3rem;
+  border-radius: 2rem;
+  box-shadow: 0.2rem 0.2rem 0.5rem #333;
+  margin-left: 40%;
 }
-.container-carreAnim .sectionCV h2 {
+.containerCv .container-carreAnim .sectionCV span {
+  font-weight: 800;
+  font-family: Abril fatface, sans-serif;
+}
+.containerCv .container-carreAnim .sectionCV h2 {
   margin-bottom: 3rem;
-  text-align: center;
+  text-align: justify;
+  font-family: Abril fatface, sans-serif;
 }
-.container-carreAnim .school {
-  right: 3%;
+.containerCv .container-carreAnim .school {
+  top: 40%;
   display: none;
 }
-.container-carreAnim .exp {
-  right: 1%;
+.containerCv .container-carreAnim .exp {
+  top: 32%;
   display: none;
 }
-.container-carreAnim .qualit {
-  right: 3%;
+.containerCv .container-carreAnim .qualit {
+  text-align: justify;
+  top: 40%;
   display: none;
 }
-
-.containerSlot {
+.containerCv .wrap-language {
+  margin: 8rem;
+}
+.containerCv .wrap-language .containerSlot {
   position: absolute;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.containerSlot .btnConfettis {
+.containerCv .wrap-language .containerSlot .btnConfettis {
   width: 10rem;
   height: 10rem;
   position: absolute;
@@ -168,15 +194,15 @@ a {
   outline: none;
   box-shadow: 0 0.7rem 0 #8e8d8d;
 }
-.containerSlot .btnConfettis:active {
+.containerCv .wrap-language .containerSlot .btnConfettis:active {
   margin-top: 0.7rem;
   box-shadow: 0 0 0 #8e8d8d;
 }
-.containerSlot .slot {
+.containerCv .wrap-language .containerSlot .slot {
   position: relative;
   perspective: 100rem;
 }
-.containerSlot .slot div {
+.containerCv .wrap-language .containerSlot .slot div {
   width: 3.5rem;
   height: 3.5rem;
   border-radius: 50%;
@@ -186,13 +212,50 @@ a {
   transform: translate(-50%, -50%);
   user-select: none;
 }
-
-.language {
-  top: 10%;
+.containerCv .wrap-language .language {
+  z-index: 2;
+  background: rgba(197, 197, 198, 0.8823529412);
+  padding: 3rem;
+  border-radius: 2rem;
+  box-shadow: 0.2rem 0.2rem 0.5rem #333;
+  margin-left: 40%;
+  padding: 5rem;
+  line-height: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  justify-content: space-between;
+  width: 50%;
+  margin-left: 60rem;
+}
+.containerCv .wrap-language .language .lang img {
+  width: 10rem;
+}
+.containerCv .hobbies {
+  display: none;
+  z-index: 5;
+  background: rgba(197, 197, 198, 0.8823529412);
+  padding: 3rem;
+  border-radius: 2rem;
+  box-shadow: 0.2rem 0.2rem 0.5rem #333;
+  margin-left: 40%;
+  padding: 5rem;
+  line-height: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  justify-content: space-between;
+  margin: 3rem;
+  width: 40%;
   margin-left: 50%;
 }
-.language img {
-  width: 5rem;
+.containerCv .hobbies .hob h3 {
+  text-align: center;
+  font-family: Abril fatface, sans-serif;
+  font-weight: 200;
+}
+.containerCv .hobbies .hob img {
+  width: 8rem;
 }
 
 .contact-title {
@@ -489,7 +552,7 @@ nav {
   align-items: center;
   padding: 1.5rem 2.5rem;
   background: #fafafa;
-  box-shadow: inset 0rem -0.1rem 0rem #c5c5c6;
+  box-shadow: inset 0rem -0.1rem 0rem rgba(197, 197, 198, 0.8823529412);
   z-index: 5;
 }
 @media screen and (max-width: 992px) {
@@ -696,25 +759,29 @@ nav {
   }
 }
 
-h1 {
+.bgDetail {
+  background: url("../img/web.jpg");
+}
+.bgDetail h1 {
   font-family: Abril fatface, sans-serif;
   padding-top: 10rem;
   text-align: center;
   font-size: 8rem;
   color: #218e96;
+  text-shadow: 0.3rem 0.3rem rgba(197, 197, 198, 0.8823529412);
 }
-
-.work-details {
+.bgDetail .work-details {
   padding: 0 3rem;
   display: flex;
 }
-.work-details .picturesProject img {
+.bgDetail .work-details .picturesProject img {
   margin-top: 10rem;
   width: 90rem;
   padding: 3rem;
   background-color: #218e96;
+  box-shadow: 0.5rem 0.5rem 1rem #333;
 }
-.work-details .txtProject {
+.bgDetail .work-details .txtProject {
   background-color: rgba(241, 241, 241, 0.6901960784);
   border-radius: 2rem;
   margin: 12rem 5rem;
@@ -724,13 +791,14 @@ h1 {
   justify-content: center;
   align-items: center;
   font-size: 5rem;
+  box-shadow: 0.5rem 0.5rem 1rem #333;
 }
-.work-details .txtProject p {
+.bgDetail .work-details .txtProject p {
   text-align: center;
   margin: 5rem 0 0 0;
   font-size: 2rem;
 }
-.work-details .txtProject p a {
+.bgDetail .work-details .txtProject p a {
   border: 0.2rem solid #f1f1f1;
   border-radius: 1rem;
   outline: none;
@@ -744,15 +812,19 @@ h1 {
   background-color: #218e96;
   color: #fafafa;
 }
-.work-details .txtProject p a:active {
+.bgDetail .work-details .txtProject p a:active {
   margin-top: 0.7rem;
   box-shadow: 0 0 0 #8e8d8d;
 }
-.work-details .txtProject h2 {
+.bgDetail .work-details .txtProject h2 {
   margin-top: 5rem;
   font-family: Abril fatface, sans-serif;
   font-size: 4rem;
   color: #218e96;
+}
+.bgDetail .techno img {
+  width: 20rem;
+  height: 20rem;
 }
 
 /*  Effet au clic */
@@ -800,6 +872,7 @@ h1 {
   color: #f1f1f1;
   text-transform: uppercase;
   color: #f1f1f1;
+  margin-top: 15rem;
 }
 .acceuil .container-first h1 span {
   position: relative;

@@ -20,6 +20,33 @@ foreach ($works as $item) {
         $data = $item;
     }
 }
+$query = $db->query("SELECT *, GROUP_CONCAT(language.name)AS 'Language'
+                  FROM language
+                  INNER JOIN product_language
+                  ON language.id = product_language.id_language
+                  INNER JOIN products
+                  ON product_language.id_prod = products.id
+                  GROUP BY language.id;");
+// $query = $db->query("SELECT *, GROUP_CONCAT(language.id )AS 'Language'
+//                   FROM products
+//                   INNER JOIN product_language
+//                   ON product.id = product_language.id_prod
+//                   INNER JOIN languages
+//                   ON product_language.id_language = language.id
+  
+//                   GROUP BY language.name;");
+// $query = $db->query("SELECT * FROM * WHERE language.id = product_language.id_prod");
+$languages = $query->execute();
+
+// var_dump($_GET);
+// $idPage = trim(strip_tags($_GET["idPage"]));
+$idPage = $_GET;
+
+$query =$db->prepare("SELECT * FROM product_language WHERE id_prod = :idPage");
+$query->bindParam(":idPage", $idPage, PDO::PARAM_INT);
+$langProject = $query->fetchAll();
+// var_dump($idPage);
+// var_dump($langProject);
 
 include("../templates/header.php");
 ?>
@@ -28,7 +55,7 @@ include("../templates/header.php");
 if ($find) {
 ?>
 
-    <main>
+    <main class="bgDetail">
 
         <h1><?= $data['title'] ?></h1>
         <div class="work-details">
@@ -53,9 +80,24 @@ if ($find) {
                     <?= date("d/m/Y", strtotime($data["date"])); ?></h2>
             </div>
         </div>
+
         <?php
 
 
+        foreach ($langProject as $language) {
+        ?>
+
+            <div class="techno">
+                <!-- <img src="../assets/img/logo/" alt=""> -->
+                <img src="../assets/img/logo/<?=$language['picname']?>" alt="000">
+                <h1><?= $language["name"] ?></h1>
+
+         
+            </div>
+        <?php
+        var_dump($language["name"]);
+        }
+     
         ?>
 
     </main>
