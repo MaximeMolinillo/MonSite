@@ -4,9 +4,9 @@
 
 // TITRE ANIME *******************************************************************
 .containerCv {
-    background: url("../img/computer.jpg");
+    background: url("../img/web.jpg");
     background-size: cover;
-    height: 120vh;
+    height: 110vh;
     // overflow-y: hidden;
     .letter-container {
         text-align: center;
@@ -26,7 +26,7 @@
             cursor: pointer;
             text-transform: uppercase;
             // background: rgba(255, 166, 0, 0.464);
-            text-shadow:  0.3rem 0.3rem v.$shadow-white;
+            text-shadow: 0.3rem 0.3rem v.$shadow-white;
 
             span {
                 pointer-events: none;
@@ -51,8 +51,7 @@
                 height: 42rem;
                 position: absolute;
                 margin-top: 2rem;
-            box-shadow:  1rem 1rem 1rem 1rem v.$darkgrey;
-
+                box-shadow: 1rem 1rem 1rem 1rem v.$darkgrey;
             }
             .carre {
                 width: 40rem;
@@ -67,69 +66,144 @@
             //     height: 15rem;
             //     margin-left: 12rem;
             //     margin-top: -50rem;
+            .pTriangle {
+                font-family: v.$fatFont;
+                color: v.$text-white;
+                font-size: 3.5rem;
+                position: absolute;
+                // z-index: -0.5;
+                // display: ;
+            }
             // }
             .haut {
-                margin-top: -10.2rem;
-   
+                z-index: 2;
 
+                margin-top: -10.2rem;
+                position: relative;
                 -webkit-transform: scale(1);
                 transform: scale(1);
                 -webkit-transition: 0.3s ease-in-out;
                 transition: 0.3s ease-in-out;
-                filter: invert(100%) sepia(98%) saturate(7499%) hue-rotate(347deg) brightness(103%) contrast(106%)
-                    opacity(50%);
+                filter: invert(43%) sepia(34%) saturate(0%) hue-rotate(224deg) brightness(103%) contrast(88%)
+                    opacity(75%);
                 // position: absolute;
                 &:hover {
-                    -webkit-transform: scale(1.5);
-                    transform: scale(1.5);
+                    -webkit-transform: scale(1.3);
+                    transform: scale(1.3);
                     z-index: 2;
+                    filter: invert(42%) sepia(80%) saturate(5996%) hue-rotate(166deg) brightness(101%) contrast(74%)
+                        opacity(75%);
+                    .pHaut {
+                        opacity: 1;
+                        // color: ;
+                    }
                 }
+            }
+            .pHaut {
+                padding: 5rem;
+                top: 1%;
+                right: 15%;
+
+                // opacity: 0.1;
+                // &:hover {
+                //     opacity: 1;
+                //     // color: white;
+                //      z-index: 5;
+                // }
             }
 
             .droite {
+                z-index: 4;
+
                 margin-top: 3rem;
                 margin-left: -14.5rem;
                 -webkit-transform: scale(1);
                 transform: scale(1);
                 -webkit-transition: 0.3s ease-in-out;
                 transition: 0.3s ease-in-out;
-                filter: invert(53%) sepia(63%) saturate(474%) hue-rotate(66deg) brightness(95%) contrast(91%)
-                    opacity(65%);
+                // filter: invert(53%) sepia(63%) saturate(474%) hue-rotate(66deg) brightness(95%) contrast(91%)
+                //     opacity(65%);
+                filter: invert(43%) sepia(34%) saturate(0%) hue-rotate(224deg) brightness(103%) contrast(88%)
+                    opacity(75%);
+
                 &:hover {
-                    -webkit-transform: scale(1.5);
-                    transform: scale(1.5);
+                    -webkit-transform: scale(1.3);
+                    transform: scale(1.3);
                     z-index: 2;
+                    filter: invert(42%) sepia(80%) saturate(5996%) hue-rotate(166deg) brightness(101%) contrast(74%)
+                        opacity(75%);
                     //
                 }
             }
+            .pDroite{
+                z-index: 3;
+
+                padding: 5rem;
+                top: 8%;
+                left: 75%;
+                writing-mode: vertical-rl;
+                text-orientation: upright;
+                letter-spacing: -1.5rem;
+            }
             .gauche {
+                z-index: 4;
+
                 margin-top: 3rem;
                 margin-right: -15rem;
                 -webkit-transform: scale(1);
                 transform: scale(1);
                 -webkit-transition: 0.3s ease-in-out;
                 transition: 0.3s ease-in-out;
-                filter: invert(10%) sepia(48%) saturate(6686%) hue-rotate(240deg) brightness(83%) contrast(124%)
-                    opacity(50%);
+                // filter: invert(10%) sepia(48%) saturate(6686%) hue-rotate(240deg) brightness(83%) contrast(124%)
+                //     opacity(50%);
+                filter: invert(43%) sepia(34%) saturate(0%) hue-rotate(224deg) brightness(103%) contrast(88%)
+                    opacity(75%);
                 &:hover {
-                    -webkit-transform: scale(1.5);
-                    transform: scale(1.5);
+                    -webkit-transform: scale(1.3);
+                    transform: scale(1.3);
                     z-index: 2;
+                    filter: invert(42%) sepia(80%) saturate(5996%) hue-rotate(166deg) brightness(101%) contrast(74%)
+                        opacity(75%);
                 }
             }
+            .pGauche{
+                z-index: 3;
+
+                padding: 5rem;
+                top: 7%;
+                right: 75%;
+                writing-mode: vertical-rl;
+                text-orientation: upright;
+                // line-height: 1rem;
+                letter-spacing: -2rem;
+            }
+
             .bas {
+                z-index: 2;
+
+                // z-index: 4;
                 margin-top: -13.9rem;
                 -webkit-transform: scale(1);
                 transform: scale(1);
                 -webkit-transition: 0.3s ease-in-out;
                 transition: 0.3s ease-in-out;
-                filter: invert(12%) sepia(63%) saturate(5174%) hue-rotate(6deg) brightness(96%) contrast(120%)
-                    opacity(50%);
+                // filter: invert(12%) sepia(63%) saturate(5174%) hue-rotate(6deg) brightness(96%) contrast(120%)
+                //     opacity(50%);
+                filter: invert(43%) sepia(34%) saturate(0%) hue-rotate(224deg) brightness(103%) contrast(88%)
+                    opacity(75%);
                 &:hover {
-                    -webkit-transform: scale(1.5);
-                    transform: scale(1.5);
+                    -webkit-transform: scale(1.3);
+                    transform: scale(1.3);
                     z-index: 2;
+                    filter: invert(42%) sepia(80%) saturate(5996%) hue-rotate(166deg) brightness(101%) contrast(74%)
+                        opacity(75%);
                 }
+            }
+            .pBas{
+                z-index: 1;
+                padding: 5rem;
+                top: 75%;
+                right: 25%;
             }
 
             .haut-centre-bas {
@@ -154,23 +228,22 @@
         }
         .school {
             top: 40%;
-            display: none;
+            opacity: 0;
         }
         .exp {
             top: 32%;
-            display: none;
+            opacity: 0;
         }
         .qualit {
             text-align: justify;
-            top: 40%;
-            display: none;
+            top: 50%;
+            opacity: 1;
         }
     }
 
     .wrap-language {
-        // display: none;
+        opacity: 0;
         margin: 8rem;
-    
 
         .containerSlot {
             position: absolute;
@@ -216,8 +289,6 @@
             width: 50%;
             margin-left: 60rem;
             .lang {
-           
-
                 img {
                     width: 10rem;
                 }
@@ -225,13 +296,14 @@
         }
     }
     .hobbies {
-        display: none;
-
-        z-index: 5;
+        opacity: 0;
+        // z-index: 5;
+        position: absolute;
         @include m.bg-cv;
         margin: 3rem;
         width: 40%;
         margin-left: 50%;
+        top: 35%;
         .hob {
             h3 {
                 text-align: center;

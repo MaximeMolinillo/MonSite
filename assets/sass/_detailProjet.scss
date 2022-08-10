@@ -4,6 +4,8 @@
 
 .bgDetail {
     background: url("../img/web.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     h1 {
         font-family: v.$fatFont;
         padding-top: 10rem;
@@ -11,6 +13,9 @@
         font-size: 8rem;
         color: v.$purple;
         text-shadow:  0.3rem 0.3rem v.$shadow-white;
+        background-color: rgba(255, 255, 255, 0.26);
+        // margin: 0 20%;
+        // border-radius: 2rem;
 
     }
 

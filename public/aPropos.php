@@ -29,15 +29,22 @@ include("../templates/header.php");
 
     <div class="carreAnim">
       <img src="../assets/img/MaxMoli.png" class="pic">
-      <img src="../assets/img/forme-apropos/gauche.svg" class="carre gauche">
+      <img src="../assets/img/forme-apropos/gauche.svg" class="carre gauche" onclick="animTriangleLeft()">
+      <p class="pGauche pTriangle">Expèriences</p>
+
       <div class="haut-centre-bas">
-        <img src="../assets/img/forme-apropos/haut.svg" class="carre haut">
+        <img src="../assets/img/forme-apropos/haut.svg" class="haut carre" onclick="animTriangleTop()" >
+        <p class="pHaut pTriangle">Technologies</p>
 
         <!-- <img src="../assets/img/forme-apropos/centre.svg" class="centre"> -->
-        <img src="../assets/img/forme-apropos/bas.svg" class="carre bas">
+        <img src="../assets/img/forme-apropos/bas.svg" class="carre bas"
+        onclick="animTriangleBottom()">
+        <p class="pBas pTriangle">Hobbies</p>
       </div>
 
-      <img src="../assets/img/forme-apropos/droite.svg" class="carre droite">
+      <img src="../assets/img/forme-apropos/droite.svg" class="carre droite"
+      onclick="animTriangleRight()">
+      <p class="pDroite pTriangle">Scolarité</p>
     </div>
 
     <div class="school sectionCV">

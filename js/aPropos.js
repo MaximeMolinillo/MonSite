@@ -111,7 +111,7 @@ btnConfettis.addEventListener('click', fiesta)
 
 function fiesta() {
 
-if(isTweening()) return;
+    if (isTweening()) return;
 
     for (let i = 0; i < 50; i++) {
         const confetti = document.createElement('div');
@@ -142,4 +142,45 @@ function animateConfettis() {
 
 function isTweening() {
     return gsap.isTweening('.slot div');
+}
+
+
+// Animation triangle *********************************************************
+// const  top = document.querySelector('.pHaut');
+// const lang =document.querySelector('.wrap-language');
+
+
+// top.addEventListener("click", animTriangle);
+
+function animTriangleTop() {
+    document.querySelector(".qualit").style.opacity = "0";
+    document.querySelector(".hobbies").style.opacity = "0";
+    document.querySelector(".exp").style.opacity = "0";
+    document.querySelector(".school").style.opacity = "0";
+
+    document.querySelector(".wrap-language").style.opacity = "1";
+}
+function animTriangleLeft() {
+    document.querySelector(".qualit").style.opacity = "0";
+    document.querySelector(".hobbies").style.opacity = "0";
+    document.querySelector(".wrap-language").style.opacity = "0";
+    document.querySelector(".school").style.opacity = "0";
+
+    document.querySelector(".exp").style.opacity = "1";
+}
+function animTriangleRight() {
+    document.querySelector(".qualit").style.opacity = "0";
+    document.querySelector(".hobbies").style.opacity = "0";
+    document.querySelector(".wrap-language").style.opacity = "0";
+    document.querySelector(".exp").style.opacity = "0";
+
+    document.querySelector(".school").style.opacity = "1";
+}
+function animTriangleBottom() {
+    document.querySelector(".qualit").style.opacity = "0";
+    document.querySelector(".wrap-language").style.opacity = "0";
+    document.querySelector(".exp").style.opacity = "0";
+    document.querySelector(".school").style.opacity = "0";
+
+    document.querySelector(".hobbies").style.opacity = "1";
 }

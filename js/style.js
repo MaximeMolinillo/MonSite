@@ -69,7 +69,7 @@ window.addEventListener('load', () => {
     .from(l2, 1 ,{width: 0, ease: "power2.out"}, '-=1')
     .from(l3, 1 ,{width: 0, ease: "power2.out"}, '-=0')
     .from(logo, 1 ,{transform: "scale(0)", ease: "power2.out"}, '-=2')
-    .staggerFrom(medias, 1, {right: -200, ease: "power2.out"}, 0.3, '-=1')
+    .staggerFrom(medias, 1, {right: -400, ease: "power2.out"}, 0.3, '-=1')
 
     TL.play();
 })

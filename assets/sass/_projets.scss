@@ -8,6 +8,9 @@
         background: v.$darkgrey url("../img/web.jpg");
         background-repeat: no-repeat;
         background-size: cover;
+        @media screen and(max-width: v.$md-breakpoint) {
+           height: 120vh;
+        }
         // padding-top: 5rem;
         p {
             // color: v.$darkgrey;
@@ -15,9 +18,15 @@
             font-size: 12rem;
             margin: 0;
             position: absolute;
+            @media screen and(max-width: v.$xl-breakpoint) {
+                font-size: 7rem;
+            }
+            @media screen and(max-width: v.$lg-breakpoint) {
+                font-size: 4rem;
+            }
 
             a {
-                text-shadow: 0.5rem 0.5rem 0.5rem  v.$cream;
+                text-shadow: 0.5rem 0.5rem 0.5rem v.$cream;
                 // -webkit-transition: 0.3s ease-in-out;
                 // transition: 0.3s ease-in-out;
             }
@@ -31,16 +40,24 @@
             top: 10rem;
             left: 65rem;
             z-index: 1;
+
             a {
                 color: v.$blue;
+            }
+            @media screen and(max-width: v.$sm-breakpoint) {
+                left: 25rem;
             }
         }
         p:nth-child(2) {
             top: 35rem;
             left: 2rem;
             z-index: 1;
+
             a {
                 color: v.$green;
+            }
+            @media screen and(max-width: v.$sm-breakpoint) {
+                top: 20rem;
             }
         }
 
@@ -51,6 +68,13 @@
             a {
                 color: v.$yellow;
             }
+            @media screen and(max-width: v.$xl-breakpoint) {
+                left: 55rem;
+            }
+            @media screen and(max-width: v.$md-breakpoint) {
+                top: 37rem;
+                left: 22rem;
+            }
         }
         p:nth-child(4) {
             top: 105rem;
@@ -58,6 +82,13 @@
             z-index: 3;
             a {
                 color: v.$red;
+            }
+            @media screen and(max-width: v.$xl-breakpoint) {
+                left: 15rem;
+            }
+            @media screen and(max-width: v.$md-breakpoint) {
+                top: 55rem;
+                left: 5rem;
             }
         }
         p:nth-child(5) {
@@ -68,105 +99,152 @@
             a {
                 color: v.$purple;
             }
+            @media screen and(max-width: v.$xl-breakpoint) {
+                left: 65rem;
+            }
+            @media screen and(max-width: v.$md-breakpoint) {
+                top: 70rem;
+                left: 25rem;
+            }
         }
 
-        .logoMM { 
+        .logoMM {
             top: 50rem;
             left: 40rem;
-            position: absolute; 
-          
-            img{
+            position: absolute;
+
+            img {
                 filter: invert(90%) sepia(1%) saturate(0%) hue-rotate(151deg) brightness(85%) contrast(84%) opacity(50%);
             }
         }
-        .logoMM1 { 
+        .logoMM1 {
             top: 50rem;
-            left: 58rem;        
-            img{
+            left: 58rem;
+            img {
                 width: 20rem;
             }
+            @media screen and(max-width: v.$md-breakpoint) {
+                display: none;
+            }
         }
-        .logoMM2 { 
+        .logoMM2 {
             top: 30rem;
-            left: 70rem;        
-            img{
+            left: 70rem;
+            img {
                 width: 10rem;
             }
+            @media screen and(max-width: v.$md-breakpoint) {
+                top: 28rem;
+                left: 15rem;
+            }
         }
-        .logoMM3 { 
+        .logoMM3 {
             top: 75rem;
-            left: 90rem;        
-            img{
+            left: 90rem;
+            img {
                 width: 15rem;
             }
+            @media screen and(max-width: v.$xl-breakpoint) {
+                left: 8rem;
+            }
         }
-        .logoMM4 { 
+        .logoMM4 {
             top: 90rem;
-            left: 5rem;       
-            img{
+            left: 5rem;
+            img {
                 width: 5rem;
             }
+            @media screen and(max-width: v.$md-breakpoint) {
+                display: none;
+            }
         }
-        .logoMM5 { 
+        .logoMM5 {
             top: 100rem;
-            left: 120rem;       
-            img{
+            left: 120rem;
+            img {
                 width: 5rem;
             }
+            @media screen and(max-width: v.$xl-breakpoint) {
+                left: 68rem;
+            }
+            @media screen and(max-width: v.$md-breakpoint) {
+               display: none;
+            }
         }
-        .logoMM6 { 
+        .logoMM6 {
             top: 115rem;
-            left: 35rem;       
-            img{
+            left: 35rem;
+            img {
                 width: 15rem;
             }
+            @media screen and(max-width: v.$md-breakpoint) {
+                display: none;
+            }
         }
-        .logoMM7 { 
+        .logoMM7 {
             top: 120rem;
-            left: 15rem;       
-            img{
+            left: 15rem;
+            img {
                 width: 10rem;
             }
-        }
-        .logoMM8 { 
-            top: 100rem;
-            left: 50rem;       
-            img{
-                width: 15rem;
+            @media screen and(max-width: v.$md-breakpoint) {
+                display: none;
             }
         }
-
-
+        .logoMM8 {
+            top: 100rem;
+            left: 50rem;
+            img {
+                width: 15rem;
+            }
+            @media screen and(max-width: v.$md-breakpoint) {
+                display: none;
+            }
+        }
         .box {
             position: absolute;
             box-shadow: 0.3rem 0.3rem 0.5rem v.$cream;
+            img {
+                width: 40rem;
+                padding: 2rem;
+                @media screen and(max-width: v.$lg-breakpoint) {
+                    width: 30rem;
+                    padding: 1rem;
+                }
+                @media screen and(max-width: v.$md-breakpoint) {
+                    width: 15rem;
+                    padding: 0.5rem;
+                }
+            }
         }
 
         .box1 {
             top: 10rem;
             left: 5rem;
             background: v.$blue;
-            img {
-                width: 40rem;
-                padding: 2rem;
-            }
         }
         .box2 {
             top: 35rem;
             left: 105rem;
             background: v.$green;
-            img {
-                width: 40rem;
-                padding: 2rem;
+            @media screen and(max-width: v.$xl-breakpoint) {
+                left: 60rem;
+            }
+            @media screen and(max-width: v.$md-breakpoint) {
+                top: 28rem;
+                left: 25rem;
             }
         }
         .box3 {
             top: 60rem;
             left: 15rem;
             background: v.$yellow;
-            img {
-                width: 40rem;
-                padding: 2rem;
+            @media screen and(max-width: v.$xl-breakpoint) {
+                left: 11rem;
+            }
+            @media screen and(max-width: v.$md-breakpoint) {
+                top: 35rem;
+                left: 5rem;
             }
         }
 
@@ -174,18 +252,24 @@
             top: 90rem;
             left: 100rem;
             background: v.$red;
-            img {
-                width: 40rem;
-                padding: 2rem;
+            @media screen and(max-width: v.$xl-breakpoint) {
+                left: 55rem;
+            }
+            @media screen and(max-width: v.$md-breakpoint) {
+                top: 50rem;
+                left: 25rem;
             }
         }
         .box5 {
             top: 110rem;
             left: 25rem;
             background: v.$purple;
-            img {
-                width: 40rem;
-                padding: 2rem;
+            @media screen and(max-width: v.$xl-breakpoint) {
+                left: 10rem;
+            }
+            @media screen and(max-width: v.$md-breakpoint) {
+                top: 65rem;
+                left: 5rem;
             }
         }
     }
