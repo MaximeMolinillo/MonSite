@@ -19,7 +19,7 @@
             transform-style: preserve-3d;
             display: inline-flex;
             // margin-top: 10rem;
-            color: v.$darkgrey;
+            color: v.$purple;
             font-weight: 100;
             letter-spacing: 1rem;
             font-size: 10rem;
@@ -129,13 +129,13 @@
                 &:hover {
                     -webkit-transform: scale(1.3);
                     transform: scale(1.3);
-                    z-index: 2;
+                    z-index: 4;
                     filter: invert(42%) sepia(80%) saturate(5996%) hue-rotate(166deg) brightness(101%) contrast(74%)
                         opacity(75%);
                     //
                 }
             }
-            .pDroite{
+            .pDroite {
                 z-index: 3;
 
                 padding: 5rem;
@@ -161,12 +161,12 @@
                 &:hover {
                     -webkit-transform: scale(1.3);
                     transform: scale(1.3);
-                    z-index: 2;
+                    z-index: 4;
                     filter: invert(42%) sepia(80%) saturate(5996%) hue-rotate(166deg) brightness(101%) contrast(74%)
                         opacity(75%);
                 }
             }
-            .pGauche{
+            .pGauche {
                 z-index: 3;
 
                 padding: 5rem;
@@ -199,7 +199,7 @@
                         opacity(75%);
                 }
             }
-            .pBas{
+            .pBas {
                 z-index: 1;
                 padding: 5rem;
                 top: 75%;
@@ -221,33 +221,55 @@
             }
 
             h2 {
-                margin-bottom: 3rem;
                 text-align: justify;
                 font-family: v.$fatFont;
+            }
+            .l4{
+                width: 80%;
+                height: 0.2rem;
+                background-color: v.$purple;
+                margin-bottom: 3rem;
+
             }
         }
         .school {
             top: 40%;
             opacity: 0;
+            .logExp {
+                @include m.logo-apropos;
+                 }
+            
         }
         .exp {
-            top: 32%;
+            top: 35%;
             opacity: 0;
+            .logExp {
+           @include m.logo-apropos;
+            }
         }
         .qualit {
             text-align: justify;
             top: 50%;
             opacity: 1;
+            p{
+                margin-top: 5rem;
+            }
+        
+            .logExp {
+                @include m.logo-apropos;
+                 }
         }
     }
 
     .wrap-language {
         opacity: 0;
         margin: 8rem;
+        z-index: 4;
+        position: absolute;
 
         .containerSlot {
             position: absolute;
-            top: 40%;
+            top: -10%;
             left: 50%;
             transform: translate(-50%, -50%);
             .btnConfettis {
@@ -286,11 +308,19 @@
         .language {
             z-index: 2;
             @include m.bg-cv;
-            width: 50%;
+            width: 55%;
             margin-left: 60rem;
             .lang {
+                background: v.$text-white;
+                border-radius: 50%;
+                width: 10rem;
+                height: 10rem;
+                margin: 1rem;
+                border: 0.2rem solid v.$purple;
+                box-shadow: 0.3rem 0.7rem 0.5rem v.$third-dark;
+                padding: 0.5rem;
                 img {
-                    width: 10rem;
+                    width: 100%;
                 }
             }
         }
@@ -301,10 +331,18 @@
         position: absolute;
         @include m.bg-cv;
         margin: 3rem;
-        width: 40%;
-        margin-left: 50%;
+        width: 50%;
+        margin-left: 42%;
         top: 35%;
         .hob {
+            background: v.$text-white;
+            border-radius: 50%;
+            width: 10rem;
+            height: 10rem;
+            margin: 1rem;
+            border: 0.2rem solid v.$purple;
+            box-shadow: 0.3rem 0.7rem 0.5rem v.$third-dark;
+            padding: 1.5rem;
             h3 {
                 text-align: center;
                 font-family: v.$fatFont;
@@ -312,7 +350,7 @@
             }
 
             img {
-                width: 8rem;
+                width: 100%;
             }
         }
     }

@@ -33,7 +33,7 @@ $query = $db->query("SELECT *, GROUP_CONCAT(language.name)AS 'Language'
 //                   ON product.id = product_language.id_prod
 //                   INNER JOIN languages
 //                   ON product_language.id_language = language.id
-  
+
 //                   GROUP BY language.name;");
 // $query = $db->query("SELECT * FROM * WHERE language.id = product_language.id_prod");
 $languages = $query->execute();
@@ -42,7 +42,7 @@ $languages = $query->execute();
 // $idPage = trim(strip_tags($_GET["idPage"]));
 $idPage = $_GET;
 
-$query =$db->prepare("SELECT * FROM product_language WHERE id_prod = :idPage");
+$query = $db->prepare("SELECT * FROM product_language WHERE id_prod = :idPage");
 $query->bindParam(":idPage", $idPage, PDO::PARAM_INT);
 $langProject = $query->fetchAll();
 // var_dump($idPage);
@@ -72,38 +72,45 @@ if ($find) {
 
                 <p><a href="<?= $data["url"] ?>" target="_blank"> Visiter ce site </a></p>
 
+
                 <p>Technologies utilisées : <?= $data["technologies"] ?></p>
+                <div class="responsive">
+                    <div class="wrap-resp">
+                        <img src="../assets/img/logo/portable.svg" alt="Compatible PC">
+                    </div>
+                    <div class="wrap-resp">
+                        <img src="../assets/img/logo/tablette.svg" alt="Compatible Tablette">
+                    </div>
+                    <div class="wrap-resp">
+
+                        <img src="../assets/img/tel.svg" alt="Compatible Smartphone">
+                    </div>
+
+                </div>
 
                 <p>Contexte : <?= $data["contexte"] ?></p>
 
                 <h2>
                     <?= date("d/m/Y", strtotime($data["date"])); ?></h2>
+
             </div>
         </div>
 
         <?php
-
-
         foreach ($langProject as $language) {
         ?>
-
             <div class="techno">
                 <!-- <img src="../assets/img/logo/" alt=""> -->
-                <img src="../assets/img/logo/<?=$language['picname']?>" alt="000">
+                <img src="../assets/img/logo/<?= $language['picname'] ?>" alt="000">
                 <h1><?= $language["name"] ?></h1>
-
-         
             </div>
         <?php
-        var_dump($language["name"]);
         }
-     
         ?>
 
     </main>
 
 <?php
 }
-
 include("../templates/footer.php");
 ?>

@@ -83,34 +83,7 @@ include("../templates/header.php");
 
 
 </main>
-<!-- <div class="db">
-    <?php
-    foreach ($products as $product) {
-    ?>
 
-        <div class="products">
-            <h1><?= $product["title"] ?></h1>
-            <h1><?= $product["id"] ?></h1>
-
-            <img src="../assets/img/projets/<?= $product['picture'] ?>" alt="<?= $product["title"] ?>">
-
-            <p><a href="<?= $product["url"] ?>" target="_blank">Visiter ce site</a></p>
-
-            <p><?= $product["description"] ?></p>
-
-            <p>Technologies utilisées : <?= $product["technologies"] ?></p>
-
-            <p>Contexte : <?= $product["contexte"] ?></p>
-
-            <h2><?= $product["date"] ?></h2>
-
-            <p></p>
-        </div>
-
-    <?php
-    }
-    ?>
-</div> -->
 
 
 

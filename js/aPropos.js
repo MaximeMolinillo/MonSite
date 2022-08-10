@@ -184,3 +184,18 @@ function animTriangleBottom() {
 
     document.querySelector(".hobbies").style.opacity = "1";
 }
+
+
+
+// // ANimation Logo Techno ******************************************
+
+// const lang1 = document.querySelector('lang1');
+
+// window.addEventListener('load', () => {
+//     const TimeLine = gsap.timeline({paused: true});
+
+//     TimeLine
+//     .straggerFrom(lang1, 1, {top: -50,  ease: "power2.out"}, 0.3 )
+
+//     TimeLine.play();
+// })

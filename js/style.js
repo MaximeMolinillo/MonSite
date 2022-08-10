@@ -51,7 +51,7 @@ const logo = document.querySelector('.logo');
 const medias = document.querySelectorAll('.bulle');
 const l1 = document.querySelector('.l1');
 const l2 = document.querySelector('.l2');
-const l3 = document.querySelector('.l3');
+const l3 = document.querySelectorAll('.l3');
 
 
 

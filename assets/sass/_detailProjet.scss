@@ -12,11 +12,10 @@
         text-align: center;
         font-size: 8rem;
         color: v.$purple;
-        text-shadow:  0.3rem 0.3rem v.$shadow-white;
+        text-shadow: 0.3rem 0.3rem v.$shadow-white;
         background-color: rgba(255, 255, 255, 0.26);
         // margin: 0 20%;
         // border-radius: 2rem;
-
     }
 
     .work-details {
@@ -29,8 +28,7 @@
                 width: 90rem;
                 padding: 3rem;
                 background-color: v.$purple;
-        box-shadow: 0.5rem 0.5rem 1rem v.$darkgrey;
-
+                box-shadow: 0.5rem 0.5rem 1rem v.$darkgrey;
             }
         }
         .txtProject {
@@ -48,17 +46,38 @@
             // margin: 0 15rem;
             font-size: 5rem;
             // padding: 5rem;
-        box-shadow: 0.5rem 0.5rem 1rem v.$darkgrey;
+            box-shadow: 0.5rem 0.5rem 1rem v.$darkgrey;
+            .responsive {
+                display: flex;
+                .wrap-resp {
+                    background: v.$purple;
+                    border-radius: 50%;
+                    width: 6rem;
+                    height: 6rem;
+                    margin: 2rem;
+                    border: 0.1rem solid v.$text-white;
+                    box-shadow: 0.3rem 0.7rem 0.5rem v.$third-dark;
 
+                    // margin: 2rem;
+                    img {
+                        width: 100%;
+                        padding: 1rem;
+                        // margin-top: 3rem;
+                        // filter: invert(44%) sepia(58%) saturate(541%) hue-rotate(136deg) brightness(94%) contrast(90%);
+                        filter: invert(100%) sepia(0%) saturate(5541%) hue-rotate(130deg) brightness(121%) contrast(82%);
+                    }
+                }
+            }
 
             p {
                 text-align: center;
-                margin: 5rem 0 0 0;
+                margin: 3rem 0 0 0;
                 font-size: 2rem;
                 a {
                     @include m.btn2;
                     background-color: v.$purple;
                     color: v.$cream;
+                    // padding: 3rem 0;
                 }
             }
             h2 {

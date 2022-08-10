@@ -33,22 +33,24 @@ include("../templates/header.php");
       <p class="pGauche pTriangle">Expèriences</p>
 
       <div class="haut-centre-bas">
-        <img src="../assets/img/forme-apropos/haut.svg" class="haut carre" onclick="animTriangleTop()" >
+        <img src="../assets/img/forme-apropos/haut.svg" class="haut carre" onclick="animTriangleTop()">
         <p class="pHaut pTriangle">Technologies</p>
 
         <!-- <img src="../assets/img/forme-apropos/centre.svg" class="centre"> -->
-        <img src="../assets/img/forme-apropos/bas.svg" class="carre bas"
-        onclick="animTriangleBottom()">
+        <img src="../assets/img/forme-apropos/bas.svg" class="carre bas" onclick="animTriangleBottom()">
         <p class="pBas pTriangle">Hobbies</p>
       </div>
 
-      <img src="../assets/img/forme-apropos/droite.svg" class="carre droite"
-      onclick="animTriangleRight()">
+      <img src="../assets/img/forme-apropos/droite.svg" class="carre droite" onclick="animTriangleRight()">
       <p class="pDroite pTriangle">Scolarité</p>
     </div>
 
     <div class="school sectionCV">
       <h2>Cursus Scolaire</h2>
+      <div class="l4"></div>
+      <div class="logExp">
+        <img src="../assets/img/logo/school.svg" alt="">
+      </div>
       <ul>
         <li><span>2021: Obtention du titre pro Développeur-Web avec M2i formation.</span></li>
         <br>
@@ -69,6 +71,10 @@ include("../templates/header.php");
 
     <div class="exp sectionCV">
       <h2>Expérience Professionnelle</h2>
+      <div class="l4"></div>
+      <div class="logExp">
+        <img src="../assets/img/logo/exp.svg" alt="">
+      </div>
       <ul>
         <li><span>2022: Stage pour la fleuriste Demain dès l'Aube -- Réalisation d'un site avec systéme d'authentification et gestion de contenus</span></li>
         <br>
@@ -96,6 +102,10 @@ include("../templates/header.php");
 
     <div class="qualit sectionCV">
       <h2>Qualités personelles</h2>
+      <div class="l4"></div>
+      <div class="logExp">
+        <img src="../assets/img/logo/max.svg" alt="">
+      </div>
       <p>Mon expérience de cuisinier m'a appris le travail en équipe, la rigueur et l'investissement dans le
         travail.
         Tandis que mes études en Arts Appliquées m'ont enseigné l'art du graphisme et ont éveillé ma curiosité .
@@ -114,7 +124,7 @@ include("../templates/header.php");
       ?>
         <div class="lang">
 
-          <img src="../assets/img/logo/<?= $lang["picname"] ?>" alt="<?= $lang["name"] ?>">
+          <img src="../assets/img/logo/<?= $lang["picname"] ?>" alt="<?= $lang["name"] ?>" class="lang<?= $lang["id"] ?>">
 
 
         </div>
@@ -131,7 +141,7 @@ include("../templates/header.php");
     ?>
       <div class="hob">
         <img src="../assets/img/logo/<?= $hobbie["picture"] ?>" alt="">
-        <h3><?= $hobbie["name"] ?></h3>
+        <!-- <h3><?= $hobbie["name"] ?></h3> -->
       </div>
     <?php
     }
