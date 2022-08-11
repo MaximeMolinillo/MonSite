@@ -6,6 +6,9 @@
     padding-top: 10rem;
     text-align: center;
     font-family: v.$fatFont;
+    @media screen and(max-width: v.$lg-breakpoint) {
+        padding-top: 3rem;
+                }
 }
 .wrap-section {
     background: v.$darkgrey url("../img/bgContacts.jpg") center / cover no-repeat;

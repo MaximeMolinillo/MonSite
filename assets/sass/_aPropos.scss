@@ -7,12 +7,22 @@
     background: url("../img/web.jpg");
     background-size: cover;
     height: 110vh;
+    background-position: center;
     // overflow-y: hidden;
+    @media screen and(max-width: v.$xl-breakpoint) {
+        height: 180vh;
+    }
+    @media screen and(max-width: v.$sm-breakpoint) {
+        height: 140vh;
+    }
     .letter-container {
         text-align: center;
         perspective: 100rem;
         z-index: -1;
         padding-top: 10rem;
+        @media screen and(max-width: v.$lg-breakpoint) {
+            padding-top: 2rem;
+        }
 
         h1 {
             font-family: v.$fatFont;
@@ -27,6 +37,12 @@
             text-transform: uppercase;
             // background: rgba(255, 166, 0, 0.464);
             text-shadow: 0.3rem 0.3rem v.$shadow-white;
+            @media screen and(max-width: v.$md-breakpoint) {
+                font-size: 8rem;
+            }
+            @media screen and(max-width: v.$sm-breakpoint) {
+                font-size: 4rem;
+            }
 
             span {
                 pointer-events: none;
@@ -39,12 +55,25 @@
 
         .carreAnim {
             background-size: cover;
-            max-width: 42rem;
+            width: 42rem;
             height: 42rem;
             margin-left: 10%;
             display: flex;
             padding: 0;
             position: absolute;
+            @media screen and(max-width: v.$xl-breakpoint) {
+                // width: 70%;
+                margin-left: 30%;
+            }
+            @media screen and(max-width: v.$lg-breakpoint) {
+                // width: 70%;
+                margin-left: 25%;
+            }
+            @media screen and(max-width: v.$sm-breakpoint) {
+                width: 25rem;
+                height: 25rem;
+                margin-left: 15%;
+            }
 
             .pic {
                 width: 42rem;
@@ -52,11 +81,19 @@
                 position: absolute;
                 margin-top: 2rem;
                 box-shadow: 1rem 1rem 1rem 1rem v.$darkgrey;
+                @media screen and(max-width: v.$sm-breakpoint) {
+                    width: 27rem;
+                    height: 27rem;
+                }
             }
             .carre {
                 width: 40rem;
                 height: 40rem;
                 position: relative;
+                @media screen and(max-width: v.$sm-breakpoint) {
+                    width: 25rem;
+                    height: 25rem;
+                }
             }
             // .centre {
             //     // margin-top: -25rem;
@@ -71,6 +108,11 @@
                 color: v.$text-white;
                 font-size: 3.5rem;
                 position: absolute;
+                @media screen and(max-width: v.$sm-breakpoint) {
+                   font-size: 2.5rem;
+                //    text-align: justify;
+
+                     }
                 // z-index: -0.5;
                 // display: ;
             }
@@ -98,6 +140,10 @@
                         // color: ;
                     }
                 }
+                @media screen and(max-width: v.$sm-breakpoint) {
+                    margin-top: -5.6rem;
+                    margin-left: 6rem;
+                }
             }
             .pHaut {
                 padding: 5rem;
@@ -110,6 +156,11 @@
                 //     // color: white;
                 //      z-index: 5;
                 // }
+                @media screen and(max-width: v.$sm-breakpoint) {
+                   top: -8%;
+                   right: 0;
+
+                     }
             }
 
             .droite {
@@ -134,6 +185,9 @@
                         opacity(75%);
                     //
                 }
+                @media screen and(max-width: v.$sm-breakpoint) {
+                    margin-left: -8.5rem;
+                }
             }
             .pDroite {
                 z-index: 3;
@@ -144,6 +198,7 @@
                 writing-mode: vertical-rl;
                 text-orientation: upright;
                 letter-spacing: -1.5rem;
+               
             }
             .gauche {
                 z-index: 4;
@@ -165,10 +220,10 @@
                     filter: invert(42%) sepia(80%) saturate(5996%) hue-rotate(166deg) brightness(101%) contrast(74%)
                         opacity(75%);
                 }
+             
             }
             .pGauche {
                 z-index: 3;
-
                 padding: 5rem;
                 top: 7%;
                 right: 75%;
@@ -176,6 +231,10 @@
                 text-orientation: upright;
                 // line-height: 1rem;
                 letter-spacing: -2rem;
+                @media screen and(max-width: v.$sm-breakpoint) {
+                    top: 7%;
+                    right: 65%;
+                     }
             }
 
             .bas {
@@ -198,12 +257,21 @@
                     filter: invert(42%) sepia(80%) saturate(5996%) hue-rotate(166deg) brightness(101%) contrast(74%)
                         opacity(75%);
                 }
+                @media screen and(max-width: v.$sm-breakpoint) {
+                    margin-top: -8.1rem;
+                    margin-left: 6rem;
+
+                     }
             }
             .pBas {
                 z-index: 1;
                 padding: 5rem;
                 top: 75%;
                 right: 25%;
+                @media screen and(max-width: v.$sm-breakpoint) {
+                    right: 10%;
+
+                     }
             }
 
             .haut-centre-bas {
@@ -215,6 +283,9 @@
             width: 50%;
             right: 8%;
             @include m.bg-cv-text;
+            @media screen and(max-width: v.$sm-breakpoint) {
+                font-size: 1.2rem;
+            }
             span {
                 font-weight: 800;
                 font-family: v.$fatFont;
@@ -224,40 +295,83 @@
                 text-align: justify;
                 font-family: v.$fatFont;
             }
-            .l4{
+            .l4 {
                 width: 80%;
                 height: 0.2rem;
                 background-color: v.$purple;
                 margin-bottom: 3rem;
-
             }
+            
         }
         .school {
             top: 40%;
             opacity: 0;
             .logExp {
                 @include m.logo-apropos;
-                 }
-            
+            }
+            @media screen and(max-width: v.$xl-breakpoint) {
+                top: 80rem;
+
+
+                right: 10%;
+                width: 80%;
+            }
+            @media screen and(max-width: v.$lg-breakpoint) {
+                // width: 70%;
+                top: 70rem;
+            }
+            @media screen and(max-width: v.$sm-breakpoint) {
+                // width: 70%;
+                top: 50rem;
+            }
         }
         .exp {
             top: 35%;
             opacity: 0;
+            @media screen and(max-width: v.$xl-breakpoint) {
+                top: 80rem;
+                right: 10%;
+                width: 80%;
+            }
+            @media screen and(max-width: v.$lg-breakpoint) {
+                // width: 70%;
+                top: 70rem;
+            }
+            @media screen and(max-width: v.$sm-breakpoint) {
+                // width: 70%;
+                top: 50rem;
+            }
+
             .logExp {
-           @include m.logo-apropos;
+                @include m.logo-apropos;
             }
         }
         .qualit {
             text-align: justify;
             top: 50%;
             opacity: 1;
-            p{
+            @media screen and(max-width: v.$xl-breakpoint) {
+                top: 70rem;
+                right: 10%;
+                width: 80%;
+            }
+            @media screen and(max-width: v.$lg-breakpoint) {
+                // width: 70%;
+                top: 70rem;
+            }
+            @media screen and(max-width: v.$sm-breakpoint) {
+                // width: 70%;
+                top: 50rem;
+            }
+            
+
+            p {
                 margin-top: 5rem;
             }
-        
+
             .logExp {
                 @include m.logo-apropos;
-                 }
+            }
         }
     }
 
@@ -266,12 +380,17 @@
         margin: 8rem;
         z-index: 4;
         position: absolute;
+        @media screen and(max-width: v.$sm-breakpoint) {
+            margin: 4rem;
+      top: 5%;
+        }
 
         .containerSlot {
             position: absolute;
             top: -10%;
             left: 50%;
             transform: translate(-50%, -50%);
+            
             .btnConfettis {
                 width: 10rem;
                 height: 10rem;
@@ -310,6 +429,22 @@
             @include m.bg-cv;
             width: 55%;
             margin-left: 60rem;
+            @media screen and(max-width: v.$xl-breakpoint) {
+                margin-left: 10%;
+                margin-top: 42rem;
+                width: 80%;
+            }
+            @media screen and(max-width: v.$lg-breakpoint) {
+                // width: 70%;
+                top: 95%;
+            }
+            @media screen and(max-width: v.$sm-breakpoint) {
+              width: 100%;
+              margin-left: 0;
+          
+
+            }
+
             .lang {
                 background: v.$text-white;
                 border-radius: 50%;
@@ -319,6 +454,11 @@
                 border: 0.2rem solid v.$purple;
                 box-shadow: 0.3rem 0.7rem 0.5rem v.$third-dark;
                 padding: 0.5rem;
+                @media screen and(max-width: v.$sm-breakpoint) {
+                    width: 6rem;
+                    height: 6rem;
+                    margin: 0.2rem;
+                }
                 img {
                     width: 100%;
                 }
@@ -334,6 +474,19 @@
         width: 50%;
         margin-left: 42%;
         top: 35%;
+        @media screen and(max-width: v.$xl-breakpoint) {
+            margin-left: 12.5%;
+            margin-top: 42rem;
+            width: 75%;
+        }
+        @media screen and(max-width: v.$lg-breakpoint) {
+            // width: 70%;
+            margin-top: 50rem;
+        }
+        @media screen and(max-width: v.$sm-breakpoint) {
+            top: 5%;
+        }
+
         .hob {
             background: v.$text-white;
             border-radius: 50%;
@@ -343,6 +496,12 @@
             border: 0.2rem solid v.$purple;
             box-shadow: 0.3rem 0.7rem 0.5rem v.$third-dark;
             padding: 1.5rem;
+            @media screen and(max-width: v.$sm-breakpoint) {
+                width: 6rem;
+                height: 6rem;
+                margin: 0.2rem;
+                padding: 0.5rem;
+            }
             h3 {
                 text-align: center;
                 font-family: v.$fatFont;

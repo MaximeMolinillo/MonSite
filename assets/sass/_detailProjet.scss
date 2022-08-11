@@ -16,12 +16,21 @@
         background-color: rgba(255, 255, 255, 0.26);
         // margin: 0 20%;
         // border-radius: 2rem;
+        @media screen and(max-width: v.$md-breakpoint) {
+          font-size: 5rem;
+          padding-top: 3rem;
+        }
     }
 
     .work-details {
         padding: 0 3rem;
         display: flex;
         // width: 80rem;
+        justify-content: center;
+        @media screen and(max-width: v.$xl-breakpoint) {
+            flex-direction: column;
+            align-items: center;
+        }
         .picturesProject {
             img {
                 margin-top: 10rem;
@@ -29,6 +38,19 @@
                 padding: 3rem;
                 background-color: v.$purple;
                 box-shadow: 0.5rem 0.5rem 1rem v.$darkgrey;
+                @media screen and(max-width: v.$lg-breakpoint) {
+                    width: 70rem;
+                    padding: 2rem;
+                    margin-top: 3rem;
+                }
+                @media screen and(max-width: v.$md-breakpoint) {
+                    width: 50rem;
+                    padding: 1rem;
+                }
+                @media screen and(max-width: v.$sm-breakpoint) {
+                    width: 30rem;
+                  
+                }
             }
         }
         .txtProject {
@@ -47,6 +69,10 @@
             font-size: 5rem;
             // padding: 5rem;
             box-shadow: 0.5rem 0.5rem 1rem v.$darkgrey;
+            @media screen and(max-width: v.$md-breakpoint) {
+               margin: 5rem 3rem;
+                padding: 1rem;
+            }
             .responsive {
                 display: flex;
                 .wrap-resp {
@@ -73,10 +99,15 @@
                 text-align: center;
                 margin: 3rem 0 0 0;
                 font-size: 2rem;
+                @media screen and(max-width: v.$md-breakpoint) {
+                  font-size: 1.5rem;
+                }
                 a {
                     @include m.btn2;
                     background-color: v.$purple;
                     color: v.$cream;
+                    display: inline;
+                    flex-wrap: nowrap;
                     // padding: 3rem 0;
                 }
             }
