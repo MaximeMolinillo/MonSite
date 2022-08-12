@@ -404,7 +404,7 @@ ul {
 .containerCv .container-carreAnim .qualit {
   text-align: justify;
   top: 50%;
-  opacity: 1;
+  opacity: 0;
 }
 @media screen and (max-width: 1200px) {
   .containerCv .container-carreAnim .qualit {
@@ -516,6 +516,16 @@ ul {
   width: 55%;
   margin-left: 60rem;
 }
+.containerCv .wrap-language .language h2 {
+  text-align: justify;
+  font-family: Abril fatface, sans-serif;
+}
+.containerCv .wrap-language .language .l4 {
+  width: 80%;
+  height: 0.2rem;
+  background-color: #218e96;
+  margin-bottom: 3rem;
+}
 @media screen and (max-width: 1200px) {
   .containerCv .wrap-language .language {
     margin-left: 10%;
@@ -540,7 +550,7 @@ ul {
   width: 10rem;
   height: 10rem;
   margin: 1rem;
-  border: 0.2rem solid #218e96;
+  border: 0.4rem solid #218e96;
   box-shadow: 0.3rem 0.7rem 0.5rem #8e8d8d;
   padding: 0.5rem;
 }
@@ -553,9 +563,18 @@ ul {
 }
 .containerCv .wrap-language .language .lang img {
   width: 100%;
+  filter: invert(0%) sepia(8%) saturate(0%) hue-rotate(137deg) brightness(98%) contrast(101%);
+}
+@media screen and (max-width: 992px) {
+  .containerCv .wrap-language .language .lang img {
+    filter: none;
+  }
+}
+.containerCv .wrap-language .language .lang img:hover {
+  filter: none;
 }
 .containerCv .hobbies {
-  opacity: 0;
+  opacity: 1;
   position: absolute;
   background: rgba(197, 197, 198, 0.8823529412);
   padding: 3rem;
@@ -571,6 +590,19 @@ ul {
   width: 50%;
   margin-left: 42%;
   top: 35%;
+}
+.containerCv .hobbies .titleAp {
+  flex-direction: column;
+}
+.containerCv .hobbies .titleAp h2 {
+  text-align: justify;
+  font-family: Abril fatface, sans-serif;
+}
+.containerCv .hobbies .titleAp .l4 {
+  width: 80%;
+  height: 0.2rem;
+  background-color: #218e96;
+  margin-bottom: 3rem;
 }
 @media screen and (max-width: 1200px) {
   .containerCv .hobbies {
@@ -595,7 +627,7 @@ ul {
   width: 10rem;
   height: 10rem;
   margin: 1rem;
-  border: 0.2rem solid #218e96;
+  border: 0.4rem solid #218e96;
   box-shadow: 0.3rem 0.7rem 0.5rem #8e8d8d;
   padding: 1.5rem;
 }
@@ -607,13 +639,17 @@ ul {
     padding: 0.5rem;
   }
 }
-.containerCv .hobbies .hob h3 {
-  text-align: center;
-  font-family: Abril fatface, sans-serif;
-  font-weight: 200;
-}
 .containerCv .hobbies .hob img {
   width: 100%;
+  filter: invert(0%) sepia(8%) saturate(0%) hue-rotate(137deg) brightness(98%) contrast(101%);
+}
+@media screen and (max-width: 992px) {
+  .containerCv .hobbies .hob img {
+    filter: none;
+  }
+}
+.containerCv .hobbies .hob img:hover {
+  filter: none;
 }
 
 .contact-title {
@@ -782,7 +818,7 @@ ul {
 .main .wrapProjects {
   width: 100%;
   height: 200vh;
-  background: #333 url("../img/web.jpg");
+  background: rgba(197, 197, 198, 0.8823529412);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -808,7 +844,9 @@ ul {
   }
 }
 .main .wrapProjects p a {
-  text-shadow: 0.5rem 0.5rem 0.5rem #fafafa;
+  text-shadow: 0.4rem 0.4rem 0.3rem rgba(95, 94, 94, 0.774);
+  border-radius: 2rem;
+  box-shadow: 0.2rem 0.2rem 0.5rem #333;
 }
 .main .wrapProjects p:nth-child(1) {
   top: 10rem;
@@ -816,7 +854,7 @@ ul {
   z-index: 1;
 }
 .main .wrapProjects p:nth-child(1) a {
-  color: #591e98;
+  color: #032366;
 }
 @media screen and (max-width: 576px) {
   .main .wrapProjects p:nth-child(1) {
@@ -829,7 +867,7 @@ ul {
   z-index: 1;
 }
 .main .wrapProjects p:nth-child(2) a {
-  color: #005300;
+  color: #163f99;
 }
 @media screen and (max-width: 576px) {
   .main .wrapProjects p:nth-child(2) {
@@ -842,7 +880,7 @@ ul {
   z-index: 2;
 }
 .main .wrapProjects p:nth-child(3) a {
-  color: #ffff00;
+  color: #4874d1;
 }
 @media screen and (max-width: 1200px) {
   .main .wrapProjects p:nth-child(3) {
@@ -861,7 +899,7 @@ ul {
   z-index: 3;
 }
 .main .wrapProjects p:nth-child(4) a {
-  color: #990e10;
+  color: #218e96;
 }
 @media screen and (max-width: 1200px) {
   .main .wrapProjects p:nth-child(4) {
@@ -880,7 +918,7 @@ ul {
   z-index: 4;
 }
 .main .wrapProjects p:nth-child(5) a {
-  color: #218e96;
+  color: #8ba8e7;
 }
 @media screen and (max-width: 1200px) {
   .main .wrapProjects p:nth-child(5) {
@@ -1005,7 +1043,7 @@ ul {
 }
 .main .wrapProjects .box {
   position: absolute;
-  box-shadow: 0.3rem 0.3rem 0.5rem #fafafa;
+  box-shadow: 0.5rem 0.5rem 0.4rem #333;
 }
 .main .wrapProjects .box img {
   width: 40rem;
@@ -1026,12 +1064,12 @@ ul {
 .main .wrapProjects .box1 {
   top: 10rem;
   left: 5rem;
-  background: #591e98;
+  background: #032366;
 }
 .main .wrapProjects .box2 {
   top: 35rem;
   left: 105rem;
-  background: #005300;
+  background: #163f99;
 }
 @media screen and (max-width: 1200px) {
   .main .wrapProjects .box2 {
@@ -1047,7 +1085,7 @@ ul {
 .main .wrapProjects .box3 {
   top: 60rem;
   left: 15rem;
-  background: #ffff00;
+  background: #4874d1;
 }
 @media screen and (max-width: 1200px) {
   .main .wrapProjects .box3 {
@@ -1063,7 +1101,7 @@ ul {
 .main .wrapProjects .box4 {
   top: 90rem;
   left: 100rem;
-  background: #990e10;
+  background: #218e96;
 }
 @media screen and (max-width: 1200px) {
   .main .wrapProjects .box4 {
@@ -1079,7 +1117,7 @@ ul {
 .main .wrapProjects .box5 {
   top: 110rem;
   left: 25rem;
-  background: #218e96;
+  background: #8ba8e7;
 }
 @media screen and (max-width: 1200px) {
   .main .wrapProjects .box5 {
@@ -1536,7 +1574,6 @@ nav {
 }
 .acceuil .container-first h1 {
   font-size: 5rem;
-  padding-left: 10rem;
   color: #f1f1f1;
   text-transform: uppercase;
   color: #f1f1f1;
@@ -1558,8 +1595,13 @@ nav {
   font-family: Abril fatface, sans-serif;
 }
 .acceuil .container-btns {
-  position: relative;
-  top: 10rem;
+  position: fixed;
+  bottom: 30%;
+}
+@media screen and (max-width: 992px) {
+  .acceuil .container-btns {
+    bottom: 10%;
+  }
 }
 .acceuil .container-btns .btn-first {
   outline: none;
@@ -1571,6 +1613,7 @@ nav {
   padding: 2rem;
   box-shadow: 1rem 1rem 0.5rem #333;
   margin: 0.5rem 3rem;
+  margin: 0;
   cursor: pointer;
 }
 .acceuil .container-btns .btn-first:active {
@@ -1673,7 +1716,7 @@ nav {
   width: 7rem;
   height: 7rem;
   border-radius: 50%;
-  border: 0.2rem solid #f1f1f1;
+  border: 0.2rem solid #218e96;
   box-shadow: 1rem 1rem 1rem;
   display: flex;
   justify-content: center;

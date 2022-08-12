@@ -109,10 +109,9 @@
                 font-size: 3.5rem;
                 position: absolute;
                 @media screen and(max-width: v.$sm-breakpoint) {
-                   font-size: 2.5rem;
-                //    text-align: justify;
-
-                     }
+                    font-size: 2.5rem;
+                    //    text-align: justify;
+                }
                 // z-index: -0.5;
                 // display: ;
             }
@@ -157,10 +156,9 @@
                 //      z-index: 5;
                 // }
                 @media screen and(max-width: v.$sm-breakpoint) {
-                   top: -8%;
-                   right: 0;
-
-                     }
+                    top: -8%;
+                    right: 0;
+                }
             }
 
             .droite {
@@ -198,7 +196,6 @@
                 writing-mode: vertical-rl;
                 text-orientation: upright;
                 letter-spacing: -1.5rem;
-               
             }
             .gauche {
                 z-index: 4;
@@ -220,7 +217,6 @@
                     filter: invert(42%) sepia(80%) saturate(5996%) hue-rotate(166deg) brightness(101%) contrast(74%)
                         opacity(75%);
                 }
-             
             }
             .pGauche {
                 z-index: 3;
@@ -234,7 +230,7 @@
                 @media screen and(max-width: v.$sm-breakpoint) {
                     top: 7%;
                     right: 65%;
-                     }
+                }
             }
 
             .bas {
@@ -260,8 +256,7 @@
                 @media screen and(max-width: v.$sm-breakpoint) {
                     margin-top: -8.1rem;
                     margin-left: 6rem;
-
-                     }
+                }
             }
             .pBas {
                 z-index: 1;
@@ -270,8 +265,7 @@
                 right: 25%;
                 @media screen and(max-width: v.$sm-breakpoint) {
                     right: 10%;
-
-                     }
+                }
             }
 
             .haut-centre-bas {
@@ -301,7 +295,6 @@
                 background-color: v.$purple;
                 margin-bottom: 3rem;
             }
-            
         }
         .school {
             top: 40%;
@@ -311,7 +304,6 @@
             }
             @media screen and(max-width: v.$xl-breakpoint) {
                 top: 80rem;
-
 
                 right: 10%;
                 width: 80%;
@@ -349,7 +341,7 @@
         .qualit {
             text-align: justify;
             top: 50%;
-            opacity: 1;
+            opacity: 0;
             @media screen and(max-width: v.$xl-breakpoint) {
                 top: 70rem;
                 right: 10%;
@@ -363,7 +355,6 @@
                 // width: 70%;
                 top: 50rem;
             }
-            
 
             p {
                 margin-top: 5rem;
@@ -380,9 +371,10 @@
         margin: 8rem;
         z-index: 4;
         position: absolute;
+
         @media screen and(max-width: v.$sm-breakpoint) {
             margin: 4rem;
-      top: 5%;
+            top: 5%;
         }
 
         .containerSlot {
@@ -390,7 +382,7 @@
             top: -10%;
             left: 50%;
             transform: translate(-50%, -50%);
-            
+
             .btnConfettis {
                 width: 10rem;
                 height: 10rem;
@@ -429,6 +421,16 @@
             @include m.bg-cv;
             width: 55%;
             margin-left: 60rem;
+            h2 {
+                text-align: justify;
+                font-family: v.$fatFont;
+            }
+            .l4 {
+                width: 80%;
+                height: 0.2rem;
+                background-color: v.$purple;
+                margin-bottom: 3rem;
+            }
             @media screen and(max-width: v.$xl-breakpoint) {
                 margin-left: 10%;
                 margin-top: 42rem;
@@ -439,10 +441,8 @@
                 top: 95%;
             }
             @media screen and(max-width: v.$sm-breakpoint) {
-              width: 100%;
-              margin-left: 0;
-          
-
+                width: 100%;
+                margin-left: 0;
             }
 
             .lang {
@@ -451,7 +451,7 @@
                 width: 10rem;
                 height: 10rem;
                 margin: 1rem;
-                border: 0.2rem solid v.$purple;
+                border: 0.4rem solid v.$purple;
                 box-shadow: 0.3rem 0.7rem 0.5rem v.$third-dark;
                 padding: 0.5rem;
                 @media screen and(max-width: v.$sm-breakpoint) {
@@ -461,12 +461,19 @@
                 }
                 img {
                     width: 100%;
+                    filter: invert(0%) sepia(8%) saturate(0%) hue-rotate(137deg) brightness(98%) contrast(101%);
+                    @media screen and(max-width: v.$lg-breakpoint) {
+                        filter: none;
+                    }
+                    &:hover {
+                        filter: none;
+                    }
                 }
             }
         }
     }
     .hobbies {
-        opacity: 0;
+        opacity: 1;
         // z-index: 5;
         position: absolute;
         @include m.bg-cv;
@@ -474,6 +481,21 @@
         width: 50%;
         margin-left: 42%;
         top: 35%;
+       
+        .titleAp {
+            flex-direction: column;
+            h2 {
+                text-align: justify;
+                font-family: v.$fatFont;
+            }
+            .l4 {
+                width: 80%;
+                height: 0.2rem;
+                background-color: v.$purple;
+                margin-bottom: 3rem;
+            }
+        }
+
         @media screen and(max-width: v.$xl-breakpoint) {
             margin-left: 12.5%;
             margin-top: 42rem;
@@ -493,7 +515,7 @@
             width: 10rem;
             height: 10rem;
             margin: 1rem;
-            border: 0.2rem solid v.$purple;
+            border: 0.4rem solid v.$purple;
             box-shadow: 0.3rem 0.7rem 0.5rem v.$third-dark;
             padding: 1.5rem;
             @media screen and(max-width: v.$sm-breakpoint) {
@@ -502,14 +524,17 @@
                 margin: 0.2rem;
                 padding: 0.5rem;
             }
-            h3 {
-                text-align: center;
-                font-family: v.$fatFont;
-                font-weight: 200;
-            }
 
             img {
                 width: 100%;
+                filter: invert(0%) sepia(8%) saturate(0%) hue-rotate(137deg) brightness(98%) contrast(101%);
+                @media screen and(max-width: v.$lg-breakpoint) {
+                    filter: none;
+                }
+                &:hover {
+                    filter: none;
+                    // filter: invert(0%) sepia(8%) saturate(0%) hue-rotate(137deg) brightness(98%) contrast(101%);
+                }
             }
         }
     }

@@ -100,7 +100,7 @@ include("../templates/header.php");
       </ul>
     </div>
 
-    <div class="qualit sectionCV">
+    <div class="qualit ">
       <h2>Qualités personelles</h2>
       <div class="l4"></div>
       <div class="logExp">
@@ -112,12 +112,14 @@ include("../templates/header.php");
         Je suis persuadé que ces qualités me seront utiles dans ma nouvelle vie.</p>
     </div>
   </div>
-  <div class="wrap-language">
+  <div class="wrap-language sectionCV">
+    <h2>Technologies et language Web</h2>
+    <div class="l4"></div>
 
-    <div class="containerSlot">
+    <!-- <div class="containerSlot">
       <div class="slot"></div>
       <button class="btnConfettis">language</button>
-    </div>
+    </div> -->
     <div class="language sectionCV">
       <?php
       foreach ($language as $lang) {
@@ -135,7 +137,11 @@ include("../templates/header.php");
     </div>
   </div>
 
-  <div class="hobbies">
+  <div class="hobbies sectionCV">
+    <div class="tilteAp">
+      <h2>Hobbies</h2>
+      <div class="l4"></div>
+    </div>
     <?php
     foreach ($hobbies as $hobbie) {
     ?>

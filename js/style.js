@@ -108,7 +108,7 @@ new Typewriter(txtAnim,  {
 .typeString('<span style="color: #30353A"> WordPress</span> !')
 .pauseFor(800)
 .deleteChars(47)
-.typeString('<span style="color: #591e98">Bienvenue sur mon site !</span> ')
+.typeString('<span style="color: #591e98">Bienvenue !</span> ')
 .pauseFor(400)
 .typeString('<br> Je vous laisse découvrir mes projets...')
 
