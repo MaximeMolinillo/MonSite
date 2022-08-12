@@ -61,6 +61,7 @@
             display: flex;
             padding: 0;
             position: absolute;
+           
             @media screen and(max-width: v.$xl-breakpoint) {
                 // width: 70%;
                 margin-left: 30%;
@@ -81,6 +82,7 @@
                 position: absolute;
                 margin-top: 2rem;
                 box-shadow: 1rem 1rem 1rem 1rem v.$darkgrey;
+                border: 0.3rem solid v.$purple;
                 @media screen and(max-width: v.$sm-breakpoint) {
                     width: 27rem;
                     height: 27rem;
@@ -88,7 +90,7 @@
             }
             .carre {
                 width: 40rem;
-                height: 40rem;
+                height: auto;
                 position: relative;
                 @media screen and(max-width: v.$sm-breakpoint) {
                     width: 25rem;
@@ -119,7 +121,7 @@
             .haut {
                 z-index: 2;
 
-                margin-top: -10.2rem;
+                top: 2rem;
                 position: relative;
                 -webkit-transform: scale(1);
                 transform: scale(1);
@@ -129,15 +131,15 @@
                     opacity(75%);
                 // position: absolute;
                 &:hover {
-                    -webkit-transform: scale(1.3);
-                    transform: scale(1.3);
+                    -webkit-transform: scale(1.1);
+                    transform: scale(1.1);
                     z-index: 2;
                     filter: invert(42%) sepia(80%) saturate(5996%) hue-rotate(166deg) brightness(101%) contrast(74%)
                         opacity(75%);
-                    .pHaut {
-                        opacity: 1;
-                        // color: ;
-                    }
+                    // .pHaut {
+                    //     opacity: 1;
+                    //     // color: ;
+                    // }
                 }
                 @media screen and(max-width: v.$sm-breakpoint) {
                     margin-top: -5.6rem;
@@ -145,9 +147,17 @@
                 }
             }
             .pHaut {
-                padding: 5rem;
-                top: 1%;
-                right: 15%;
+                z-index: 6;
+                // padding: 5rem;
+                // top: 10%;
+                // right: 15%;
+            img{
+                width: 50rem
+            }
+                    @include m.logo-apropos;
+
+           
+
 
                 // opacity: 0.1;
                 // &:hover {
@@ -235,7 +245,7 @@
 
             .bas {
                 z-index: 2;
-
+top: 57%;
                 // z-index: 4;
                 margin-top: -13.9rem;
                 -webkit-transform: scale(1);
@@ -270,6 +280,7 @@
 
             .haut-centre-bas {
                 margin: 0;
+    
             }
         }
         .sectionCV {
@@ -288,6 +299,8 @@
             h2 {
                 text-align: justify;
                 font-family: v.$fatFont;
+                font-size: 4rem;
+
             }
             .l4 {
                 width: 80%;
@@ -341,7 +354,7 @@
         .qualit {
             text-align: justify;
             top: 50%;
-            opacity: 0;
+            opacity: 1;
             @media screen and(max-width: v.$xl-breakpoint) {
                 top: 70rem;
                 right: 10%;
@@ -371,6 +384,7 @@
         margin: 8rem;
         z-index: 4;
         position: absolute;
+        top: 30%;
 
         @media screen and(max-width: v.$sm-breakpoint) {
             margin: 4rem;
@@ -421,9 +435,29 @@
             @include m.bg-cv;
             width: 55%;
             margin-left: 60rem;
+            .titleAp {
+                width: 100%;
+                // flex-direction: column;
+                h2 {
+                    text-align: justify;
+                    font-family: v.$fatFont;
+                }
+                .l4 {
+                    width: 80%;
+                    height: 0.2rem;
+                    background-color: v.$purple;
+                    margin-bottom: 2rem;
+                }
+                .logExp {
+                    @include m.logo-apropos;
+                    // margin-left: 5rem;
+                }
+            }
             h2 {
                 text-align: justify;
                 font-family: v.$fatFont;
+                font-size: 3.5rem;
+
             }
             .l4 {
                 width: 80%;
@@ -454,6 +488,11 @@
                 border: 0.4rem solid v.$purple;
                 box-shadow: 0.3rem 0.7rem 0.5rem v.$third-dark;
                 padding: 0.5rem;
+
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                -webkit-transition: 0.3s ease-in-out;
+                transition: 0.3s ease-in-out;
                 @media screen and(max-width: v.$sm-breakpoint) {
                     width: 6rem;
                     height: 6rem;
@@ -467,24 +506,34 @@
                     }
                     &:hover {
                         filter: none;
+                    
                     }
                 }
+                &:hover {
+                    -webkit-transform: scale(1.3);
+                    transform: scale(1.3);
+                }
             }
+            
         }
     }
     .hobbies {
-        opacity: 1;
+        opacity: 0;
         // z-index: 5;
         position: absolute;
         @include m.bg-cv;
-        margin: 3rem;
-        width: 50%;
+        // margin: 03rem;
+        width: 45%;
         margin-left: 42%;
-        top: 35%;
-       
+        top: 40%;
+        display: flex;
+        // flex-direction: column;
+
         .titleAp {
-            flex-direction: column;
+            width: 100%;
+            // flex-direction: column;
             h2 {
+                font-size: 4rem;
                 text-align: justify;
                 font-family: v.$fatFont;
             }
@@ -492,7 +541,11 @@
                 width: 80%;
                 height: 0.2rem;
                 background-color: v.$purple;
-                margin-bottom: 3rem;
+                margin-bottom: 2rem;
+            }
+            .logExp {
+                @include m.logo-apropos;
+                // margin-left: 5rem;
             }
         }
 
@@ -508,34 +561,56 @@
         @media screen and(max-width: v.$sm-breakpoint) {
             top: 5%;
         }
+        .wrap-hob {
+            display: flex;
+            flex-wrap: wrap;
+            .hob {
+                // top: 20%;
 
-        .hob {
-            background: v.$text-white;
-            border-radius: 50%;
-            width: 10rem;
-            height: 10rem;
-            margin: 1rem;
-            border: 0.4rem solid v.$purple;
-            box-shadow: 0.3rem 0.7rem 0.5rem v.$third-dark;
-            padding: 1.5rem;
-            @media screen and(max-width: v.$sm-breakpoint) {
-                width: 6rem;
-                height: 6rem;
-                margin: 0.2rem;
-                padding: 0.5rem;
-            }
+                background: v.$text-white;
+                border-radius: 50%;
+                width: 10rem;
+                height: 10rem;
+                margin: 0.5rem;
+                border: 0.4rem solid v.$purple;
+                box-shadow: 0.3rem 0.7rem 0.5rem v.$third-dark;
+                padding: 1.5rem;
+                // display: inline-flex;
+                // flex-direction: row;
 
-            img {
-                width: 100%;
-                filter: invert(0%) sepia(8%) saturate(0%) hue-rotate(137deg) brightness(98%) contrast(101%);
-                @media screen and(max-width: v.$lg-breakpoint) {
-                    filter: none;
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                -webkit-transition: 0.3s ease-in-out;
+                transition: 0.3s ease-in-out;
+          
+                @media screen and(max-width: v.$sm-breakpoint) {
+                    width: 6rem;
+                    height: 6rem;
+                    margin: 0.2rem;
+                    padding: 0.5rem;
+                }
+
+                .logoHobbies {
+                    width: 100%;
+                    filter: invert(0%) sepia(8%) saturate(0%) hue-rotate(137deg) brightness(98%) contrast(101%);
+                    @media screen and(max-width: v.$lg-breakpoint) {
+                        filter: none;
+                    }
+                    &:hover {
+                        filter: none;
+                        // filter: invert(0%) sepia(8%) saturate(0%) hue-rotate(137deg) brightness(98%) contrast(101%);
+                    }
                 }
                 &:hover {
-                    filter: none;
-                    // filter: invert(0%) sepia(8%) saturate(0%) hue-rotate(137deg) brightness(98%) contrast(101%);
+                    -webkit-transform: scale(1.3);
+                    transform: scale(1.3);
                 }
             }
+            // &:hover {
+            //     -webkit-transform: scale(1.2);
+            //     transform: scale(1.2);
+            // }
+           
         }
     }
 }

@@ -29,12 +29,18 @@ include("../templates/header.php");
 
     <div class="carreAnim">
       <img src="../assets/img/MaxMoli.png" class="pic">
-      <img src="../assets/img/forme-apropos/gauche.svg" class="carre gauche" onclick="animTriangleLeft()">
+
+      <img src="../assets/img/forme-apropos/gauche.svg" class="carre gauche">
       <p class="pGauche pTriangle">Expèriences</p>
 
       <div class="haut-centre-bas">
-        <img src="../assets/img/forme-apropos/haut.svg" class="haut carre" onclick="animTriangleTop()">
-        <p class="pHaut pTriangle">Technologies</p>
+        <div class="haut" onclick="animTriangleTop()">
+          <img src="../assets/img/forme-apropos/haut.png" class=" carre" >
+        </div>
+   
+          <img class="phaut" src="../assets/img/logo/lang.svg" alt="Technologies">
+       
+
 
         <!-- <img src="../assets/img/forme-apropos/centre.svg" class="centre"> -->
         <img src="../assets/img/forme-apropos/bas.svg" class="carre bas" onclick="animTriangleBottom()">
@@ -100,7 +106,7 @@ include("../templates/header.php");
       </ul>
     </div>
 
-    <div class="qualit ">
+    <div class="qualit sectionCV">
       <h2>Qualités personelles</h2>
       <div class="l4"></div>
       <div class="logExp">
@@ -112,15 +118,22 @@ include("../templates/header.php");
         Je suis persuadé que ces qualités me seront utiles dans ma nouvelle vie.</p>
     </div>
   </div>
-  <div class="wrap-language sectionCV">
-    <h2>Technologies et language Web</h2>
-    <div class="l4"></div>
+  <div class="wrap-language">
+
+
 
     <!-- <div class="containerSlot">
       <div class="slot"></div>
       <button class="btnConfettis">language</button>
     </div> -->
     <div class="language sectionCV">
+      <div class="titleAp">
+        <h2>Technologies et languages Web</h2>
+        <div class="l4"></div>
+        <div class="logExp">
+          <img src="../assets/img/logo/lang.svg" alt="">
+        </div>
+      </div>
       <?php
       foreach ($language as $lang) {
       ?>
@@ -137,21 +150,26 @@ include("../templates/header.php");
     </div>
   </div>
 
-  <div class="hobbies sectionCV">
-    <div class="tilteAp">
+  <div class="hobbies ">
+    <div class="titleAp">
       <h2>Hobbies</h2>
       <div class="l4"></div>
-    </div>
-    <?php
-    foreach ($hobbies as $hobbie) {
-    ?>
-      <div class="hob">
-        <img src="../assets/img/logo/<?= $hobbie["picture"] ?>" alt="">
-        <!-- <h3><?= $hobbie["name"] ?></h3> -->
+      <div class="logExp">
+        <img src="../assets/img/logo/hobbies.svg" alt="">
       </div>
-    <?php
-    }
-    ?>
+    </div>
+    <div class="wrap-hob">
+      <?php
+      foreach ($hobbies as $hobbie) {
+      ?>
+        <div class="hob">
+          <img src="../assets/img/logo/<?= $hobbie["picture"] ?>" alt="<?= $hobbie["name"] ?>" class="logoHobbies">
+          <!-- <h3><?= $hobbie["name"] ?></h3> -->
+        </div>
+      <?php
+      }
+      ?>
+    </div>
   </div>
 
 </main>
