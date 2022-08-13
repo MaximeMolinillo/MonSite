@@ -129,7 +129,7 @@ ul {
 }
 .containerCv .container-carreAnim .carreAnim .carre {
   width: 40rem;
-  height: auto;
+  height: 40rem;
   position: relative;
 }
 @media screen and (max-width: 576px) {
@@ -150,20 +150,10 @@ ul {
   }
 }
 .containerCv .container-carreAnim .carreAnim .haut {
-  z-index: 2;
-  top: 2rem;
+  right: 15rem;
+  top: -10rem;
   position: relative;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
   filter: invert(43%) sepia(34%) saturate(0%) hue-rotate(224deg) brightness(103%) contrast(88%) opacity(75%);
-}
-.containerCv .container-carreAnim .carreAnim .haut:hover {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-  z-index: 2;
-  filter: invert(42%) sepia(80%) saturate(5996%) hue-rotate(166deg) brightness(101%) contrast(74%) opacity(75%);
 }
 @media screen and (max-width: 576px) {
   .containerCv .container-carreAnim .carreAnim .haut {
@@ -171,8 +161,38 @@ ul {
     margin-left: 6rem;
   }
 }
-.containerCv .container-carreAnim .carreAnim .pHaut {
-  z-index: 6;
+.containerCv .container-carreAnim .carreAnim .droite {
+  z-index: 4;
+  top: 7%;
+  right: 71%;
+  filter: invert(43%) sepia(34%) saturate(0%) hue-rotate(224deg) brightness(103%) contrast(88%) opacity(75%);
+}
+.containerCv .container-carreAnim .carreAnim .gauche {
+  z-index: 4;
+  top: 7%;
+  margin-left: 0.5%;
+  filter: invert(43%) sepia(34%) saturate(0%) hue-rotate(224deg) brightness(103%) contrast(88%) opacity(75%);
+}
+.containerCv .container-carreAnim .carreAnim .bas {
+  z-index: 2;
+  bottom: 58%;
+  right: 38%;
+  filter: invert(43%) sepia(34%) saturate(0%) hue-rotate(224deg) brightness(103%) contrast(88%) opacity(75%);
+}
+@media screen and (max-width: 576px) {
+  .containerCv .container-carreAnim .carreAnim .bas {
+    margin-top: -8.1rem;
+    margin-left: 6rem;
+  }
+}
+.containerCv .container-carreAnim .carreAnim .haut-centre-bas {
+  margin: 0;
+}
+.containerCv .container-carreAnim .logo-carre {
+  position: absolute;
+  z-index: 5;
+}
+.containerCv .container-carreAnim .logo-carre img {
   position: absolute;
   right: 3%;
   top: 1%;
@@ -183,125 +203,39 @@ ul {
   border: 0.2rem solid #f1f1f1;
   box-shadow: 0.3rem 0.7rem 0.5rem #8e8d8d;
   padding: 1rem;
-}
-.containerCv .container-carreAnim .carreAnim .pHaut img {
-  width: 50rem;
+  background-color: rgba(250, 235, 215, 0);
 }
 @media screen and (max-width: 576px) {
-  .containerCv .container-carreAnim .carreAnim .pHaut {
+  .containerCv .container-carreAnim .logo-carre img {
     width: 7rem;
     height: 7rem;
     top: -7%;
     right: -1%;
   }
 }
-.containerCv .container-carreAnim .carreAnim .pHaut img {
+.containerCv .container-carreAnim .logo-carre img img {
   width: 90%;
   transform: rotate(25deg) translateX(0.5rem);
   filter: invert(100%) sepia(0%) saturate(5541%) hue-rotate(130deg) brightness(121%) contrast(82%);
 }
-@media screen and (max-width: 576px) {
-  .containerCv .container-carreAnim .carreAnim .pHaut {
-    top: -8%;
-    right: 0;
-  }
+.containerCv .container-carreAnim .logo-carre:hover img {
+  filter: invert(44%) sepia(99%) saturate(365%) hue-rotate(136deg) brightness(87%) contrast(85%);
 }
-.containerCv .container-carreAnim .carreAnim .droite {
-  z-index: 4;
-  margin-top: 3rem;
-  margin-left: -14.5rem;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-  filter: invert(43%) sepia(34%) saturate(0%) hue-rotate(224deg) brightness(103%) contrast(88%) opacity(75%);
+.containerCv .container-carreAnim .logo-carre .phaut {
+  top: -37rem;
+  left: 65%;
 }
-.containerCv .container-carreAnim .carreAnim .droite:hover {
-  -webkit-transform: scale(1.3);
-  transform: scale(1.3);
-  z-index: 4;
-  filter: invert(42%) sepia(80%) saturate(5996%) hue-rotate(166deg) brightness(101%) contrast(74%) opacity(75%);
+.containerCv .container-carreAnim .logo-carre .pgauche {
+  top: 18.5rem;
+  left: 1rem;
 }
-@media screen and (max-width: 576px) {
-  .containerCv .container-carreAnim .carreAnim .droite {
-    margin-left: -8.5rem;
-  }
+.containerCv .container-carreAnim .logo-carre .pbas {
+  top: -47rem;
+  left: 0rem;
 }
-.containerCv .container-carreAnim .carreAnim .pDroite {
-  z-index: 3;
-  padding: 5rem;
-  top: 8%;
-  left: 75%;
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-  letter-spacing: -1.5rem;
-}
-.containerCv .container-carreAnim .carreAnim .gauche {
-  z-index: 4;
-  margin-top: 3rem;
-  margin-right: -15rem;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-  filter: invert(43%) sepia(34%) saturate(0%) hue-rotate(224deg) brightness(103%) contrast(88%) opacity(75%);
-}
-.containerCv .container-carreAnim .carreAnim .gauche:hover {
-  -webkit-transform: scale(1.3);
-  transform: scale(1.3);
-  z-index: 4;
-  filter: invert(42%) sepia(80%) saturate(5996%) hue-rotate(166deg) brightness(101%) contrast(74%) opacity(75%);
-}
-.containerCv .container-carreAnim .carreAnim .pGauche {
-  z-index: 3;
-  padding: 5rem;
-  top: 7%;
-  right: 75%;
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-  letter-spacing: -2rem;
-}
-@media screen and (max-width: 576px) {
-  .containerCv .container-carreAnim .carreAnim .pGauche {
-    top: 7%;
-    right: 65%;
-  }
-}
-.containerCv .container-carreAnim .carreAnim .bas {
-  z-index: 2;
-  top: 57%;
-  margin-top: -13.9rem;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-  filter: invert(43%) sepia(34%) saturate(0%) hue-rotate(224deg) brightness(103%) contrast(88%) opacity(75%);
-}
-.containerCv .container-carreAnim .carreAnim .bas:hover {
-  -webkit-transform: scale(1.3);
-  transform: scale(1.3);
-  z-index: 2;
-  filter: invert(42%) sepia(80%) saturate(5996%) hue-rotate(166deg) brightness(101%) contrast(74%) opacity(75%);
-}
-@media screen and (max-width: 576px) {
-  .containerCv .container-carreAnim .carreAnim .bas {
-    margin-top: -8.1rem;
-    margin-left: 6rem;
-  }
-}
-.containerCv .container-carreAnim .carreAnim .pBas {
-  z-index: 1;
-  padding: 5rem;
-  top: 75%;
-  right: 25%;
-}
-@media screen and (max-width: 576px) {
-  .containerCv .container-carreAnim .carreAnim .pBas {
-    right: 10%;
-  }
-}
-.containerCv .container-carreAnim .carreAnim .haut-centre-bas {
-  margin: 0;
+.containerCv .container-carreAnim .logo-carre .pdroite {
+  top: 18.5rem;
+  left: 32rem;
 }
 .containerCv .container-carreAnim .sectionCV {
   position: absolute;
@@ -1264,7 +1198,7 @@ nav {
   padding: 1.5rem 2.5rem;
   background: #fafafa;
   box-shadow: inset 0rem -0.1rem 0rem rgba(197, 197, 198, 0.8823529412);
-  z-index: 5;
+  z-index: 6;
 }
 @media screen and (max-width: 992px) {
   nav {

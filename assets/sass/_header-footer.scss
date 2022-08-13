@@ -14,7 +14,7 @@ nav {
     padding: 1.5rem 2.5rem;
     background: v.$cream;
     box-shadow: inset 0rem -0.1rem 0rem v.$shadow-white;
-    z-index: 5;
+    z-index: 6;
     @media screen and(max-width: v.$lg-breakpoint) {
         padding: 1.5rem 2rem;
         position: relative;

@@ -29,27 +29,39 @@ include("../templates/header.php");
 
     <div class="carreAnim">
       <img src="../assets/img/MaxMoli.png" class="pic">
+      <!-- <div class="gauche"> -->
+      <img src="../assets/img/forme-apropos/gauche.svg" class="gauche carre ">
+      <!-- </div> -->
 
-      <img src="../assets/img/forme-apropos/gauche.svg" class="carre gauche">
-      <p class="pGauche pTriangle">Expèriences</p>
-
-      <div class="haut-centre-bas">
-        <div class="haut" onclick="animTriangleTop()">
-          <img src="../assets/img/forme-apropos/haut.png" class=" carre" >
-        </div>
-   
-          <img class="phaut" src="../assets/img/logo/lang.svg" alt="Technologies">
-       
-
-
-        <!-- <img src="../assets/img/forme-apropos/centre.svg" class="centre"> -->
-        <img src="../assets/img/forme-apropos/bas.svg" class="carre bas" onclick="animTriangleBottom()">
-        <p class="pBas pTriangle">Hobbies</p>
+      <div class="logo-carre" onclick="animTriangleLeft()">
+        <img class="pgauche" src="../assets/img/logo/exp.svg" alt="Expérience">
       </div>
 
-      <img src="../assets/img/forme-apropos/droite.svg" class="carre droite" onclick="animTriangleRight()">
-      <p class="pDroite pTriangle">Scolarité</p>
+      <div class="haut-centre-bas">
+        <div class="haut">
+          <img src="../assets/img/forme-apropos/haut.svg" class=" carre">
+        </div>
+        <div class="logo-carre" onclick="animTriangleTop()">
+          <img class="phaut" src="../assets/img/logo/lang.svg" alt="Technologies">
+        </div>
+
+        <!-- <img src="../assets/img/forme-apropos/centre.svg" class="centre"> -->
+        <img src="../assets/img/forme-apropos/bas.svg" class="carre bas">
+        <div class="logo-carre" onclick="animTriangleBottom()">
+          <img class="pbas" src="../assets/img/logo/hobbies.svg" alt="Hobbies">
+        </div>
+      </div>
+
+      <img src="../assets/img/forme-apropos/droite.svg" class="carre droite">
+      <div class="logo-carre" onclick="animTriangleRight()">
+          <img class="pdroite" src="../assets/img/logo/school.svg" alt="Scolarité">
+        </div>
+      </div>
+      <!-- <p class="pDroite pTriangle">Scolarité</p> -->
     </div>
+
+
+
 
     <div class="school sectionCV">
       <h2>Cursus Scolaire</h2>
@@ -107,7 +119,7 @@ include("../templates/header.php");
     </div>
 
     <div class="qualit sectionCV">
-      <h2>Qualités personelles</h2>
+      <h2>Qualités personnelles</h2>
       <div class="l4"></div>
       <div class="logExp">
         <img src="../assets/img/logo/max.svg" alt="">

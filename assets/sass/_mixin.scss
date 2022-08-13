@@ -1,5 +1,6 @@
 @use "variables" as v;
 @use "reset";
+// @use "mixin" as m;
 
 @mixin input-style {
     border-radius: 0.5rem;
@@ -123,5 +124,20 @@
         transform: rotate(25deg) translateX(0.5rem);
         filter: invert(100%) sepia(0%) saturate(5541%) hue-rotate(130deg) brightness(121%) contrast(82%);
      
+    }
+}
+
+
+@mixin logo-picture{
+    position: absolute;
+    z-index: 5;
+
+
+    img {
+        @include logo-apropos;
+        background-color: rgba(250, 235, 215, 0);
+    }
+    &:hover img{
+        filter: invert(44%) sepia(99%) saturate(365%) hue-rotate(136deg) brightness(87%) contrast(85%);
     }
 }
