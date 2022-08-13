@@ -45,7 +45,6 @@ include("../templates/header.php");
           <img class="phaut" src="../assets/img/logo/lang.svg" alt="Technologies">
         </div>
 
-        <!-- <img src="../assets/img/forme-apropos/centre.svg" class="centre"> -->
         <img src="../assets/img/forme-apropos/bas.svg" class="carre bas">
         <div class="logo-carre" onclick="animTriangleBottom()">
           <img class="pbas" src="../assets/img/logo/hobbies.svg" alt="Hobbies">
@@ -54,11 +53,10 @@ include("../templates/header.php");
 
       <img src="../assets/img/forme-apropos/droite.svg" class="carre droite">
       <div class="logo-carre" onclick="animTriangleRight()">
-          <img class="pdroite" src="../assets/img/logo/school.svg" alt="Scolarité">
-        </div>
+        <img class="pdroite" src="../assets/img/logo/school.svg" alt="Scolarité">
       </div>
-      <!-- <p class="pDroite pTriangle">Scolarité</p> -->
     </div>
+
 
 
 
@@ -151,7 +149,7 @@ include("../templates/header.php");
       ?>
         <div class="lang">
 
-          <img src="../assets/img/logo/<?= $lang["picname"] ?>" alt="<?= $lang["name"] ?>" class="lang<?= $lang["id"] ?>">
+          <img src="../assets/img/logo/<?= $lang["picname"] ?>" alt="<?= $lang["name"] ?>" ">
 
 
         </div>
@@ -183,7 +181,7 @@ include("../templates/header.php");
       ?>
     </div>
   </div>
-
+  <!-- </div> -->
 </main>
 
 

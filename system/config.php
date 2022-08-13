@@ -1,7 +1,7 @@
 <?php
 require_once "db.php";
 
-// define("HOST", "http://www.demaindeslaube.site/public");
+// define("HOST", "http://www.maxime-molinillo.fr/");
 define("HOST", "http://localhost/MonSite/public");
 
 
