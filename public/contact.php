@@ -121,8 +121,8 @@ include("../templates/header.php");
                     </div>
 
                     <div class="form-group">
-                        <label for="inputSociety">Sociétée :</label>
-                        <input type="text" name="society" id="inputSociety" placeholder="Votre Sociétée...">
+                        <label for="inputSociety">Société :</label>
+                        <input type="text" name="society" id="inputSociety" placeholder="Votre Société...">
                     </div>
 
                 </div>
@@ -134,7 +134,7 @@ include("../templates/header.php");
                     </div>
 
                     <div class="form-group">
-                        <label for="inputTel">Télephone :</label>
+                        <label for="inputTel">Téléphone :</label>
                         <input type="tel" name="tel" id="inputTel" placeholder="Votre Numéro de tél...">
                     </div>
 

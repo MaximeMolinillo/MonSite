@@ -92,20 +92,20 @@ include("../templates/header.php");
         <img src="../assets/img/logo/exp.svg" alt="">
       </div>
       <ul>
-        <li><span>2022: Stage pour la fleuriste Demain dès l'Aube -- Réalisation d'un site avec systéme d'authentification et gestion de contenus</span></li>
+        <li><span>2022: Stage pour la fleuriste Demain dès l'Aube -- Réalisation d'un site avec système d'authentification et gestion de contenus</span></li>
         <br>
         <li><span>2016/2021: </span>Traiteur dans la société Maison Davaine à Douai</li>
         <br>
         <li><span>2014/2016: Chef d’entreprise de la société Molinillo Traiteur( Organisation
-            d’evennement, location de salle, repas à domicile )</span></li>
+            d’évènements, location de salle, repas à domicile )</span></li>
         <br>
         <li><span>2010/2014:</span> Chef traiteur/ cuisinier chez Molinillo Traiteur, et gérant d’une salle
-          de reception à Condé/Escaut.</li>
+          de réception à Condé/Escaut.</li>
         <br>
         <li><span>2010: </span>Apprenti cuisinier, dans le restaurant gastronomique La Grignotière à
           Raismes.</li>
         <br>
-        <li><span>2009: </span>Apprenti cuisinier, dans le restaurant, brasserie La Tourtiére à
+        <li><span>2009: </span>Apprenti cuisinier, dans le restaurant, brasserie La Tourtière à
           Valenciennes.</li>
         <br>
         <li><span>2008: </span>Apprenti cuisinier/traiteur dans la boucherie, charcuterie, traiteur
@@ -124,7 +124,7 @@ include("../templates/header.php");
       </div>
       <p>Mon expérience de cuisinier m'a appris le travail en équipe, la rigueur et l'investissement dans le
         travail.
-        Tandis que mes études en Arts Appliquées m'ont enseigné l'art du graphisme et ont éveillé ma curiosité .
+        Tandis que mes études en Arts Appliqués m'ont enseigné l'art du graphisme et ont éveillé ma curiosité .
         Je suis persuadé que ces qualités me seront utiles dans ma nouvelle vie.</p>
     </div>
   </div>
@@ -138,50 +138,52 @@ include("../templates/header.php");
     </div> -->
     <div class="language sectionCV">
       <div class="titleAp">
-        <h2>Technologies et languages Web</h2>
+        <h2>Technologies et langages Web</h2>
         <div class="l4"></div>
         <div class="logExp">
           <img src="../assets/img/logo/lang.svg" alt="">
         </div>
       </div>
-      <?php
-      foreach ($language as $lang) {
-      ?>
-        <div class="lang">
+      <div class="wrap-lang">
+        <?php
+        foreach ($language as $lang) {
+        ?>
+          <div class="lang">
 
-          <img src="../assets/img/logo/<?= $lang["picname"] ?>" alt="<?= $lang["name"] ?>" ">
+            <img src="../assets/img/logo/<?= $lang["picname"] ?>" alt="<?= $lang["name"] ?>" ">
 
 
         </div>
       <?php
-      }
+        }
       ?>
-      <!-- <img src="../assets/img/logo/html.png" alt=""> -->
-    </div>
-  </div>
-
-  <div class="hobbies ">
-    <div class="titleAp">
-      <h2>Hobbies</h2>
-      <div class="l4"></div>
-      <div class="logExp">
-        <img src="../assets/img/logo/hobbies.svg" alt="">
       </div>
-    </div>
-    <div class="wrap-hob">
-      <?php
-      foreach ($hobbies as $hobbie) {
-      ?>
-        <div class="hob">
-          <img src="../assets/img/logo/<?= $hobbie["picture"] ?>" alt="<?= $hobbie["name"] ?>" class="logoHobbies">
-          <!-- <h3><?= $hobbie["name"] ?></h3> -->
+      <!-- <img src=" ../assets/img/logo/html.png" alt=""> -->
+          </div>
+      </div>
+
+      <div class="hobbies ">
+        <div class="titleAp">
+          <h2>Hobbies</h2>
+          <div class="l4"></div>
+          <div class="logExp">
+            <img src="../assets/img/logo/hobbies.svg" alt="">
+          </div>
         </div>
-      <?php
-      }
-      ?>
-    </div>
-  </div>
-  <!-- </div> -->
+        <div class="wrap-hob">
+          <?php
+          foreach ($hobbies as $hobbie) {
+          ?>
+            <div class="hob">
+              <img src="../assets/img/logo/<?= $hobbie["picture"] ?>" alt="<?= $hobbie["name"] ?>" class="logoHobbies">
+              <!-- <h3><?= $hobbie["name"] ?></h3> -->
+            </div>
+          <?php
+          }
+          ?>
+        </div>
+      </div>
+      <!-- </div> -->
 </main>
 
 

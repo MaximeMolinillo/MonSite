@@ -8,84 +8,101 @@
     font-family: v.$fatFont;
     @media screen and(max-width: v.$lg-breakpoint) {
         padding-top: 3rem;
-                }
+    }
 }
 .wrap-section {
     background: v.$darkgrey url("../img/bgContacts.jpg") center / cover no-repeat;
     display: flex;
     height: 80vh;
+    width: 100%;
     @media screen and(max-width: v.$lg-breakpoint) {
-      flex-direction: column;
-      height: 100%;
-              }
-   
-    .coordinate{
+        flex-direction: column;
+        height: 120vh;
+    }
+    @media screen and(max-width: v.$sm-breakpoint) {
+        height: 145vh;
+    }
+
+    .coordinate {
         padding: 5rem 1rem 0 1rem;
         background-color: #f1f1f165;
         margin: 5rem;
         border-radius: 2rem;
-       
-        @media screen and(max-width: v.$xl-breakpoint) {
-            //    flex-direction: column;
-            height: auto;
-                  }
+        width: 30%;
+        margin:  2.5%;
+
+        @media screen and(max-width: v.$lg-breakpoint) {
+           width:70%;
+           margin: 2.5% 15%;
+        }
         .section {
             display: flex;
             padding: 1.5rem;
-            img{
+            img {
                 width: 3rem;
                 margin-right: 2rem;
                 @media screen and(max-width: v.$sm-breakpoint) {
                     width: 2rem;
                     margin-right: 0.5rem;
-                          }
+                }
             }
-            h3{
+            h3 {
                 @media screen and(max-width: v.$sm-breakpoint) {
                     font-size: 1.3rem;
-                          }
+                }
             }
-
         }
     }
-  
+
     form {
         font-family: v.$fatFont;
 
         // padding-top: 5rem;
         // text-align: left;
-        width: 80%;
+        width: 60%;
         // height: 70%;
         background-color: #f1f1f165;
-        padding: 5rem 1rem 0 1rem;
-        margin: 5rem;
+        // padding: 5rem 1rem 0 1rem;
+        padding: 5rem;
         border-radius: 2rem;
-        
-
-
+        // margin: 0 10%;
+        margin: 2.5%;
+        @media screen and(max-width: v.$lg-breakpoint) {
+            width:70%;
+            margin: 2.5% 15%;
+         }
 
         .wrap-form-group {
-       
             // margin-left: 2%;
             @media screen and(max-width: v.$xl-breakpoint) {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 80%;
+                width: 100%;
                 flex-direction: column;
                 // margin: 0 10%;
-              
-                  }
+            }
+            @media screen and(max-width: v.$lg-breakpoint) {
+                flex-direction: row;
+            }
+            @media screen and(max-width: v.$md-breakpoint) {
+                flex-direction: column;
+            }
             .column-form-group {
                 display: flex;
                 @media screen and(max-width: v.$lg-breakpoint) {
                     flex-direction: column;
-               
-                      }
+                    margin: 5rem;
+                }
+                @media screen and(max-width: v.$md-breakpoint) {
+                    // flex-direction: column;
+                    margin: 0;
+                }
                 .form-group {
                     color: v.$darkgrey;
                     font-size: 2rem;
                     text-shadow: 0.2rem 0.2rem 1rem v.$cream;
+                    // padding-left: 0.5em;
                     input {
                         @include m.input-style;
 
@@ -93,16 +110,18 @@
                         height: 3rem;
                         @media screen and(max-width: v.$xl-breakpoint) {
                             width: 20rem;
-                          
-                              }
+                        }
                         @media screen and(max-width: v.$lg-breakpoint) {
-                          width: 25rem;
-                          margin: 0 10%;
-                              }
-                              
-                        
+                            width: 25rem;
+                            // margin: 0 20%;
+                            // margin: 0 10%;
+                        }
+                        @media screen and(max-width: v.$lg-breakpoint) {
+                            width: 20rem;
+                            // margin: 0 20%;
+                        }
                     }
-                    label{
+                    label {
                         margin-left: 5rem;
                     }
                 }
@@ -112,6 +131,7 @@
 }
 
 .textarea-btn {
+    width: 100%;
     .form-group {
         display: flex;
         flex-direction: column;
@@ -119,9 +139,9 @@
         margin-top: 2rem;
         textarea {
             @include m.input-style;
-            width: 90%;
+            width: 80%;
             height: 10rem;
-            margin: 1rem 5% 5rem 5%;
+            margin: 1rem 10% 5rem 10%;
         }
         label {
             color: v.$darkgrey;
@@ -132,5 +152,4 @@
     .submit {
         @include m.btn;
     }
-
 }

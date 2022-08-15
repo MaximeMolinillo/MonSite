@@ -25,48 +25,48 @@ INSERT INTO
     )
 VALUES
     (
-        "Mon Port-Folio",
-        "",
-        "",
-        "Le site me permettant d'être une vitrine de mes projets - site responsive",
+        "Mon Portfolio",
+        "monsite.png",
+        "www.maxime-molinillo.fr",
+        "Ce site me permet d'être une vitrine de mes projets - site responsive",
         "HTML, SASS, JavaScript, PHP, SQL, photoshop, illustrator",
         "Créer en autonomie dans le but de mettre en ligne et présenter mes différents travaux",
         "2022/07/10"
     ),
     (
         "Demain dès l'Aube",
-        "",
+        "ddla.png",
         "https://demaindeslaube.site/public/index.php",
-        "Site vitrine réalisé pour une Fleuriste afin de mettre en avant ses créations - Ce site contient une page administrateur qui permet à la fleuriste d'ajouter elle même du contenus à la base de donnée (image, titre, description, catégorie), depuis une interface simple - Site responsive",
+        "Site vitrine réalisé pour une fleuriste afin de mettre en avant ses créations - Ce site contient une page administrateur qui permet à la fleuriste d'ajouter elle même du contenu à la base de données (image, titre, description, catégorie), depuis une interface simple - Site responsive",
         "HTML, SASS, PHP, SQL, Photoshop",
         "Réalisé lors d'un stage en entreprise pour le diplôme de Développeur web et web mobile",
         "2022/05/12"
     ),
     (
         "Platform Movie",
-        "",
+        "MoviePlatform.png",
         "https://platformmovie.000webhostapp.com/index.php",
-        "Interface d'informations de films - Création et intéraction avec une base de données - Systéme de recherche de films - Page de détails",
+        "Service d'informations cinématographiques - Création et interaction avec une base de données - Système de recherche de films - Page de détails",
         "HTML, SASS, PHP, SQL",
         "Exercice débuté en formation puis customisé et pousser plus loin par envie personnel ",
         "2022/03/06"
     ),
     (
         "Clône de Disney +",
-        "",
+        "Disney.png",
         "https://maximemolinillo-83f37.web.app/#/",
-        "Clône d'une application existante - Intéraction avec un fichier JSON existant - Site responsive",
+        "Clone d'une application existante - Interaction avec un fichier JSON existant - Site responsive",
         "REACT, HTML, SASS",
         "Exercice réalisé lors de la formation de Développeur web et web mobile",
         "2022/02/25"
     ),
     (
         "Clône du site de l'hôtel Olivarius",
-        "",
+        "Hotel.png",
         "https://hotelprojectmaxmoli.000webhostapp.com/?#",
         "Clône d'un site existant - Calcul simple d'une facture ",
         "JavaScript, HTML, CSS",
-        "Exercice réalisé lors de la formation de Développeur web et web mobile",
+        "Clone d'un site existant - Calcul simple d'une facture ",
         "2022/02/05"
     );
 
@@ -123,8 +123,8 @@ GROUP BY products.title;
 
 CREATE TABLE language(
     id INT PRIMARY KEY AUTO_INCREMENT,
-    name VARCHAR(100)NOT NULL;
-    picture VARCHAR(256 NOT NULL)
+    name VARCHAR(100)NOT NULL,
+    picture VARCHAR(256) NOT NULL
 );
 
 INSERT INTO language
@@ -139,7 +139,7 @@ VALUES
 ("WordPress", "wordpress.png"),
 ("Illustrator", "illustrator.png"),
 ("Photoshop", "photoshop.png"),
-("Sass", "sass.png")
+("Sass", "sass.png");
 
 
 CREATE TABLE product_language(

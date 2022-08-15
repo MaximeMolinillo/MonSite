@@ -84,7 +84,7 @@ new Typewriter(txtAnim,  {
 .typeString('<span style="color: #00D5F7">Moi c\'est Maxime Molinillo,</span>  ')
 .pauseFor(300)
 .deleteChars(29)
-.typeString('<strong> Developpeur Web</strong> Junior : ')
+.typeString('<strong> Développeur Web</strong> Junior : ')
 .pauseFor(800)
 
 .typeString('<span style="color: #254BDD"> CSS</span> !')

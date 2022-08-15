@@ -18,7 +18,7 @@ include("../templates/header.php");
 
 
         <p class="rellax" data-rellax-speed="-4">
-            <a href="detailProjet.php?id=1">Port-Folio </a>
+            <a href="detailProjet.php?id=1">Portfolio </a>
         </p>
 
         <p class="rellax" data-rellax-speed="-2">

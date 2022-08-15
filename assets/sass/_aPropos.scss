@@ -6,10 +6,10 @@
 .containerCv {
     background: url("../img/web.jpg");
     background-size: cover;
-    height: 100vh;
+    height: 145vh;
     background-position: center;
     @media screen and(max-width: v.$xl-breakpoint) {
-        height: 100vh;
+        height: 220vh;
     }
     @media screen and(max-width: v.$sm-breakpoint) {
         height: 140vh;
@@ -49,26 +49,40 @@
 
     .container-carreAnim {
         display: flex;
-
+        margin-left: 10%;
+        @media screen and(max-width: v.$xl-breakpoint) {
+            width: 60%;
+            margin: 0 30%;
+        }
+        @media screen and(max-width: v.$lg-breakpoint) {
+            width: 60%;
+            margin: 0 20%;
+        }
+        @media screen and(max-width: v.$sm-breakpoint) {
+            width: 40rem;
+            // margin: 0 30%;
+        }
+// width: 60%;
+// margin: 0 20%;
         .carreAnim {
             background-size: cover;
             width: 42rem;
             height: 42rem;
-            margin-left: 10%;
+            // margin-left: 10%;
             display: flex;
             padding: 0;
             position: absolute;
-            @media screen and(max-width: v.$xl-breakpoint) {
-                margin-left: 30%;
-            }
-            @media screen and(max-width: v.$lg-breakpoint) {
-                margin-left: 25%;
-            }
-            @media screen and(max-width: v.$sm-breakpoint) {
-                width: 25rem;
-                height: 25rem;
-                margin-left: 15%;
-            }
+            // @media screen and(max-width: v.$xl-breakpoint) {
+            //     margin-left: 30%;
+            // }
+            // @media screen and(max-width: v.$lg-breakpoint) {
+            //     margin-left: 25%;
+            // }
+            // @media screen and(max-width: v.$sm-breakpoint) {
+            //     width: 25rem;
+            //     height: 25rem;
+            //     margin-left: 15%;
+            // }
 
             .pic {
                 width: 42rem;
@@ -109,9 +123,11 @@
                 position: relative;
                 filter: invert(43%) sepia(34%) saturate(0%) hue-rotate(224deg) brightness(103%) contrast(88%)
                     opacity(75%);
-                    @media screen and(max-width: v.$sm-breakpoint) {
-                        margin-top: 2rem;
-                    }
+                @media screen and(max-width: v.$sm-breakpoint) {
+                    margin-top: 2rem;
+                    top: 2%;
+                    right: 43%;
+                }
             }
 
             .gauche {
@@ -120,6 +136,9 @@
                 margin-left: 0.5%;
                 filter: invert(43%) sepia(34%) saturate(0%) hue-rotate(224deg) brightness(103%) contrast(88%)
                     opacity(75%);
+                    @media screen and(max-width: v.$sm-breakpoint) {
+                        top: 7%;
+                    }
             }
 
             .haut-centre-bas {
@@ -131,7 +150,8 @@
                     filter: invert(43%) sepia(34%) saturate(0%) hue-rotate(224deg) brightness(103%) contrast(88%)
                         opacity(75%);
                     @media screen and(max-width: v.$sm-breakpoint) {
-                       right: 20%;
+                        right: 35%;
+                        top: -13%;
                     }
                 }
                 .bas {
@@ -143,6 +163,10 @@
                     //     margin-top: -8.1rem;
                     //     margin-left: 6rem;
                     // }
+                    @media screen and(max-width: v.$sm-breakpoint) {
+                       bottom: 33%;
+                       right: 37%;
+                    }
                 }
             }
         }
@@ -152,21 +176,35 @@
                 top: -37rem;
                 left: 65%;
                 @media screen and(max-width: v.$sm-breakpoint) {
-                    top: -20rem;
-                    left: 10%;
+                    top: -22rem;
+                    left: 1rem;
                 }
             }
             .pgauche {
                 top: 18.5rem;
                 left: 1rem;
+                @media screen and(max-width: v.$sm-breakpoint) {
+                    top: 12.5rem;
+                    
+                }
             }
             .pbas {
                 top: -47rem;
                 left: 0rem;
+                @media screen and(max-width: v.$sm-breakpoint) {
+                    top: -28rem;
+                    left: 1rem;
+                    
+                }
             }
             .pdroite {
                 top: 18.5rem;
                 left: 32rem;
+                @media screen and(max-width: v.$sm-breakpoint) {
+                    top: 12.5rem;
+                    left: 20rem;
+                    
+                }
             }
         }
 
@@ -186,6 +224,9 @@
                 text-align: justify;
                 font-family: v.$fatFont;
                 font-size: 4rem;
+                @media screen and(max-width: v.$sm-breakpoint) {
+                    font-size: 2.5rem;
+                }
             }
             .l4 {
                 width: 80%;
@@ -239,12 +280,12 @@
             top: 50%;
             opacity: 1;
             @media screen and(max-width: v.$xl-breakpoint) {
-                top: 70rem;
+                top: 80rem;
                 right: 10%;
                 width: 80%;
             }
             @media screen and(max-width: v.$lg-breakpoint) {
-                top: 70rem;
+                top: 80rem;
             }
             @media screen and(max-width: v.$sm-breakpoint) {
                 top: 50rem;
@@ -260,14 +301,17 @@
 
     .wrap-language {
         opacity: 0;
-        margin: 8rem;
-        z-index: 4;
-        position: absolute;
-        top: 30%;
-        @media screen and(max-width: v.$sm-breakpoint) {
-            margin: 4rem;
-            top: 5%;
-        }
+        margin: 3rem;
+        // @media screen and(max-width: v.$lg-breakpoint) {
+        //     //   margin-top: 100rem;
+        //     top: 80rem;
+        //         // top: 5%;
+        //     }
+
+        // @media screen and(max-width: v.$sm-breakpoint) {
+        //     margin: 4rem;
+        //     top: 5%;
+        // }
 
         // .containerSlot {
         //     position: absolute;
@@ -309,14 +353,26 @@
         //     }
         // }
         .language {
-            z-index: 2;
+            z-index: 4;
+            position: absolute;
+            top: 35%;
             @include m.bg-cv;
-            width: 55%;
-            margin-left: 60rem;
+            // margin-top: 5%;
+            width: 45%;
+            @media screen and(max-width: v.$xl-breakpoint) {
+              
+                // top: -100%;
+            }
+            // @media screen and(max-width: v.$lg-breakpoint) {
+              
+            //     top: 80rem;
+            // }
+         
+          
             .titleAp {
                 width: 100%;
                 h2 {
-                    text-align: justify;
+                    // text-align: justify;
                     font-family: v.$fatFont;
                 }
                 .l4 {
@@ -330,12 +386,19 @@
                     // @media screen and(max-width: v.$xl-breakpoint) {
                     //    margin-top: 50%;
                     // }
+                    @media screen and(max-width: v.$sm-breakpoint) {
+                    //    top: 6rem;
+                    }
                 }
             }
             h2 {
                 text-align: justify;
                 font-family: v.$fatFont;
                 font-size: 3.5rem;
+                @media screen and(max-width: v.$sm-breakpoint) {
+                 font-size: 2.5rem;
+                 text-align: start;
+                 }
             }
             .l4 {
                 width: 80%;
@@ -349,59 +412,75 @@
                 width: 80%;
             }
             @media screen and(max-width: v.$lg-breakpoint) {
-                top: 95%;
+                top: 35%;
             }
             @media screen and(max-width: v.$sm-breakpoint) {
-                width: 100%;
+                // width: 100%;
                 margin-left: 0;
+                top: 10%;
             }
 
-            .lang {
-                background: v.$text-white;
-                border-radius: 50%;
-                width: 10rem;
-                height: 10rem;
-                margin: 1rem;
-                border: 0.4rem solid v.$purple;
-                box-shadow: 0.3rem 0.7rem 0.5rem v.$third-dark;
-                padding: 0.5rem;
-                -webkit-transform: scale(1);
-                transform: scale(1);
-                -webkit-transition: 0.3s ease-in-out;
-                transition: 0.3s ease-in-out;
-                // @media screen and(max-width: v.$sm-breakpoint) {
-                //     width: 6rem;
-                //     height: 6rem;
-                //     margin: 0.2rem;
-                // }
-                img {
-                    width: 100%;
-                    filter: invert(0%) sepia(8%) saturate(0%) hue-rotate(137deg) brightness(98%) contrast(101%);
-                    @media screen and(max-width: v.$lg-breakpoint) {
-                        filter: none;
+            .wrap-lang {
+                z-index: 2;
+                width: 100%;
+                // margin-left: 60rem;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                .lang {
+                    background: v.$text-white;
+                    border-radius: 50%;
+                    width: 10rem;
+                    height: 10rem;
+                    margin: 1rem;
+                    border: 0.4rem solid v.$purple;
+                    box-shadow: 0.3rem 0.7rem 0.5rem v.$third-dark;
+                    padding: 0.5rem;
+                    -webkit-transform: scale(1);
+                    transform: scale(1);
+                    -webkit-transition: 0.3s ease-in-out;
+                    transition: 0.3s ease-in-out;
+                    // @media screen and(max-width: v.$sm-breakpoint) {
+                    //     width: 6rem;
+                    //     height: 6rem;
+                    //     margin: 0.2rem;
+                    // }
+                    @media screen and(max-width: v.$sm-breakpoint) {
+                        width: 6rem;
+                        height: 6rem;
+                    }
+                    img {
+                        width: 100%;
+                        // filter: invert(0%) sepia(8%) saturate(0%) hue-rotate(137deg) brightness(98%) contrast(101%);
+                  
+                        @media screen and(max-width: v.$lg-breakpoint) {
+                            filter: none;
+                        }
+                        &:hover {
+                         
+                            filter: none;
+                        }
                     }
                     &:hover {
-                        filter: none;
+                        -webkit-transform: scale(1.3);
+                        transform: scale(1.3);
                     }
-                }
-                &:hover {
-                    -webkit-transform: scale(1.3);
-                    transform: scale(1.3);
                 }
             }
         }
     }
     .hobbies {
-        // opacity: 0;
-        // position: absolute;
-        // width: 100%;
-        margin-left: 42%;
-        top: 40%;
-        display: flex;
-        display: flex;
+        opacity: 0;
+        z-index: 4;
+        position: absolute;
+        top: 30%;
+        @include m.bg-cv;
+        margin-top: 5%;
+        width: 45%;
+
         @media screen and(max-width: v.$xl-breakpoint) {
             margin-left: 12.5%;
-            margin-top: 42rem;
+            margin-top: 60rem;
             width: 75%;
         }
         @media screen and(max-width: v.$lg-breakpoint) {
@@ -420,6 +499,10 @@
                 font-size: 4rem;
                 text-align: justify;
                 font-family: v.$fatFont;
+                left: 10%;
+                @media screen and(max-width: v.$sm-breakpoint) {
+                   font-size: 2.5rem;
+                 }
             }
             .l4 {
                 width: 80%;
@@ -432,18 +515,13 @@
             }
         }
         .wrap-hob {
-            // display: flex;
-            margin-right: 50rem;
+            display: flex;
             flex-wrap: wrap;
-            width: 100%;
             flex-direction: row;
-        z-index: 2;
+            z-index: 2;
+            width: 100%;
 
-            @include m.bg-cv;
-
-   
             .hob {
-                // display: flex;
                 background: v.$text-white;
                 border-radius: 50%;
                 width: 10rem;
@@ -452,7 +530,11 @@
                 border: 0.4rem solid v.$purple;
                 box-shadow: 0.3rem 0.7rem 0.5rem v.$third-dark;
                 padding: 1.5rem;
-             
+
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                -webkit-transition: 0.3s ease-in-out;
+                transition: 0.3s ease-in-out;
                 @media screen and(max-width: v.$sm-breakpoint) {
                     width: 6rem;
                     height: 6rem;
@@ -461,25 +543,23 @@
                 }
 
                 img {
-                    -webkit-transform: scale(1);
-                    transform: scale(1);
-                    -webkit-transition: 0.3s ease-in-out;
-                    transition: 0.3s ease-in-out;
                     width: 100%;
                     filter: invert(0%) sepia(8%) saturate(0%) hue-rotate(137deg) brightness(98%) contrast(101%);
                     @media screen and(max-width: v.$lg-breakpoint) {
                         filter: none;
                     }
                     &:hover {
-                        -webkit-transform: scale(1.3);
-                        transform: scale(1.3);
+                        // -webkit-transform: scale(1.3);
+                        // transform: scale(1.3);
                         filter: none;
-                    
                     }
                 }
-             
+                &:hover {
+                    -webkit-transform: scale(1.3);
+                    transform: scale(1.3);
+                    // filter: none;
+                }
             }
-           
         }
     }
 }

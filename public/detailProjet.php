@@ -78,13 +78,13 @@ if ($find) {
                     <div class="wrap-resp">
                         <img src="../assets/img/logo/portable.svg" alt="Compatible PC">
                     </div>
-                    <div class="wrap-resp">
+                    <!-- <div class="wrap-resp">
                         <img src="../assets/img/logo/tablette.svg" alt="Compatible Tablette">
                     </div>
                     <div class="wrap-resp">
 
                         <img src="../assets/img/tel.svg" alt="Compatible Smartphone">
-                    </div>
+                    </div> -->
 
                 </div>
 
