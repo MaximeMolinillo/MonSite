@@ -9,9 +9,9 @@ define("HOST", "http://localhost/MonSite/public");
 
 // DB
 // define("DB_HOSTNAME", "localhost");
-// define("DB_USERNAME", "u305945986_maxime");
-// define("DB_PASSWORD", "jbTasQr;4");
-// define("DB_DATABASE", "u305945986_demaindeslaube");
+// define("DB_USERNAME", "u305945986_maxmoli");
+// define("DB_PASSWORD", "aGL&OTmQH9:");
+// define("DB_DATABASE", "u305945986_mesprojets");
 // define("DB_PORT", "65002");
 define("DB_HOSTNAME", "localhost");
 define("DB_USERNAME", "root");

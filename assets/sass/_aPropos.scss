@@ -302,6 +302,8 @@
     .wrap-language {
         opacity: 0;
         margin: 3rem;
+       
+
         // @media screen and(max-width: v.$lg-breakpoint) {
         //     //   margin-top: 100rem;
         //     top: 80rem;
@@ -355,9 +357,10 @@
         .language {
             z-index: 4;
             position: absolute;
-            top: 35%;
             @include m.bg-cv;
             // margin-top: 5%;
+            right:13% ;
+            top: 40%;
             width: 45%;
             @media screen and(max-width: v.$xl-breakpoint) {
               
@@ -476,6 +479,7 @@
         top: 30%;
         @include m.bg-cv;
         margin-top: 5%;
+        right: 13%;
         width: 45%;
 
         @media screen and(max-width: v.$xl-breakpoint) {

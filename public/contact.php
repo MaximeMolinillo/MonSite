@@ -9,7 +9,9 @@ use PHPMailer\PHPMailer\PHPMailer;
 define("HOST", "http://localhost/MonSite/");
 /**traitement du formulaire */
 $errors = [];
-$message = "";
+// $message = "";
+$messageError = "";
+
 if (isset($_POST["contactMail"])) {
     $name = trim(strip_tags($_POST["name"]));
     $firstname = trim(strip_tags($_POST["firstname"]));
@@ -18,6 +20,7 @@ if (isset($_POST["contactMail"])) {
     $tel = trim(strip_tags($_POST["tel"]));
     $object = trim(strip_tags($_POST["object"]));
     $message = trim(strip_tags($_POST["message"]));
+
 
     // $to = 'maxime.molinillo@outlook.fr';
     // // $to = 'max_224@hotmail.fr';
@@ -33,14 +36,14 @@ if (isset($_POST["contactMail"])) {
     // // 'Reply-To:$emailC' . "\r\n" .
     // // 'X-Mailer: PHP/' . phpversion();
 
-    // if (empty($email)) {
-    //     array_push($errors, "Veuillez renseigner votre email, afin que nous puissions vous transmettre une réponse !");
-    // };
-    // if (mail($to, $object, $messageMail)) {
-    //     $message = "Votre message à été envoyé avec succès !";
-    // } else {
-    //     $message = "Impossible d'envoyer le mail, veillez recommencer.";
-    // }
+    if (empty($email)) {
+        array_push($error, "Veuillez renseigner votre email, afin que nous puissions vous transmettre une réponse !");
+    };
+    if (mail($to, $object, $message)) {
+        $messageError = "Votre message à été envoyé avec succès !";
+    } else {
+        $messageError = "Impossible d'envoyer le mail, veillez recommencer.";
+    }
 
 
 
@@ -64,15 +67,18 @@ if (isset($_POST["contactMail"])) {
         $phpmailer->Subject = $object;
         //Corps du mail
         $phpmailer->Body = $message . " " . 'De la part de :' . " " . $firstname . " " . $name . 'de la société :' . " " . $society . " . " . 'Numéro de téléphone :' . " " . $tel;
-        try {
-            //Envoie du mail
-            $phpmailer->send();
 
-            // On affiche un message de succès si la requéte s'est bien executée.
-            $message = "<div class=\"error\">Votre message a bien été envoyé.</div>";
-        } catch (Exception $e) {
-            $message = "Un problème s'est produit ";
+        //Envoie du mail
+        if ($phpmailer->send()) {
+            $messageError = "Mail envoyé avec succès !";
+
         }
+            //     // On affiche un message de succès si la requéte s'est bien executée.
+            //     $message = "<div class=\"error\">Votre message a bien été envoyé.</div>";
+            // } catch (Exception $e) {
+            //     $message = "Un problème s'est produit ";
+            // }
+       
     }
 }
 
@@ -105,14 +111,20 @@ include("../templates/header.php");
                 <h3>35 ans</h3>
             </div>
         </div>
-      
+   
         <form action="" method="post">
-
+        <?php
+        if (isset($messageError)) {
+        ?>
+            <p class="error"><?= $messageError ?></p>
+        <?php
+        }
+        ?>
             <div class="wrap-form-group">
                 <div class="column-form-group">
                     <div class="form-group">
                         <label for="inputName">Nom :</label>
-                        <input type="text" name="name" id="inputName" placeholder="Votre Nom...">
+                        <input type="text" name="name" id="inputName" placeholder="Votre Nom..." required>
                     </div>
 
                     <div class="form-group">

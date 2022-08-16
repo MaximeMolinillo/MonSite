@@ -17,7 +17,7 @@ include("../templates/header.php");
     <div class="wrapProjects">
 
 
-        <p class="rellax" data-rellax-speed="-4">
+        <!-- <p class="rellax" data-rellax-speed="-4">
             <a href="detailProjet.php?id=1">Portfolio </a>
         </p>
 
@@ -35,48 +35,58 @@ include("../templates/header.php");
 
         <p class="rellax" data-rellax-speed="3">
             <a href="detailProjet.php?id=5">Olivarius</a>
-        </p>
+        </p> -->
         <div class="logoMM logoMM1 rellax" data-rellax-speed="-2">
-            <img src="../assets/img/logoMM.svg" alt=""  >
+            <img src="../assets/img/logoMM.svg" alt="">
         </div>
         <div class="logoMM logoMM2 rellax" data-rellax-speed="1">
-            <img src="../assets/img/logoMM.svg" alt=""  >
+            <img src="../assets/img/logoMM.svg" alt="">
         </div>
         <div class="logoMM logoMM3 rellax" data-rellax-speed="8">
-            <img src="../assets/img/logoMM.svg" alt=""  >
+            <img src="../assets/img/logoMM.svg" alt="">
         </div>
         <div class="logoMM logoMM4 rellax" data-rellax-speed="5">
-            <img src="../assets/img/logoMM.svg" alt=""  >
+            <img src="../assets/img/logoMM.svg" alt="">
         </div>
         <div class="logoMM logoMM5 rellax" data-rellax-speed="9">
-            <img src="../assets/img/logoMM.svg" alt=""  >
+            <img src="../assets/img/logoMM.svg" alt="">
         </div>
         <div class="logoMM logoMM6 rellax" data-rellax-speed="8">
-            <img src="../assets/img/logoMM.svg" alt=""  >
+            <img src="../assets/img/logoMM.svg" alt="">
         </div>
         <div class="logoMM logoMM7 rellax" data-rellax-speed="1">
-            <img src="../assets/img/logoMM.svg" alt=""  >
+            <img src="../assets/img/logoMM.svg" alt="">
         </div>
         <div class="logoMM logoMM8 rellax" data-rellax-speed="-2">
-            <img src="../assets/img/logoMM.svg" alt=""  >
+            <img src="../assets/img/logoMM.svg" alt="">
         </div>
 
 
 
         <div class="box box1 rellax" data-rellax-speed="-5">
-            <img src="../assets/img/projets/monsite.png" alt="Mon site">
+            <a href="detailProjet.php?id=1">
+                <img src="../assets/img/projets/monsite.png" alt="Mon site">
+            </a>
         </div>
         <div class="box box2 rellax" data-rellax-speed="-3">
-            <img src="../assets/img/projets/ddla.png" alt="Demain des l'aube">
+            <a href="detailProjet.php?id=2">
+                <img src="../assets/img/projets/ddla.png" alt="Demain des l'aube">
+            </a>
         </div>
         <div class="box box3 rellax" data-rellax-speed="-1">
-            <img src="../assets/img/projets/MoviePlatform.png" alt="Movie platform">
+            <a href="detailProjet.php?id=3">
+                <img src="../assets/img/projets/MoviePlatform.png" alt="Movie platform">
+            </a>
         </div>
         <div class="box box4" data-rellax-speed="1">
-            <img src="../assets/img/projets/Disney.png" alt="Clône de Disney +">
+            <a href="detailProjet.php?id=4">
+                <img src="../assets/img/projets/Disney.png" alt="Clône de Disney +">
+            </a>
         </div>
         <div class="box box5" data-rellax-speed="5">
-            <img src="../assets/img/projets/Hotel.png" alt="Clône du site Hotel Olivarius">
+            <a href="detailProjet.php?id=5">
+                <img src="../assets/img/projets/Hotel.png" alt="Clône du site Hotel Olivarius">
+            </a>
         </div>
 
     </div>

@@ -464,7 +464,6 @@ ul {
 .containerCv .wrap-language .language {
   z-index: 4;
   position: absolute;
-  top: 35%;
   background: rgba(197, 197, 198, 0.8823529412);
   padding: 3rem;
   border-radius: 2rem;
@@ -474,6 +473,8 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  right: 13%;
+  top: 40%;
   width: 45%;
 }
 .containerCv .wrap-language .language .titleAp {
@@ -606,6 +607,7 @@ ul {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 5%;
+  right: 13%;
   width: 45%;
 }
 @media screen and (max-width: 1200px) {
@@ -742,12 +744,7 @@ ul {
 @media screen and (max-width: 992px) {
   .wrap-section {
     flex-direction: column;
-    height: 120vh;
-  }
-}
-@media screen and (max-width: 576px) {
-  .wrap-section {
-    height: 145vh;
+    height: 200vh;
   }
 }
 .wrap-section .coordinate {
@@ -834,6 +831,8 @@ ul {
   color: #333;
   font-size: 2rem;
   text-shadow: 0.2rem 0.2rem 1rem #fafafa;
+  margin: 0 1rem;
+  width: 100%;
 }
 .wrap-section form .wrap-form-group .column-form-group .form-group input {
   border-radius: 0.5rem;
@@ -846,7 +845,7 @@ ul {
   padding: 1rem;
   width: 40rem;
   font-family: Abril fatface, sans-serif;
-  width: 28rem;
+  width: 100%;
   height: 3rem;
 }
 @media screen and (max-width: 1200px) {
@@ -888,9 +887,9 @@ ul {
   padding: 1rem;
   width: 40rem;
   font-family: Abril fatface, sans-serif;
-  width: 80%;
+  width: 100%;
   height: 10rem;
-  margin: 1rem 10% 5rem 10%;
+  margin: 1rem 0 5rem 0;
 }
 .textarea-btn .form-group label {
   color: #333;
@@ -898,8 +897,8 @@ ul {
   text-shadow: 0.2rem 0.2rem 1rem #fafafa;
 }
 .textarea-btn .submit {
-  width: 40%;
-  margin-left: 30%;
+  width: 80%;
+  margin: 0 10%;
   height: 8rem;
   font-family: Abril fatface, sans-serif;
   font-size: 4rem;
@@ -923,211 +922,61 @@ ul {
   }
 }
 
+.error {
+  color: red;
+  text-align: center;
+}
+
 .main {
   width: 100%;
-}
-.main .wrapProjects {
-  height: 200vh;
+  height: 230vh;
   background: #333 url("../img/wood.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 @media screen and (max-width: 1200px) {
-  .main .wrapProjects {
-    height: 135vh;
+  .main {
+    height: 270vh;
   }
 }
 @media screen and (max-width: 992px) {
-  .main .wrapProjects {
-    height: 115vh;
+  .main {
+    height: 180vh;
   }
 }
 @media screen and (max-width: 768px) {
-  .main .wrapProjects {
-    height: 50vh;
-  }
-}
-@media screen and (max-width: 768px) {
-  .main .wrapProjects {
+  .main {
     height: 100vh;
   }
 }
-.main .wrapProjects p {
-  font-family: "Playfair Display", serif;
-  font-size: 12rem;
-  margin: 0;
-  position: absolute;
-}
-@media screen and (max-width: 1200px) {
-  .main .wrapProjects p {
-    font-size: 8rem;
-  }
-}
-@media screen and (max-width: 992px) {
-  .main .wrapProjects p {
-    font-size: 5rem;
-  }
-}
 @media screen and (max-width: 768px) {
-  .main .wrapProjects p {
-    font-size: 4rem;
-  }
-}
-.main .wrapProjects p a {
-  text-shadow: 0.4rem 0.4rem 0.3rem rgba(95, 94, 94, 0.774);
-  background-color: rgba(241, 241, 241, 0.5058823529);
-  border-radius: 2rem;
-  box-shadow: 0.2rem 0.2rem 0.5rem #333;
-}
-.main .wrapProjects p:nth-child(1) {
-  top: 13rem;
-  left: 65rem;
-  z-index: 1;
-}
-.main .wrapProjects p:nth-child(1) a {
-  color: #032366;
-}
-@media screen and (max-width: 1200px) {
-  .main .wrapProjects p:nth-child(1) {
-    left: 65rem;
-  }
-}
-@media screen and (max-width: 992px) {
-  .main .wrapProjects p:nth-child(1) {
-    left: 50rem;
-  }
-}
-@media screen and (max-width: 768px) {
-  .main .wrapProjects p:nth-child(1) {
-    left: 40rem;
-  }
-}
-@media screen and (max-width: 576px) {
-  .main .wrapProjects p:nth-child(1) {
-    left: 20rem;
-  }
-}
-.main .wrapProjects p:nth-child(2) {
-  top: 35rem;
-  left: 2rem;
-  z-index: 1;
-}
-.main .wrapProjects p:nth-child(2) a {
-  color: #163f99;
-}
-@media screen and (max-width: 576px) {
-  .main .wrapProjects p:nth-child(2) {
-    top: 20rem;
-  }
-}
-.main .wrapProjects p:nth-child(3) {
-  top: 60rem;
-  left: 65rem;
-  z-index: 2;
-}
-.main .wrapProjects p:nth-child(3) a {
-  color: #4874d1;
-}
-@media screen and (max-width: 1200px) {
-  .main .wrapProjects p:nth-child(3) {
-    left: 55rem;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .main .wrapProjects p:nth-child(3) {
-    left: 45rem;
-  }
-}
-@media screen and (max-width: 768px) {
-  .main .wrapProjects p:nth-child(3) {
-    top: 48rem;
-    left: 37rem;
-  }
-}
-@media screen and (max-width: 576px) {
-  .main .wrapProjects p:nth-child(3) {
-    left: 17rem;
-  }
-}
-.main .wrapProjects p:nth-child(4) {
-  top: 105rem;
-  left: 35rem;
-  z-index: 3;
-}
-.main .wrapProjects p:nth-child(4) a {
-  color: #218e96;
-}
-@media screen and (max-width: 1200px) {
-  .main .wrapProjects p:nth-child(4) {
-    left: 15rem;
-  }
-}
-@media screen and (max-width: 768px) {
-  .main .wrapProjects p:nth-child(4) {
-    top: 72rem;
-    left: 5rem;
-  }
-}
-@media screen and (max-width: 576px) {
-  .main .wrapProjects p:nth-child(4) {
-    top: 65rem;
-    left: 2rem;
-  }
-}
-.main .wrapProjects p:nth-child(5) {
-  top: 145rem;
-  left: 85rem;
-  z-index: 4;
-}
-.main .wrapProjects p:nth-child(5) a {
-  color: #8ba8e7;
-}
-@media screen and (max-width: 1200px) {
-  .main .wrapProjects p:nth-child(5) {
-    left: 65rem;
-  }
-}
-@media screen and (max-width: 992px) {
-  .main .wrapProjects p:nth-child(5) {
-    left: 45rem;
-    top: 130rem;
-  }
-}
-@media screen and (max-width: 768px) {
-  .main .wrapProjects p:nth-child(5) {
-    top: 95rem;
-    left: 42rem;
-  }
-}
-@media screen and (max-width: 576px) {
-  .main .wrapProjects p:nth-child(5) {
-    top: 85rem;
-    left: 23rem;
+  .main {
+    height: 116vh;
   }
 }
 .main .wrapProjects .logoMM {
-  top: 50rem;
-  left: 40rem;
+  top: 20rem;
+  left: 80rem;
   position: absolute;
 }
 .main .wrapProjects .logoMM img {
   filter: invert(90%) sepia(1%) saturate(0%) hue-rotate(151deg) brightness(85%) contrast(84%) opacity(50%);
 }
 .main .wrapProjects .logoMM1 {
-  top: 50rem;
-  left: 58rem;
+  top: 15rem;
+  left: 75rem;
 }
 .main .wrapProjects .logoMM1 img {
   width: 20rem;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .main .wrapProjects .logoMM1 {
     display: none;
   }
 }
 .main .wrapProjects .logoMM2 {
-  top: 30rem;
-  left: 70rem;
+  top: 40rem;
+  left: 20rem;
 }
 .main .wrapProjects .logoMM2 img {
   width: 10rem;
@@ -1142,17 +991,17 @@ ul {
   top: 75rem;
   left: 90rem;
 }
-.main .wrapProjects .logoMM3 img {
-  width: 15rem;
-}
 @media screen and (max-width: 1200px) {
   .main .wrapProjects .logoMM3 {
     left: 8rem;
   }
 }
+.main .wrapProjects .logoMM3 img {
+  width: 15rem;
+}
 .main .wrapProjects .logoMM4 {
-  top: 90rem;
-  left: 5rem;
+  top: 20rem;
+  left: 15rem;
 }
 .main .wrapProjects .logoMM4 img {
   width: 5rem;
@@ -1164,7 +1013,7 @@ ul {
 }
 .main .wrapProjects .logoMM5 {
   top: 100rem;
-  left: 120rem;
+  left: 600rem;
 }
 .main .wrapProjects .logoMM5 img {
   width: 5rem;
@@ -1193,7 +1042,7 @@ ul {
 }
 .main .wrapProjects .logoMM7 {
   top: 120rem;
-  left: 15rem;
+  left: 45rem;
 }
 .main .wrapProjects .logoMM7 img {
   width: 10rem;
@@ -1204,13 +1053,13 @@ ul {
   }
 }
 .main .wrapProjects .logoMM8 {
-  top: 100rem;
-  left: 50rem;
+  top: 120rem;
+  left: 85rem;
 }
 .main .wrapProjects .logoMM8 img {
   width: 15rem;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .main .wrapProjects .logoMM8 {
     display: none;
   }
@@ -1223,6 +1072,14 @@ ul {
 .main .wrapProjects .box img {
   width: 100%;
   padding: 2%;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.main .wrapProjects .box img:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 .main .wrapProjects .box1 {
   top: 10rem;
@@ -1237,12 +1094,12 @@ ul {
 }
 .main .wrapProjects .box2 {
   top: 35rem;
-  left: 105rem;
+  left: 85rem;
   background: #163f99;
 }
 @media screen and (max-width: 1200px) {
   .main .wrapProjects .box2 {
-    left: 65rem;
+    left: 50rem;
   }
 }
 @media screen and (max-width: 992px) {
@@ -1258,7 +1115,7 @@ ul {
 }
 @media screen and (max-width: 576px) {
   .main .wrapProjects .box2 {
-    top: 28rem;
+    top: 23rem;
     left: 20rem;
   }
 }
@@ -1269,7 +1126,7 @@ ul {
 }
 @media screen and (max-width: 1200px) {
   .main .wrapProjects .box3 {
-    left: 5rem;
+    left: 1rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1280,18 +1137,19 @@ ul {
 }
 @media screen and (max-width: 576px) {
   .main .wrapProjects .box3 {
-    top: 35rem;
+    top: 38rem;
     left: 1rem;
   }
 }
 .main .wrapProjects .box4 {
   top: 90rem;
-  left: 100rem;
+  left: 80rem;
   background: #218e96;
 }
 @media screen and (max-width: 1200px) {
   .main .wrapProjects .box4 {
-    left: 62rem;
+    left: 52rem;
+    top: 95rem;
   }
 }
 @media screen and (max-width: 992px) {
@@ -1307,18 +1165,18 @@ ul {
 }
 @media screen and (max-width: 576px) {
   .main .wrapProjects .box4 {
-    top: 60rem;
-    left: 20rem;
+    top: 57rem;
+    left: 17rem;
   }
 }
 .main .wrapProjects .box5 {
-  top: 110rem;
-  left: 25rem;
+  top: 120rem;
+  left: 10rem;
   background: #8ba8e7;
 }
 @media screen and (max-width: 1200px) {
   .main .wrapProjects .box5 {
-    left: 10rem;
+    left: 4rem;
     top: 125rem;
   }
 }
@@ -1568,7 +1426,7 @@ nav {
   background: url("../img/wood.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 145vh;
 }
 .bgDetail h1 {
   font-family: Abril fatface, sans-serif;
@@ -1713,7 +1571,7 @@ nav {
 .acceuil {
   width: 100%;
   height: 100vh;
-  background: #333 url("../img/acceuil.jpg") center/cover no-repeat;
+  background: #333 url("../img/acceuil.png") center/cover no-repeat;
 }
 .acceuil .lignes {
   position: absolute;
