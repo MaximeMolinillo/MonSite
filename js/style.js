@@ -110,7 +110,7 @@ new Typewriter(txtAnim,  {
 .deleteChars(47)
 .typeString('<span style="color: #591e98">Bienvenue !</span> ')
 .pauseFor(400)
-.typeString('<br> Je vous laisse découvrir mes projets...')
+.typeString('<br> <span style="color: #00D5F7">Je vous laisse découvrir mes projets...')
 
 .start()
 

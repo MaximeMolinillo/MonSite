@@ -102,7 +102,7 @@ ul {
 }
 @media screen and (max-width: 576px) {
   .containerCv .container-carreAnim {
-    width: 40rem;
+    margin: 0 15%;
   }
 }
 .containerCv .container-carreAnim .carreAnim {
@@ -112,6 +112,11 @@ ul {
   display: flex;
   padding: 0;
   position: absolute;
+}
+@media screen and (max-width: 576px) {
+  .containerCv .container-carreAnim .carreAnim {
+    width: 25%;
+  }
 }
 .containerCv .container-carreAnim .carreAnim .pic {
   width: 42rem;
@@ -157,9 +162,7 @@ ul {
 }
 @media screen and (max-width: 576px) {
   .containerCv .container-carreAnim .carreAnim .droite {
-    margin-top: 2rem;
-    top: 2%;
-    right: 43%;
+    right: 182%;
   }
 }
 .containerCv .container-carreAnim .carreAnim .gauche {
@@ -461,6 +464,11 @@ ul {
   opacity: 0;
   margin: 3rem;
 }
+@media screen and (max-width: 576px) {
+  .containerCv .wrap-language {
+    margin-top: -50%;
+  }
+}
 .containerCv .wrap-language .language {
   z-index: 4;
   position: absolute;
@@ -477,17 +485,44 @@ ul {
   top: 40%;
   width: 45%;
 }
+@media screen and (max-width: 1200px) {
+  .containerCv .wrap-language .language {
+    width: 70%;
+    margin-left: 8%;
+    top: 80rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .containerCv .wrap-language .language {
+    width: 80%;
+    margin: 0 -2%;
+    top: 50rem;
+  }
+}
 .containerCv .wrap-language .language .titleAp {
   width: 100%;
 }
 .containerCv .wrap-language .language .titleAp h2 {
+  text-align: justify;
   font-family: Abril fatface, sans-serif;
+  font-size: 3.5rem;
+}
+@media screen and (max-width: 576px) {
+  .containerCv .wrap-language .language .titleAp {
+    font-size: 2.5rem;
+    text-align: start;
+  }
 }
 .containerCv .wrap-language .language .titleAp .l4 {
   width: 80%;
   height: 0.2rem;
   background-color: #218e96;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
+}
+@media screen and (max-width: 576px) {
+  .containerCv .wrap-language .language .titleAp {
+    margin-left: 0;
+  }
 }
 .containerCv .wrap-language .language .titleAp .logExp {
   position: absolute;
@@ -514,41 +549,6 @@ ul {
   width: 90%;
   transform: rotate(25deg) translateX(0.5rem);
   filter: invert(100%) sepia(0%) saturate(5541%) hue-rotate(130deg) brightness(121%) contrast(82%);
-}
-.containerCv .wrap-language .language h2 {
-  text-align: justify;
-  font-family: Abril fatface, sans-serif;
-  font-size: 3.5rem;
-}
-@media screen and (max-width: 576px) {
-  .containerCv .wrap-language .language h2 {
-    font-size: 2.5rem;
-    text-align: start;
-  }
-}
-.containerCv .wrap-language .language .l4 {
-  width: 80%;
-  height: 0.2rem;
-  background-color: #218e96;
-  margin-bottom: 3rem;
-}
-@media screen and (max-width: 1200px) {
-  .containerCv .wrap-language .language {
-    margin-left: 10%;
-    margin-top: 42rem;
-    width: 80%;
-  }
-}
-@media screen and (max-width: 992px) {
-  .containerCv .wrap-language .language {
-    top: 35%;
-  }
-}
-@media screen and (max-width: 576px) {
-  .containerCv .wrap-language .language {
-    margin-left: 0;
-    top: 10%;
-  }
 }
 .containerCv .wrap-language .language .wrap-lang {
   z-index: 2;
@@ -629,7 +629,7 @@ ul {
 }
 @media screen and (max-width: 576px) {
   .containerCv .hobbies {
-    top: 5%;
+    top: 0rem;
   }
 }
 .containerCv .hobbies .titleAp {
@@ -1543,16 +1543,11 @@ nav {
 }
 @media screen and (max-width: 1200px) {
   .bgDetail .work-details .txtProject p a {
-    width: 100%;
+    width: 20rem;
     font-size: 2rem;
     padding: 1rem;
     margin: 1rem;
     right: 2%;
-  }
-}
-@media screen and (max-width: 576px) {
-  .bgDetail .work-details .txtProject p a {
-    width: 80%;
   }
 }
 .bgDetail .work-details .txtProject h2 {
@@ -1571,7 +1566,7 @@ nav {
 .acceuil {
   width: 100%;
   height: 100vh;
-  background: #333 url("../img/acceuil.png") center/cover no-repeat;
+  background: #333 url("../img/acceuil.jpg") bottom/cover no-repeat;
 }
 .acceuil .lignes {
   position: absolute;
@@ -1637,7 +1632,7 @@ nav {
 }
 @media screen and (max-width: 1200px) {
   .acceuil .container-first {
-    top: 25%;
+    top: 20%;
   }
 }
 .acceuil .container-first h1 {
@@ -1645,7 +1640,8 @@ nav {
   color: #f1f1f1;
   text-transform: uppercase;
   color: #f1f1f1;
-  margin-top: 15rem;
+  margin-top: 12rem;
+  text-shadow: 0.2rem 0.2rem 0.3rem #333;
 }
 @media screen and (max-width: 1200px) {
   .acceuil .container-first h1 {
@@ -1664,11 +1660,26 @@ nav {
 }
 .acceuil .container-btns {
   position: fixed;
-  bottom: 30%;
+  bottom: 10%;
+  width: 100%;
+}
+@media screen and (max-width: 1200px) {
+  .acceuil .container-btns {
+    bottom: 10%;
+    display: flex;
+  }
 }
 @media screen and (max-width: 992px) {
   .acceuil .container-btns {
-    bottom: 20%;
+    bottom: 10%;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 20%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .acceuil .container-btns {
+    margin: 0 10%;
   }
 }
 .acceuil .container-btns .btn-first {
@@ -1690,16 +1701,11 @@ nav {
 }
 @media screen and (max-width: 1200px) {
   .acceuil .container-btns .btn-first {
-    width: 100%;
+    width: 20rem;
     font-size: 2rem;
     padding: 1rem;
     margin: 1rem;
     right: 2%;
-  }
-}
-@media screen and (max-width: 576px) {
-  .acceuil .container-btns .btn-first {
-    width: 80%;
   }
 }
 .acceuil .container-btns .btn-first:hover img {
