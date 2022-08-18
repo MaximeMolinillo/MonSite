@@ -120,8 +120,7 @@ nav {
         }
     }
     a:hover {
-       color: v.$purple;
-     
+        color: v.$purple;
     }
     a::after {
         content: "";
@@ -132,13 +131,11 @@ nav {
         height: 0.1rem;
         transform: scaleX(0);
         transform-origin: left;
-        background:  v.$purple;;
+        background: v.$purple;
         transition: transform 0.3s ease-out;
     }
     a:hover::after {
         transform: scaleX(1);
-
-     
     }
 }
 
@@ -181,7 +178,7 @@ nav {
 
     .sign-user {
         padding: 0.5rem;
-            
+
         @media screen and(max-width: v.$lg-breakpoint) {
             // display: block;
             cursor: pointer;
@@ -196,7 +193,7 @@ nav {
                 width: 2rem;
             }
         }
-        &:hover img{
+        &:hover img {
             -webkit-transform: scale(1.3);
             transform: scale(1.3);
             filter: invert(44%) sepia(58%) saturate(541%) hue-rotate(136deg) brightness(94%) contrast(90%);
@@ -208,4 +205,37 @@ nav {
     @media screen and(max-width: v.$lg-breakpoint) {
         transform: translate(0%);
     }
+}
+  /***********FOOTER ********************************/
+footer {
+    .container-footer {
+        background-color: v.$darkgrey;
+        // position: fixed;
+        z-index: 8;
+        // position: absolute;
+        display: flex;
+        bottom: 0%;
+        width: 100%;
+       justify-content: center;
+       padding: 0.5rem 3rem;
+       align-items: center;
+
+        a, p{
+       color: v.$cream;
+       padding: 0 2rem;
+       @media screen and(max-width: v.$md-breakpoint) {
+        font-size: 0.8rem;
+     }
+
+        }
+    }
+}
+
+
+
+/**Mentions légales**************************************/
+.mentions-container{
+    padding-top: 10rem;
+    text-align: center;
+   
 }
