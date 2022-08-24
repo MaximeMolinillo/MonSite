@@ -3,7 +3,6 @@ require_once('../system/config.php');
 
 $page = "Détails de projets";
 
-// $query = $db->query("SELECT * FROM products ORDER BY id ");
 $query = $db->query("SELECT products.*, GROUP_CONCAT(pictures.name SEPARATOR ', ')AS 'Pictures'
                   FROM products
                   INNER JOIN product_pictures
@@ -11,7 +10,6 @@ $query = $db->query("SELECT products.*, GROUP_CONCAT(pictures.name SEPARATOR ', 
                   INNER JOIN pictures
                   ON product_pictures.id_pictures = pictures.id
                   GROUP BY products.title;");
-
 $works = $query->fetchAll();
 
 foreach ($works as $item) {
@@ -20,6 +18,7 @@ foreach ($works as $item) {
         $data = $item;
     }
 }
+
 $query = $db->query("SELECT *, GROUP_CONCAT(language.name)AS 'Language'
                   FROM language
                   INNER JOIN product_language
@@ -27,31 +26,15 @@ $query = $db->query("SELECT *, GROUP_CONCAT(language.name)AS 'Language'
                   INNER JOIN products
                   ON product_language.id_prod = products.id
                   GROUP BY language.id;");
-// $query = $db->query("SELECT *, GROUP_CONCAT(language.id )AS 'Language'
-//                   FROM products
-//                   INNER JOIN product_language
-//                   ON product.id = product_language.id_prod
-//                   INNER JOIN languages
-//                   ON product_language.id_language = language.id
-
-//                   GROUP BY language.name;");
-// $query = $db->query("SELECT * FROM * WHERE language.id = product_language.id_prod");
 $languages = $query->execute();
-
-// var_dump($_GET);
-// $idPage = trim(strip_tags($_GET["idPage"]));
 $idPage = $_GET;
 
 $query = $db->prepare("SELECT * FROM product_language WHERE id_prod = :idPage");
 $query->bindParam(":idPage", $idPage, PDO::PARAM_INT);
 $langProject = $query->fetchAll();
-// var_dump($idPage);
-// var_dump($langProject);
 
 include("../templates/header.php");
-?>
 
-<?php
 if ($find) {
 ?>
 
@@ -64,14 +47,12 @@ if ($find) {
                 <!-- <img src="../assets/img/projets/<?= $data['name'] ?>" alt="image de <?= $data['title'] ?>">
             <img src="../assets/img/projets/<?= $data['Pictures'] ?>" alt="image de <?= $data['title'] ?>">
             <img src="../assets/img/projets/<?= $data['picture'] ?>" alt="image de <?= $data['title'] ?>"> -->
-
                 <img src="../assets/img/projets/<?= $data['picture'] ?>" alt="image de <?= $data['title'] ?>">
             </div>
             <div class="txtProject">
                 <p><?= $data["description"] ?></p>
 
                 <p><a href="<?= $data["url"] ?>" target="_blank"> Visiter ce site </a></p>
-
 
                 <p>Technologies utilisées : <?= $data["technologies"] ?></p>
                 <div class="responsive">
@@ -82,17 +63,14 @@ if ($find) {
                         <img src="../assets/img/logo/tablette.svg" alt="Compatible Tablette">
                     </div>
                     <div class="wrap-resp">
-
                         <img src="../assets/img/tel.svg" alt="Compatible Smartphone">
                     </div> -->
-
                 </div>
 
                 <p>Contexte : <?= $data["contexte"] ?></p>
 
                 <h2>
                     <?= date("d/m/Y", strtotime($data["date"])); ?></h2>
-
             </div>
         </div>
 
@@ -100,14 +78,12 @@ if ($find) {
         foreach ($langProject as $language) {
         ?>
             <div class="techno">
-                <!-- <img src="../assets/img/logo/" alt=""> -->
                 <img src="../assets/img/logo/<?= $language['picname'] ?>" alt="000">
                 <h1><?= $language["name"] ?></h1>
             </div>
         <?php
         }
         ?>
-
     </main>
 
 <?php

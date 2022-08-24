@@ -1,22 +1,13 @@
 <?php
 require_once('../system/config.php');
+
 $page = "Mes projets";
-
-
-
-
-// $query = $db->query("SELECT * FROM products ORDER BY id");
-// $products = $query->fetchAll(PDO::FETCH_ASSOC);
 
 include("../templates/header.php");
 ?>
 
 <main class="main">
-
-
     <div class="wrapProjects">
-
-
         <!-- <p class="rellax" data-rellax-speed="-4">
             <a href="detailProjet.php?id=1">Portfolio </a>
         </p>
@@ -61,8 +52,6 @@ include("../templates/header.php");
             <img src="../assets/img/logoMM.svg" alt="">
         </div>
 
-
-
         <div class="box box1 rellax" data-rellax-speed="-5">
             <a href="detailProjet.php?id=1">
                 <img src="../assets/img/projets/monsite.png" alt="Mon site">
@@ -88,14 +77,8 @@ include("../templates/header.php");
                 <img src="../assets/img/projets/Hotel.png" alt="Clône du site Hotel Olivarius">
             </a>
         </div>
-
     </div>
-
-
 </main>
-
-
-
 
 <?php
 include("../templates/footer.php");

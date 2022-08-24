@@ -1,8 +1,9 @@
 // Variables
-//Couleur
+
+//Couleurs **********************
 $darkgrey: #333;
-$second-dark:#414141;
-$third-dark:#8e8d8d;
+$second-dark: #414141;
+$third-dark: #8e8d8d;
 $text-white: #f1f1f1;
 $shadow-white: #c5c5c6e1;
 $cream: #fafafa;
@@ -11,26 +12,25 @@ $red: #8ba8e7;
 $yellow: #4874d1;
 $blue: #032366;
 $green: #163f99;
-$purple:#218e96;
-//carré anim
+$purple: #218e96;
+//carré anim ************************
 $redP: #797979e3;
 $greenP: #48ac3b;
-$blueP:#02027e;
-$yellowP:#fbfb03;
-$transp-gray:#b9b9b993;
-//Breakpoint
+$blueP: #02027e;
+$yellowP: #fbfb03;
+$transp-gray: #b9b9b993;
+//Breakpoint *********************
 $sm-breakpoint: 576px;
 $md-breakpoint: 768px;
 $lg-breakpoint: 992px;
 $xl-breakpoint: 1200px;
 
-//Police
+//Police **************************
 $fatFont: Abril fatface, sans-serif;
-$playfair: 'Playfair Display', serif;
+$playfair: "Playfair Display", serif;
 
-
-// Import Police
+// Import Police ******************************
 // Abril Fatface
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 //Playfair display
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");

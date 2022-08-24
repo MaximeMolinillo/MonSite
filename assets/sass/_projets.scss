@@ -5,27 +5,22 @@
     width: 100%;
     height: 230vh;
     background: v.$darkgrey url("../img/wood.jpg");
-            // background: v.$shadow-white;
-            background-repeat: no-repeat;
-            background-size: cover;
-            @media screen and(max-width: v.$xl-breakpoint) {
-                height: 270vh;
-             }
-             @media screen and(max-width: v.$lg-breakpoint) {
-                height: 180vh;
-             }
-             @media screen and(max-width: v.$md-breakpoint) {
-                height: 100vh;
-             }
-             @media screen and(max-width: v.$md-breakpoint) {
-                height: 116vh;
-             }
-          
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media screen and(max-width: v.$xl-breakpoint) {
+        height: 270vh;
+    }
+    @media screen and(max-width: v.$lg-breakpoint) {
+        height: 180vh;
+    }
+    @media screen and(max-width: v.$md-breakpoint) {
+        height: 100vh;
+    }
+    @media screen and(max-width: v.$md-breakpoint) {
+        height: 116vh;
+    }
+
     .wrapProjects {
-       
-        // margin:  0 30rem;
-
-
         // padding-top: 5rem;
         // p {
         //     // color: v.$darkgrey;
@@ -110,7 +105,7 @@
         //         left: 37rem;
         //     }
         //     @media screen and(max-width: v.$sm-breakpoint) {
-             
+
         //         left: 17rem;
         //     }
         // }
@@ -119,7 +114,7 @@
         //     left: 35rem;
         //     z-index: 3;
         //     a {
-                
+
         //         color: v.$purple;
         //     }
         //     @media screen and(max-width: v.$xl-breakpoint) {
@@ -164,7 +159,6 @@
             top: 20rem;
             left: 80rem;
             position: absolute;
-
             img {
                 filter: invert(90%) sepia(1%) saturate(0%) hue-rotate(151deg) brightness(85%) contrast(84%) opacity(50%);
             }
@@ -175,7 +169,6 @@
             img {
                 width: 20rem;
             }
-         
             @media screen and(max-width: v.$lg-breakpoint) {
                 display: none;
             }
@@ -200,7 +193,6 @@
             img {
                 width: 15rem;
             }
-        
         }
         .logoMM4 {
             top: 20rem;
@@ -222,7 +214,7 @@
                 left: 68rem;
             }
             @media screen and(max-width: v.$md-breakpoint) {
-               display: none;
+                display: none;
             }
         }
         .logoMM6 {
@@ -262,7 +254,7 @@
             img {
                 width: 100%;
                 padding: 2%;
-                 -webkit-transform: scale(1);
+                -webkit-transform: scale(1);
                 transform: scale(1);
                 -webkit-transition: 0.3s ease-in-out;
                 transition: 0.3s ease-in-out;
@@ -271,18 +263,6 @@
                     transform: scale(1.1);
                     // filter: none;
                 }
-                // @media screen and(max-width: v.$lg-breakpoint) {
-                //     width: 30rem;
-                //     // padding: 1rem;
-                // }
-                // @media screen and(max-width: v.$md-breakpoint) {
-                //     width: 25rem;
-                //     // padding: 0.5rem;
-                // }
-                // @media screen and(max-width: v.$sm-breakpoint) {
-                //     width: 15rem;
-                //     // padding: 0.5rem;
-                // }
             }
         }
 
@@ -301,7 +281,6 @@
             background: v.$green;
             @media screen and(max-width: v.$xl-breakpoint) {
                 left: 50rem;
-                
             }
             @media screen and(max-width: v.$lg-breakpoint) {
                 left: 45rem;
@@ -321,7 +300,7 @@
             background: v.$yellow;
             @media screen and(max-width: v.$xl-breakpoint) {
                 left: 1rem;
-                            }
+            }
             @media screen and(max-width: v.$md-breakpoint) {
                 top: 45rem;
                 left: 5rem;
@@ -349,7 +328,7 @@
                 left: 35rem;
             }
             @media screen and(max-width: v.$sm-breakpoint) {
-           top: 57rem;
+                top: 57rem;
                 left: 17rem;
             }
         }
@@ -367,7 +346,7 @@
                 left: 5rem;
             }
             @media screen and(max-width: v.$sm-breakpoint) {
-           top: 75rem;
+                top: 75rem;
                 left: 1rem;
             }
         }

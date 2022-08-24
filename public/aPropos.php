@@ -29,9 +29,8 @@ include("../templates/header.php");
 
     <div class="carreAnim">
       <img src="../assets/img/MaxMoli.png" class="pic">
-      <!-- <div class="gauche"> -->
+
       <img src="../assets/img/forme-apropos/gauche.svg" class="gauche carre ">
-      <!-- </div> -->
 
       <div class="logo-carre" onclick="animTriangleLeft()">
         <img class="pgauche" src="../assets/img/logo/exp.svg" alt="Expérience">
@@ -41,24 +40,24 @@ include("../templates/header.php");
         <div class="haut">
           <img src="../assets/img/forme-apropos/haut.svg" class=" carre">
         </div>
+
         <div class="logo-carre" onclick="animTriangleTop()">
           <img class="phaut" src="../assets/img/logo/lang.svg" alt="Technologies">
         </div>
 
         <img src="../assets/img/forme-apropos/bas.svg" class="carre bas">
+
         <div class="logo-carre" onclick="animTriangleBottom()">
           <img class="pbas" src="../assets/img/logo/hobbies.svg" alt="Hobbies">
         </div>
       </div>
 
       <img src="../assets/img/forme-apropos/droite.svg" class="carre droite">
+
       <div class="logo-carre" onclick="animTriangleRight()">
         <img class="pdroite" src="../assets/img/logo/school.svg" alt="Scolarité">
       </div>
     </div>
-
-
-
 
 
     <div class="school sectionCV">
@@ -149,43 +148,37 @@ include("../templates/header.php");
         foreach ($language as $lang) {
         ?>
           <div class="lang">
-
             <img src="../assets/img/logo/<?= $lang["picname"] ?>" alt="<?= $lang["name"] ?>" ">
-
-
         </div>
       <?php
         }
       ?>
       </div>
-      <!-- <img src=" ../assets/img/logo/html.png" alt=""> -->
           </div>
       </div>
 
-      <div class="hobbies ">
-        <div class="titleAp">
-          <h2>Hobbies</h2>
-          <div class="l4"></div>
-          <div class="logExp">
-            <img src="../assets/img/logo/hobbies.svg" alt="">
-          </div>
-        </div>
-        <div class="wrap-hob">
-          <?php
-          foreach ($hobbies as $hobbie) {
-          ?>
-            <div class="hob">
-              <img src="../assets/img/logo/<?= $hobbie["picture"] ?>" alt="<?= $hobbie["name"] ?>" class="logoHobbies">
-              <!-- <h3><?= $hobbie["name"] ?></h3> -->
+      <div class=" hobbies ">
+        <div class=" titleAp">
+            <h2>Hobbies</h2>
+            <div class="l4"></div>
+            <div class="logExp">
+              <img src="../assets/img/logo/hobbies.svg" alt="">
             </div>
-          <?php
-          }
-          ?>
-        </div>
+          </div>
+          <div class="wrap-hob">
+            <?php
+            foreach ($hobbies as $hobbie) {
+            ?>
+              <div class="hob">
+                <img src="../assets/img/logo/<?= $hobbie["picture"] ?>" alt="<?= $hobbie["name"] ?>" class="logoHobbies">
+                <!-- <h3><?= $hobbie["name"] ?></h3> -->
+              </div>
+            <?php
+            }
+            ?>
+          </div>
       </div>
-      <!-- </div> -->
 </main>
-
 
 <?php
 include("../templates/footer.php");

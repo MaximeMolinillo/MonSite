@@ -34,26 +34,25 @@
           <span></span>
         </button>
         <div class="navlinks-container">
-          <!-- <a href="../index.html" aria-current="page">Home</a> -->
           <a href="./aPropos.php">A propos</a>
           <a href="./projets.php">Mes projets</a>
-        
           <a href="./contact.php">Contact</a>
         </div>
       </div>
+
       <div class="nav-authentifications">
         <a href="https://www.linkedin.com/in/maxime-molinillo/" class="sign-user" aria-label="Sign in page" target="_blank">
           <img src="../assets/img/linkedin.svg" alt="Lien vers Linkedin" />
         </a>
         <a href="https://github.com/MaximeMolinillo" class="sign-user" aria-label="Sign in page" target="_blank">
-            <img src="../assets/img/github.svg"  alt="Lien vers github"/>
-          </a>
-          <a href="mailto:maxime.molinillo@outlook.fr" class="sign-user" aria-label="Sign in page" target="_blank">
-            <img src="../assets/img/mail.svg" alt="Lien pour envoyer un mail"/>
-          </a>
-          <a href="tel:+33658885994" class="sign-user" aria-label="Sign in page" target="_blank">
-            <img src="../assets/img/tel.svg" alt="Lien pour lancer un appel téléphonique"/>
-          </a>
+          <img src="../assets/img/github.svg" alt="Lien vers github" />
+        </a>
+        <a href="mailto:maxime.molinillo@outlook.fr" class="sign-user" aria-label="Sign in page" target="_blank">
+          <img src="../assets/img/mail.svg" alt="Lien pour envoyer un mail" />
+        </a>
+        <a href="tel:+33658885994" class="sign-user" aria-label="Sign in page" target="_blank">
+          <img src="../assets/img/tel.svg" alt="Lien pour lancer un appel téléphonique" />
+        </a>
       </div>
     </nav>
   </header>

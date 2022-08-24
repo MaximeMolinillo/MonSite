@@ -5,11 +5,10 @@ $page = "Contact";
 
 use PHPMailer\PHPMailer\PHPMailer;
 
-
 define("HOST", "http://localhost/MonSite/");
+
 /**traitement du formulaire */
 $errors = [];
-// $message = "";
 $messageError = "";
 
 if (isset($_POST["contactMail"])) {
@@ -45,8 +44,6 @@ if (isset($_POST["contactMail"])) {
         $messageError = "Impossible d'envoyer le mail, veillez recommencer.";
     }
 
-
-
     if (empty($errors)) {
         $phpmailer = new PHPMailer();
         $phpmailer->isSMTP();
@@ -71,20 +68,20 @@ if (isset($_POST["contactMail"])) {
         //Envoie du mail
         if ($phpmailer->send()) {
             $messageError = "Mail envoyé avec succès !";
-
         }
-            //     // On affiche un message de succès si la requéte s'est bien executée.
-            //     $message = "<div class=\"error\">Votre message a bien été envoyé.</div>";
-            // } catch (Exception $e) {
-            //     $message = "Un problème s'est produit ";
-            // }
-       
+        //     // On affiche un message de succès si la requéte s'est bien executée.
+        //     $message = "<div class=\"error\">Votre message a bien été envoyé.</div>";
+        // } catch (Exception $e) {
+        //     $message = "Un problème s'est produit ";
+        // }
+
     }
 }
 
-
 include("../templates/header.php");
 ?>
+
+
 <main>
     <h1 class="contact-title">Contactez-moi !</h1>
     <hr>
@@ -111,15 +108,15 @@ include("../templates/header.php");
                 <h3>35 ans</h3>
             </div>
         </div>
-   
+
         <form action="" method="post">
-        <?php
-        if (isset($messageError)) {
-        ?>
-            <p class="error"><?= $messageError ?></p>
-        <?php
-        }
-        ?>
+            <?php
+            if (isset($messageError)) {
+            ?>
+                <p class="error"><?= $messageError ?></p>
+            <?php
+            }
+            ?>
             <div class="wrap-form-group">
                 <div class="column-form-group">
                     <div class="form-group">

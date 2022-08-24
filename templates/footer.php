@@ -1,10 +1,10 @@
 <footer>
     <div class="container-footer">
-    <img src="../assets/img/logoMM.svg" alt="Maxime Molinillo">
-
-        <p>Made by Maxime Molinillo  &nbsp - &nbsp 2022 &nbsp -<a href="../public/mentions.php">Mentions légales</a></p>
         <img src="../assets/img/logoMM.svg" alt="Maxime Molinillo">
-    
+
+        <p>Made by Maxime Molinillo &nbsp - &nbsp 2022 &nbsp -<a href="../public/mentions.php">Mentions légales</a></p>
+        <img src="../assets/img/logoMM.svg" alt="Maxime Molinillo">
+
     </div>
 </footer>
 
